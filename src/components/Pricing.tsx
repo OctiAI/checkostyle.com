@@ -38,7 +38,7 @@ const Pricing: React.FC = () => {
       popular: true,
       color: "from-green-500 to-green-600"
     },
-
+    {
     
       name: "Enterprise",
       price: "Contact",

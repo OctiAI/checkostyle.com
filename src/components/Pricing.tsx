@@ -107,7 +107,7 @@ const Pricing: React.FC = () => {
                 <p className="text-gray-600 mb-4">{plan.description}</p>
                 <div className="mb-4">
                   <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
-                  <span className="text-gray-600">/{plan.period}</span>
+                  <span className="text-gray-600">{plan.period}</span>
                 </div>
               </div>
 

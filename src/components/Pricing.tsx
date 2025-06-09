@@ -39,7 +39,7 @@ const Pricing: React.FC = () => {
       color: "from-green-500 to-green-600"
     },
 
-    {
+    
       name: "Enterprise",
       price: "$400+",
       period: "month",

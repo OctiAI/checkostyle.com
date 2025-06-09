@@ -38,24 +38,7 @@ const Pricing: React.FC = () => {
       popular: true,
       color: "from-green-500 to-green-600"
     },
-    {
-      name: "DFY",
-      price: "$499",
-      period: "setup + $129/mo",
-      description: "We build it for you in 72 hours",
-      features: [
-        "Everything in Pro",
-        "We build for you",
-        "CRO-optimized layout",
-        "A/B variant included",
-        "72hr delivery",
-        "2 rounds of edits",
-        "Conversion guarantee"
-      ],
-      cta: "Build It For Me",
-      popular: false,
-      color: "from-purple-500 to-purple-600"
-    },
+
     {
       name: "Enterprise",
       price: "$400+",

@@ -40,7 +40,7 @@ const Pricing: React.FC = () => {
     },
     {
       name: "Enterprise",
-      price: "Contact",
+      price: "Contact Us",
       period: "",
       description: "For teams and agencies",
       features: [

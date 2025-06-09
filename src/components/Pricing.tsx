@@ -41,7 +41,7 @@ const Pricing: React.FC = () => {
     {
       name: "Enterprise",
       price: "Contact",
-      period: "us",
+      period: "",
       description: "For teams and agencies",
       features: [
         "Unlimited accounts",

@@ -7,7 +7,7 @@ const Pricing: React.FC = () => {
     {
       name: "Tester",
       price: "$38",
-      period: "month",
+      period: "/month",
       description: "Perfect for getting started",
       features: [
         "1 Stripe account",
@@ -23,7 +23,7 @@ const Pricing: React.FC = () => {
     {
       name: "Pro",
       price: "$129", 
-      period: "month",
+      period: "/month",
       description: "Most popular for growing businesses",
       features: [
         "3 Stripe accounts",

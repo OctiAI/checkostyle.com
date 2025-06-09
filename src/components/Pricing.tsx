@@ -39,7 +39,6 @@ const Pricing: React.FC = () => {
       color: "from-green-500 to-green-600"
     },
     {
-    
       name: "Enterprise",
       price: "Contact",
       period: "month",
@@ -81,7 +80,7 @@ const Pricing: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
             <motion.div
               key={index}

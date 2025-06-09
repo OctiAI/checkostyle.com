@@ -5,8 +5,8 @@ import { Check, Star, Zap, Crown } from 'lucide-react';
 const Pricing: React.FC = () => {
   const plans = [
     {
-      name: "Starter",
-      price: "$49",
+      name: "Tester",
+      price: "$38",
       period: "month",
       description: "Perfect for getting started",
       features: [

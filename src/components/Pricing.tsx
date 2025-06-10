@@ -5,57 +5,57 @@ import { Check, Star, Zap, Crown } from 'lucide-react';
 const Pricing: React.FC = () => {
   const plans = [
     {
-      name: "Tester",
-      price: "$38",
-      period: "/month",
-      description: "Perfect for getting started",
+      name: 'Tester',
+      price: '$38',
+      period: '/month',
+      description: 'Perfect for getting started',
       features: [
-        "1 Stripe account",
-        "Drag & drop builder",
-        "Mobile responsive",
-        "Live chat support",
-        "Basic analytics"
+        '1 Stripe account',
+        'Drag & drop builder',
+        'Mobile responsive',
+        'Live chat support',
+        'Basic analytics',
       ],
-      cta: "Start with Starter",
+      cta: 'Start with Starter',
       popular: false,
-      color: "from-blue-500 to-blue-600"
+      color: 'from-blue-500 to-blue-600',
     },
     {
-      name: "Pro",
-      price: "$129", 
-      period: "/month",
-      description: "Most popular for growing businesses",
+      name: 'Pro',
+      price: '$129',
+      period: '/month',
+      description: 'Most popular for growing businesses',
       features: [
-        "3 Stripe accounts",
-        "Advanced builder",
-        "A/B testing",
-        "Priority support",
-        "Advanced analytics",
-        "Custom CSS",
-        "DFY bonus templates"
+        '3 Stripe accounts',
+        'Advanced builder',
+        'A/B testing',
+        'Priority support',
+        'Advanced analytics',
+        'Custom CSS',
+        'DFY bonus templates',
       ],
-      cta: "Upgrade My Checkout",
+      cta: 'Upgrade My Checkout',
       popular: true,
-      color: "from-green-500 to-green-600"
+      color: 'from-green-500 to-green-600',
     },
     {
-      name: "Enterprise",
-      price: "Contact Us",
-      period: "",
-      description: "For teams and agencies",
+      name: 'Enterprise',
+      price: 'Contact Us',
+      period: '',
+      description: 'For teams and agencies',
       features: [
-        "Unlimited accounts",
-        "White-label option",
-        "Strategy consultation",
-        "Slack integration",
-        "NDA available",
-        "Custom integrations",
-        "Dedicated success manager"
+        'Unlimited accounts',
+        'White-label option',
+        'Strategy consultation',
+        'Slack integration',
+        'NDA available',
+        'Custom integrations',
+        'Dedicated success manager',
       ],
-      cta: "Talk to Sales",
+      cta: 'Talk to Sales',
       popular: false,
-      color: "from-gray-700 to-gray-800"
-    }
+      color: 'from-gray-700 to-gray-800',
+    },
   ];
 
   return (
@@ -80,12 +80,14 @@ const Pricing: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 items-stretch">
           {plans.map((plan, index) => (
             <motion.div
               key={index}
-              className={`relative bg-white rounded-2xl border-2 ${
-                plan.popular ? 'border-green-300 shadow-2xl' : 'border-gray-200 shadow-lg'
+              className={`relative flex flex-col h-full bg-white rounded-2xl border-2 ${
+                plan.popular
+                  ? 'border-green-300 shadow-2xl'
+                  : 'border-gray-200 shadow-lg'
               } p-8 transition-all duration-300 hover:shadow-xl`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -103,17 +105,24 @@ const Pricing: React.FC = () => {
               )}
 
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {plan.name}
+                </h3>
                 <p className="text-gray-600 mb-4">{plan.description}</p>
                 <div className="mb-4">
-                  <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
+                  <span className="text-4xl font-bold text-gray-900">
+                    {plan.price}
+                  </span>
                   <span className="text-gray-600">{plan.period}</span>
                 </div>
               </div>
 
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center space-x-3">
+                  <li
+                    key={featureIndex}
+                    className="flex items-center space-x-3"
+                  >
                     <Check className="h-5 w-5 text-green-500 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">{feature}</span>
                   </li>
@@ -121,7 +130,7 @@ const Pricing: React.FC = () => {
               </ul>
 
               <motion.button
-                className={`w-full bg-gradient-to-r ${plan.color} text-white py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300`}
+                className={`mt-auto w-full bg-gradient-to-r ${plan.color} text-white py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -141,10 +150,13 @@ const Pricing: React.FC = () => {
         >
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Crown className="h-8 w-8 text-yellow-500" />
-            <h3 className="text-2xl font-bold text-gray-900">30-Day Money-Back Guarantee</h3>
+            <h3 className="text-2xl font-bold text-gray-900">
+              30-Day Money-Back Guarantee
+            </h3>
           </div>
           <p className="text-gray-700 text-lg">
-            If CheckoStyle doesn't increase your conversion rate within 30 days, we'll refund every penny. 
+            If CheckoStyle doesn't increase your conversion rate within 30 days,
+            we'll refund every penny.
             <br />
             <strong>No questions asked.</strong>
           </p>

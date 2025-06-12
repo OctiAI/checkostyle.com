@@ -65,66 +65,40 @@ const PainProof: React.FC = () => {
             </div>
           </div>
 
-{/* CheckoStyle - Solution */}
-<div className="relative">
-  <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
-    <TrendingUp className="h-4 w-4" />
-    <span>Conversion Booster</span>
-  </div>
-  <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-green-200">
-    <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">CheckoStyle Checkout</h3>
-    <div className="space-y-4">
-      <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
-        <div className="h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded mb-2"></div>
-        <div className="h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded w-2/3 opacity-70"></div>
-      </div>
-      <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
-        <div className="h-10 bg-gradient-to-r from-gray-50 to-blue-50 rounded border-2 border-blue-200"></div>
-      </div>
-      <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
-        <div className="h-10 bg-gradient-to-r from-gray-50 to-blue-50 rounded border-2 border-blue-200"></div>
-      </div>
-    </div>
-    <div className="mt-6 bg-gradient-to-r from-green-500 to-green-600 h-12 rounded-lg flex items-center justify-center shadow-lg">
-      <span className="text-white font-bold">Secure Checkout →</span>
-    </div>
-
-    {/* Bullet Points - Now Left-Aligned */}
-    <div className="mt-4 space-y-2 text-sm text-gray-500">
-                <div className="flex items-center justify-between items-star">
-                  <span>❌ No branding</span>
-                  <span>❌ Generic design</span>
+          {/* CheckoStyle - Solution */}
+          <div className="relative">
+            <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
+              <TrendingUp className="h-4 w-4" />
+              <span>Conversion Booster</span>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-green-200">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">CheckoStyle Checkout</h3>
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
+                  <div className="h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded mb-2"></div>
+                  <div className="h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded w-2/3 opacity-70"></div>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span>❌ Low trust signals</span>
-                  <span>❌ Poor mobile UX</span>
+                <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
+                  <div className="h-10 bg-gradient-to-r from-gray-50 to-blue-50 rounded border-2 border-blue-200"></div>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
+                  <div className="h-10 bg-gradient-to-r from-gray-50 to-blue-50 rounded border-2 border-blue-200"></div>
                 </div>
               </div>
-    
-    <div className="mt-4 space-y-2 text-sm text-green-700">
-      <div className="flex flex-col space-y-1 items-start">
-        <div className="flex items-center space-x-2">
-          <span>✅ Full branding</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <span>✅ Beautiful design</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <span>✅ Trust signals</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <span>✅ Mobile optimized</span>
-        </div>
-      </div>
-
-      {/* New Text Block */}
-      <p className="pt-3 text-sm font-medium text-green-800 leading-snug">
-        CheckoStyle overlays your existing Stripe Checkout — giving you total visual control, brand presence, and trust.
-      </p>
-    </div>
-  </div>
-
-
+              <div className="mt-6 bg-gradient-to-r from-green-500 to-green-600 h-12 rounded-lg flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold">Secure Checkout →</span>
+              </div>
+              <div className="mt-4 space-y-2 text-sm text-green-700">
+                <div className="flex items-left justify-between">
+                  <span>✅ Full branding</span>
+                  <span>✅ Beautiful design</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>✅ Trust signals</span>
+                  <span>✅ Mobile optimized</span>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
 

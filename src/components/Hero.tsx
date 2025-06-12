@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <span className="underline">You built a beautiful site</span>. A real brand. But Stripe hits your customer with a checkout 
+            <span className="underline">You built a beautiful site.</span> A real brand. But Stripe hits your customer with a checkout 
             that looks like it's from 2011. <span className="font-semibold text-gray-800">Cold. Generic. Unbranded.</span>
           </motion.p>
 

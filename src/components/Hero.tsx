@@ -85,8 +85,9 @@ const Hero: React.FC = () => {
             <span className="text-sm text-gray-700 font-medium">5-Min Setup</span>
           </div>
         </motion.div>
-       
-         
+          
+          
+
         </div>
       </div>
     </section>

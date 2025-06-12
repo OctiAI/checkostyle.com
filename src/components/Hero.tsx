@@ -80,8 +80,6 @@ const Hero: React.FC = () => {
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                <img src="/your-image-path.svg" alt="Setup Icon" className="w-8 h-8" />
-
               <span className="text-sm text-gray-500">5-Min Setup</span>
             </div>
           </motion.div>

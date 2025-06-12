@@ -91,7 +91,7 @@ const PainProof: React.FC = () => {
 
     {/* Bullet Points - Now Left-Aligned */}
     <div className="mt-4 space-y-2 text-sm text-gray-500">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between items-star">
                   <span>❌ No branding</span>
                   <span>❌ Generic design</span>
                 </div>

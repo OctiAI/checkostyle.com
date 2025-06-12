@@ -57,7 +57,7 @@ const Header: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              See Pricingdawdawd
+              See Pricing
             </motion.button>
             <motion.button
               className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300"

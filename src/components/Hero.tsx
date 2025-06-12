@@ -60,12 +60,11 @@ const Hero: React.FC = () => {
             >
               <Play className="h-5 w-5" />
               <span>Book a Setup Call</span>
-                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          
+            </motion.button>
+                           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Used by 127+ DTC founders to double checkout conversion.
           </p>
-            </motion.button>
-            
-
 
 
             

@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
           >
             Your Stripe Checkout
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
+            <span className="text-4xl md:text-5xl" style={{ color: '#E63946' }}>
               Might Be Killing
             </span>
             <br />

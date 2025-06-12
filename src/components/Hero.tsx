@@ -32,15 +32,16 @@ const Hero: React.FC = () => {
           </motion.h1>
 
           {/* Subheadline */}
-          <motion.p
-            className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            You built a beautiful site. A real brand. But Stripe hits your customer with a checkout 
-            that looks like it's from 2011. <span className="font-semibold text-gray-800">Cold. Generic. Unbranded.</span>
-          </motion.p>
+<motion.p
+  className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+>
+  <span className="underline">You built a beautiful site</span>. A real brand. But Stripe hits your customer with a checkout 
+  that looks like it's from 2011. <span className="font-semibold text-gray-800">Cold. Generic. Unbranded.</span>
+</motion.p>
+
 
           {/* CTA Buttons */}
           <motion.div

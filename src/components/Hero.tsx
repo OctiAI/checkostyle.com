@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.6 }}  
           >
 
-            
+            <div style="display: flex; flex-direction: row;">
             <motion.button
               className="bg-white text-gray-800 px-8 py-4 rounded-full font-bold text-lg flex items-center space-x-2 shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
                            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Used by 127+ DTC founders to double checkout conversion.
           </p>
-
+</div>
 
             
           </motion.div>

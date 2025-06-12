@@ -69,7 +69,6 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}>
   
-        </motion.div>
 
            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Used by 127+ DTC founders to double checkout conversion.

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, Play, CheckCircle, ShieldCheck, Timer  } from 'lucide-react';
+import { } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (

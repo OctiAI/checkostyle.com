@@ -64,25 +64,29 @@ const Hero: React.FC = () => {
 
 
           {/* Trust Indicators */}
-          <motion.div
-            className="mt-16 flex flex-wrap items-center justify-center gap-8 opacity-60"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.6 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-          >
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gray-300 rounded"></div>
-              <span className="text-sm text-gray-500">Stripe Certified</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gray-300 rounded"></div>
-              <span className="text-sm text-gray-500">100% Secure</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gray-300 rounded"></div>
-              <span className="text-sm text-gray-500">5-Min Setup</span>
-            </div>
-          </motion.div>
+          import { CheckCircle, ShieldCheck, Timer } from 'lucide-react';
+
+{/* Trust Indicators */}
+<motion.div
+  className="mt-16 flex flex-wrap items-center justify-center gap-8 opacity-60"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 0.6 }}
+  transition={{ duration: 0.6, delay: 1.2 }}
+>
+  <div className="flex items-center space-x-2">
+    <CheckCircle className="w-8 h-8 text-gray-400" />
+    <span className="text-sm text-gray-500">Stripe Certified</span>
+  </div>
+  <div className="flex items-center space-x-2">
+    <ShieldCheck className="w-8 h-8 text-gray-400" />
+    <span className="text-sm text-gray-500">100% Secure</span>
+  </div>
+  <div className="flex items-center space-x-2">
+    <Timer className="w-8 h-8 text-gray-400" />
+    <span className="text-sm text-gray-500">5-Min Setup</span>
+  </div>
+</motion.div>
+
         </div>
       </div>
     </section>

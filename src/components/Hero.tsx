@@ -40,10 +40,12 @@ const Hero: React.FC = () => {
           >
             <span className="underline">You built a beautiful site.</span> A real brand. But Stripe hits your customer with a checkout 
             that looks like it's from 2011. <span className="font-semibold text-gray-800">Cold. Generic. Unbranded.</span>
-          </motion.p>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+
+                      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Used by 127+ DTC founders to double checkout conversion.
           </p>
+          </motion.p>
+
 
           {/* CTA Buttons */}
           <motion.div

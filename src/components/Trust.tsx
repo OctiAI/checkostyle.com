@@ -72,33 +72,7 @@ const Trust: React.FC = () => {
           ))}
         </div>
 
-        {/* Trust Proof */}
-        <motion.div
-          className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 text-white text-center"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <div className="flex items-center justify-center space-x-8 mb-6">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-blue-600 font-bold text-sm">S</span>
-              </div>
-              <span className="text-sm">Stripe Certified Partner</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Shield className="h-6 w-6 text-green-400" />
-              <span className="text-sm">SOC 2 Compliant</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="h-6 w-6 text-green-400" />
-              <span className="text-sm">99.9% Uptime SLA</span>
-            </div>
-          </div>
-          <h3 className="text-2xl font-bold mb-2">Your Payments Stay With Stripe</h3>
-          <p className="text-blue-100">We never touch your money. Just make the experience better.</p>
-        </motion.div>
+
       </div>
     </section>
   );

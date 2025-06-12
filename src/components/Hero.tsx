@@ -64,7 +64,6 @@ const Hero: React.FC = () => {
 
 
           {/* Trust Indicators */}
-          import { CheckCircle, ShieldCheck, Timer } from 'lucide-react';
 
           {/* Trust Indicators */}
           <motion.div

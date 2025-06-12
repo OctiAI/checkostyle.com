@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 
             <div className="mb-10 flex justify-center">
               <img
-                src="https://media.discordapp.net/attachments/1382837308340043816/1382869455234662410/logo.png?ex=684cb90a&is=684b678a&hm=4bd1d1b8ca44a3717186f9341524e9cd2ab80ef4cdae9fe5ab24db27ec3ec7ba&=&format=webp&quality=lossless"
+                src="https://media.discordapp.net/attachments/1382837308340043816/1382870096321708072/CheckoStyle_Brand_Logo_Design.png?ex=684cb9a3&is=684b6823&hm=ffba4aac3c00bb3caadb885d592038ede501afc051b548eb8ca7342277be9290&=&format=webp&quality=lossless&width=839&height=839"
                 alt="Melny Results Logo"
                 className="w-24 h-auto opacity-90"
               />

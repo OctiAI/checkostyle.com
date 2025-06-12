@@ -50,14 +50,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <motion.button
-              className="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center space-x-2 shadow-lg hover:shadow-xl transition-all duration-300"
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(34, 197, 94, 0.3)" }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span>Start Free</span>
-              <ArrowRight className="h-5 w-5" />
-            </motion.button>
+
             
             <motion.button
               className="bg-white text-gray-800 px-8 py-4 rounded-full font-bold text-lg flex items-center space-x-2 shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300"

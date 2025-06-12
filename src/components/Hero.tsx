@@ -15,6 +15,17 @@ const Hero: React.FC = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
         <div className="text-center">
+          https://media.discordapp.net/attachments/1382837308340043816/1382869455234662410/logo.png?ex=684cb90a&is=684b678a&hm=4bd1d1b8ca44a3717186f9341524e9cd2ab80ef4cdae9fe5ab24db27ec3ec7ba&=&format=webp&quality=lossless
+
+
+
+            <div className="mb-10 flex justify-center">
+    <img
+      src="/melny-logo.png"
+      alt="Melny Results Logo"
+      className="w-24 h-auto opacity-90"
+    />
+  </div>
           {/* Main Headline */}
           <motion.h1
             className="text-5xl md:text-7xl font-bold text-gray-900 mb-12 leading-tight"

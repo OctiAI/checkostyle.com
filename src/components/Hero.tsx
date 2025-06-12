@@ -50,10 +50,11 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
+            
+          >
                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Used by 127+ DTC founders to double checkout conversion.
           </p>
-          >
 
             
             <motion.button

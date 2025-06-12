@@ -69,43 +69,6 @@ const Hero: React.FC = () => {
             </motion.button>
           </motion.div>
 
-          {/* Hero Visual */}
-          <motion.div
-            className="relative max-w-6xl mx-auto"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-200">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                {/* Default Stripe */}
-                <div className="space-y-4">
-                  <h3 className="text-lg font-semibold text-gray-800 text-center">Default Stripe</h3>
-                  <div className="bg-gray-100 rounded-lg p-6 space-y-4">
-                    <div className="h-4 bg-gray-300 rounded w-3/4"></div>
-                    <div className="h-4 bg-gray-300 rounded w-1/2"></div>
-                    <div className="h-10 bg-gray-400 rounded"></div>
-                    <div className="h-10 bg-gray-400 rounded"></div>
-                    <div className="h-10 bg-blue-500 rounded"></div>
-                  </div>
-                  <p className="text-sm text-gray-500 text-center">Generic, cold, unbranded</p>
-                </div>
-
-                {/* CheckoStyle Version */}
-                <div className="space-y-4">
-                  <h3 className="text-lg font-semibold text-gray-800 text-center">CheckoStyle</h3>
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-6 space-y-4 border-2 border-blue-200">
-                    <div className="h-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded w-3/4"></div>
-                    <div className="h-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded w-1/2"></div>
-                    <div className="h-10 bg-white rounded shadow-sm border"></div>
-                    <div className="h-10 bg-white rounded shadow-sm border"></div>
-                    <div className="h-10 bg-gradient-to-r from-green-500 to-green-600 rounded shadow-lg"></div>
-                  </div>
-                  <p className="text-sm text-green-600 text-center font-semibold">Branded, trusted, converts</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
 
           {/* Trust Indicators */}
           <motion.div

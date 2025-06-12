@@ -60,6 +60,17 @@ const Hero: React.FC = () => {
               <Play className="h-5 w-5" />
               <span>Book a Setup Call</span>
             </motion.button>
+        <motion.div  className="flex flex-wrap items-center justify-center gap-8 opacity-70 mb-12"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.7 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}>
+        
+        </motion.div>
+
+Used by 127+ DTC founders to double checkout conversion”
+
+            
           </motion.div>
 
         {/* Trust Badges */}

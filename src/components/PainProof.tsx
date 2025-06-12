@@ -22,6 +22,49 @@ const PainProof: React.FC = () => {
           </p>
         </motion.div>
 
+        <motion.div
+          className="grid lg:grid-cols-2 gap-12 items-center mb-16"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          {/* Default Stripe - Pain Point */}
+          <div className="relative">
+            <div className="absolute -top-4 -left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
+              <AlertTriangle className="h-4 w-4" />
+              <span>Conversion Killer</span>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-8 border-2 border-red-200">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Default Stripe Checkout</h3>
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg shadow-sm">
+                  <div className="h-3 bg-gray-200 rounded mb-2"></div>
+                  <div className="h-3 bg-gray-200 rounded w-2/3"></div>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-sm">
+                  <div className="h-10 bg-gray-100 rounded border"></div>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-sm">
+                  <div className="h-10 bg-gray-100 rounded border"></div>
+                </div>
+              </div>
+              <div className="mt-6 bg-blue-600 h-12 rounded-lg flex items-center justify-center">
+                <span className="text-white font-semibold">Complete Payment</span>
+              </div>
+              <div className="mt-4 space-y-2 text-sm text-gray-500">
+                <div className="flex items-center justify-between">
+                  <span>❌ No branding</span>
+                  <span>❌ Generic design</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>❌ Low trust signals</span>
+                  <span>❌ Poor mobile UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
 {/* CheckoStyle - Solution */}
 <div className="relative">
   <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
@@ -70,6 +113,9 @@ const PainProof: React.FC = () => {
     </div>
   </div>
 </div>
+
+          </div>
+        </motion.div>
 
         {/* Stats */}
         <motion.div

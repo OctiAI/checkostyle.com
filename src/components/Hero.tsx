@@ -61,7 +61,8 @@ const Hero: React.FC = () => {
               <Play className="h-5 w-5" />
               <span>Book a Setup Call</span>
             </motion.button>
-  
+            
+
 
             
           </motion.div>

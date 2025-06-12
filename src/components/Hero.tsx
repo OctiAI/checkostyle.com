@@ -62,9 +62,6 @@ const Hero: React.FC = () => {
             </motion.button>
           </motion.div>
 
-
-          {/* Trust Indicators */}
-
           {/* Trust Indicators */}
           <motion.div
             className="mt-16 flex flex-wrap items-center justify-center gap-8 opacity-60"

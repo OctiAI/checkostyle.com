@@ -91,7 +91,7 @@ const PainProof: React.FC = () => {
               <div className="mt-4 space-y-2 text-sm text-green-700">
                 <div className="flex items-left justify-between">
                   <span className="w-[120px]>✅ Full branding</span>
-                  <span>✅ Beautiful design</span>
+                  <span className="w-[120px]>✅ Beautiful design</span>
                 </div>
                 <div className="flex items-left justify-between">
                   <span>✅ Trust signals</span>

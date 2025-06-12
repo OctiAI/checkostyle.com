@@ -62,8 +62,10 @@ const Hero: React.FC = () => {
               <span>Book a Setup Call</span>
           
             </motion.button>
-         <p>Used by 127+ DTC founders to</p>
-  <p>double checkout conversion.</p>
+           <p className="text-m text-gray-600 max-w-3xl mx-auto">
+            Used by 127+ DTC founders to \n
+            double checkout conversion.
+          </p>  
         </div>
 
             

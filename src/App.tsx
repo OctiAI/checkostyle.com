@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/Header';
 import Hero from './components/Hero';
 import PainProof from './components/PainProof';
 import Transformation from './components/Transformation';
@@ -13,7 +12,6 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen">
-      <Header />
       <Hero />
       <PainProof />
       <Transformation />

@@ -18,7 +18,7 @@ const PainProof: React.FC = () => {
             <br />With Your Card?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Stripe may be secure — but customers care how it <em>looks</em>.
+            Stripe may be secure — but your customer doesn’t care. They care if it looks trustworthy, branded, and real.
           </p>
         </motion.div>
 

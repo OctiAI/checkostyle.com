@@ -41,22 +41,7 @@ const Header: React.FC = () => {
 
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <motion.button
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Book a Call
-            </motion.button>
-            <motion.button
-              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(59, 130, 246, 0.3)" }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Free
-            </motion.button>
-          </div>
+    
 
           {/* Mobile Menu Button */}
           <button

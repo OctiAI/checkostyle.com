@@ -93,30 +93,7 @@ const FinalCTA: React.FC = () => {
           </motion.button>
         </motion.div>
 
-        {/* Trust Badges */}
-        <motion.div
-          className="flex flex-wrap items-center justify-center gap-8 opacity-70 mb-12"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.7 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
-            <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-              <span className="text-white text-xs font-bold">S</span>
-            </div>
-            <span className="text-sm text-gray-700 font-medium">Stripe Certified</span>
-          </div>
-          <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
-            <Shield className="h-5 w-5 text-green-500" />
-            <span className="text-sm text-gray-700 font-medium">30-Day Guarantee</span>
-          </div>
-          <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
-            <Clock className="h-5 w-5 text-blue-500" />
-            <span className="text-sm text-gray-700 font-medium">5-Min Setup</span>
-          </div>
-        </motion.div>
-
+   
         {/* Final Push */}
         <motion.div
           className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 text-center text-white"

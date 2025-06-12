@@ -95,7 +95,7 @@ const PainProof: React.FC = () => {
                 </div>
                 <div className="flex items-left justify-between">
                   <span className="w-[160px]">✅ Trust signals</span>
-                  <span className="w-[160px]">✅ Mobile optimized</span>
+                  <span className="w-[160px]">✅ Mobile Reponsiveness</span>
                 </div>
               </div>
             </div>

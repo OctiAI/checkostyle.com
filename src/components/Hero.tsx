@@ -49,8 +49,7 @@ const Hero: React.FC = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            
+            transition={{ duration: 0.6, delay: 0.6 }}  
           >
 
             
@@ -63,12 +62,7 @@ const Hero: React.FC = () => {
               <span>Book a Setup Call</span>
             </motion.button>
             
-        <motion.div  className="flex flex-wrap items-center justify-center gap-8 opacity-70 mb-12"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.7 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}>
-  
+          
 
            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Used by 127+ DTC founders to double checkout conversion.

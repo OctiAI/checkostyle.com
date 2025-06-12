@@ -112,8 +112,7 @@ const PainProof: React.FC = () => {
       </p>
     </div>
   </div>
-</div>
-      </div>
+
 
           </div>
         </motion.div>

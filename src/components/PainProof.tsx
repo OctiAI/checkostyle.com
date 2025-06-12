@@ -90,6 +90,17 @@ const PainProof: React.FC = () => {
     </div>
 
     {/* Bullet Points - Now Left-Aligned */}
+    <div className="mt-4 space-y-2 text-sm text-gray-500">
+                <div className="flex items-center justify-between">
+                  <span>❌ No branding</span>
+                  <span>❌ Generic design</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>❌ Low trust signals</span>
+                  <span>❌ Poor mobile UX</span>
+                </div>
+              </div>
+    
     <div className="mt-4 space-y-2 text-sm text-green-700">
       <div className="flex flex-col space-y-1 items-start">
         <div className="flex items-center space-x-2">

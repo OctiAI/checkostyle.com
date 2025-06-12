@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, CheckCircle, ShieldCheck, Timer  } from 'lucide-react';
+import { ArrowRight, Play, CheckCircle, ShieldCheck, Timer, Clock, Shield  } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -63,7 +64,7 @@ const Hero: React.FC = () => {
           </motion.div>
 
 
-  {/* Trust Badges */}
+        {/* Trust Badges */}
         <motion.div
           className="flex flex-wrap items-center justify-center gap-8 opacity-70 mb-12"
           initial={{ opacity: 0 }}

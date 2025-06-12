@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 
             <div className="mb-10 flex justify-center">
               <img
-                src="https://www.melnyresults.com/"
+                src="https://static.wixstatic.com/media/97df89_95841abeaee8492d9a125d32fab0e3fb~mv2.png/v1/crop/x_0,y_167,w_500,h_281/fill/w_114,h_63,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Copy_of_Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Lo.png"
                 alt="Melny Results Logo"
                 className="w-24 h-auto opacity-90"
               />

@@ -62,7 +62,8 @@ const Hero: React.FC = () => {
             </motion.button>
           </motion.div>
 
-            {/* Trust Badges */}
+
+  {/* Trust Badges */}
         <motion.div
           className="flex flex-wrap items-center justify-center gap-8 opacity-70 mb-12"
           initial={{ opacity: 0 }}
@@ -86,7 +87,7 @@ const Hero: React.FC = () => {
           </div>
         </motion.div>
           
-          
+         
 
         </div>
       </div>

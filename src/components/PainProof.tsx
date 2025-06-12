@@ -93,7 +93,7 @@ const PainProof: React.FC = () => {
                   <span>✅ Full branding</span>
                   <span>✅ Beautiful design</span>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-left justify-between">
                   <span>✅ Trust signals</span>
                   <span>✅ Mobile optimized</span>
                 </div>

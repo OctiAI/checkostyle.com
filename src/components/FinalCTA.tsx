@@ -79,7 +79,7 @@ const FinalCTA: React.FC = () => {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            <span>Start Free — Fix This Now</span>
+            <span>Start Testing</span>
             <ArrowRight className="h-6 w-6" />
           </motion.button>
           

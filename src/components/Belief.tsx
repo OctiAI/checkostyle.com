@@ -137,13 +137,7 @@ const Belief: React.FC = () => {
             </div>
 
             {/* Floating Elements */}
-            <motion.div
-              className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold"
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              5 minutes
-            </motion.div>
+
           </motion.div>
         </div>
       </div>

@@ -72,7 +72,7 @@ const Trust: React.FC = () => {
           ))}
         </div>
           <p className="text-base text-gray-600 text-center mb-6">
-            Used by 127+ DTC founders to  double checkout conversion
+            CheckoStyle overlays your existing Stripe Checkout — giving you total visual control, brand presence, and trust.
           </p>
 
       </div>

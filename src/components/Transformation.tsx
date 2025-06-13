@@ -100,7 +100,7 @@ const Transformation: React.FC = () => {
               <div className="space-y-2 text-lg">
                 <div>1,000 visitors × 7% = 70 sales</div>
                 <div>1,000 visitors × 14% = 140 sales</div>
-                <div className="border-t border-white/20 pt-2 font-bold text-yellow-200">
+                <div className="border-t border-white/20 pt-2 font-bold text-yellow-300">
                   = 100% more revenue
                 </div>
               </div>

@@ -21,8 +21,7 @@ const PainProof: React.FC = () => {
       <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Customers Don’t Like Default Checkout. <br/>
         <span className="text-blue-600"> Here’s What They Do Like.</span> 
-           
-          </h2>
+        </h2>
 
 
           

@@ -104,7 +104,7 @@ const PainProof: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold mb-2">The Reality Check</h3>
+          <h3 className="text-2xl font-bold">The Reality Check</h3>
           <h4 className="text-l mb-4">ⓘ Based on data from 127+ founders using CheckoStyle</h4>
           <div className="grid md:grid-cols-3 gap-8">
             <div>

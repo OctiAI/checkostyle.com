@@ -71,7 +71,7 @@ const Trust: React.FC = () => {
             </motion.div>
           ))}
         </div>
-          <p className="text-gray-600 text-center text-2xl mb-4">
+          <p className="text-gray-600 text-center text-2xl mb-14">
             CheckoStyle overlays your existing Stripe Checkout — <br></br> giving you total visual control, brand presence, and trust.
           </p>
         {/* Trust Proof */}

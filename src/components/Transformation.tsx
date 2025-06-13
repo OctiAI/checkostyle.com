@@ -58,7 +58,7 @@ const Transformation: React.FC = () => {
               <div className="flex items-center justify-center">
                 <TrendingUp className="h-8 w-8 text-green-500" />
               </div>
-              <div className="bg-white rounded-xl p-6 text-center border border-green-200 shadow-sm scale-105">  
+              <div className="bg-white rounded-xl p-6 text-center border border-green-200 shadow-sm">  
                 <div className="text-2xl font-bold text-green-600 mb-1">14.2%</div>
                 <div className="text-sm text-gray-600">After CVR</div>
               </div>

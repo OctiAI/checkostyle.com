@@ -24,7 +24,7 @@ const faqs = [
   {
     icon: DollarSign,
     question: "What if it doesn’t work?",
-    answer: "7-day refund. Zero risk."
+    answer: "30-day refund. Zero risk."
   },
   {
     icon: TrendingUp,

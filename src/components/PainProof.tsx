@@ -54,11 +54,11 @@ const PainProof: React.FC = () => {
               </div>
               <div className="mt-4 space-y-2 text-sm text-gray-500">
                 <div className="flex items-center justify-around">
-                  <span className="w-[160px] ml-10">❌ No branding</span>
+                  <span className="w-[160px] ml-5">❌ No branding</span>
                   <span className="w-[160px]">❌ Generic design</span>
                 </div>
                 <div className="flex items-center justify-around">
-                  <span className="w-[160px] ml-10">❌ Low trust signals</span>
+                  <span className="w-[160px] ml-5">❌ Low trust signals</span>
                   <span className="w-[160px]">❌ Poor mobile UX</span>
                 </div>
               </div>

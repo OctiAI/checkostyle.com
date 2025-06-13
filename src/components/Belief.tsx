@@ -63,7 +63,7 @@ const Belief: React.FC = () => {
                   <benefit.icon className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{benefit.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mt-4">{benefit.title}</h3>
                 </div>
               </motion.div>
             ))}

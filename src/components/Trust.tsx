@@ -72,8 +72,7 @@ const Trust: React.FC = () => {
           ))}
         </div>
           <p className="text-base text-gray-600 max-w-3xl text-center">
-            Used by 127+ DTC founders to <br />
-            double checkout conversion
+            Used by 127+ DTC founders to  double checkout conversion
           </p>
 
       </div>

@@ -14,7 +14,7 @@ const Transformation: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Double Your Conversions —
+            Double Your Conversions
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">
               Without Changing Your Product or Price.

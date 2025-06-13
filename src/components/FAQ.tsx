@@ -5,33 +5,33 @@ import { ChevronDown, Shield, Code, DollarSign, TrendingUp, HelpCircle } from 'l
 const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
-    {
-      icon: Shield,
-      question: "Will this break Stripe?",
-      answer: "Nope. CheckoStyle sits on top of Stripe's secure payment processing. Your payments still go through Stripe's PCI-compliant system — we just make the experience beautiful. Think of it like putting a custom skin on your existing setup."
-    },
-    {
-      icon: Shield,
-      question: "Is it secure?",
-      answer: "100%. We're Stripe certified partners and never touch your payment data. All transactions go directly through Stripe's secure servers. We only handle the visual presentation layer, not the sensitive payment processing."
-    },
-    {
-      icon: Code,
-      question: "I'm not technical. Can I still use this?",
-      answer: "Absolutely. Our drag-and-drop builder is designed for non-technical users. No coding required. If you can use Canva or WordPress, you can use CheckoStyle. Plus, our support team is always ready to help."
-    },
-    {
-      icon: DollarSign,
-      question: "What if it doesn't work?",
-      answer: "We offer a 30-day money-back guarantee. If you don't see an improvement in your conversion rate within 30 days, we'll refund your money completely. No questions, no hassle."
-    },
-    {
-      icon: TrendingUp,
-      question: "Why should I pay for this?",
-      answer: "Because going from 7% to 14% conversion rate literally doubles your revenue. If you're doing $10K/month, that's an extra $10K monthly. CheckoStyle pays for itself with just a few additional sales. The real question is: can you afford NOT to optimize your checkout?"
-    }
-  ];
+const faqs = [
+  {
+    icon: Shield,
+    question: "Will this break Stripe?",
+    answer: "Nope. Still Stripe under the hood. Just looks 100x better."
+  },
+  {
+    icon: Shield,
+    question: "Is it secure?",
+    answer: "Stripe-secure. We don’t touch the processor."
+  },
+  {
+    icon: Code,
+    question: "I’m not technical.",
+    answer: "Drag. Drop. Done."
+  },
+  {
+    icon: DollarSign,
+    question: "What if it doesn’t work?",
+    answer: "7-day refund. Zero risk."
+  },
+  {
+    icon: TrendingUp,
+    question: "Why pay for this?",
+    answer: "Because 7% → 14% CVR is double the money. Simple math."
+  }
+];
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50" id="faq">

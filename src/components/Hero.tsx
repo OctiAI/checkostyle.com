@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         }} />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 sm:pb-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 sm:pb-12">
         <div className="text-center">
           
 

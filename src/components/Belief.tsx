@@ -50,7 +50,7 @@ const Belief: React.FC = () => {
             viewport={{ once: true }}
           >
                       <p className="text-lg font-bold text-gray-900 mb-2 text-center mb-14">
-            CheckoStyle overlays your existing Stripe Checkout — <br></br> giving you total visual control, brand presence, and trust.
+            You earned the click. You made the sale. Don’t lose them at the final screen.” (before the centered & boxed bullet points)
           </p>
             
             {benefits.map((benefit, index) => (

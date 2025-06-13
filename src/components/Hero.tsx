@@ -35,9 +35,9 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Your Stripe Checkout
-            <br />
+            <br /> Might Be 
             <span className="text-5xl md:text-7xl" style={{ color: '#E63946' }}>
-              Might Be Killing
+             Killing
             </span>
             <br />
             Your Sales.

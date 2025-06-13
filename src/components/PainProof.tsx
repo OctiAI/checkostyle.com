@@ -105,7 +105,7 @@ const PainProof: React.FC = () => {
           viewport={{ once: true }}
         >
           <h3 className="text-2xl font-bold">The Reality Check</h3>
-          <h4 className="text-l mb-6">ⓘ Based on data from 127+ founders using CheckoStyle</h4>
+          <h4 className="text-l mb-5">ⓘ Based on data from 127+ founders using CheckoStyle</h4>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="text-4xl font-bold text-yellow-300">67%</div>

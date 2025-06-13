@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.6 }}  
           >
 
-        <div className="w-full sm:w-auto items-center">
+        <div className="flex flex-col items-center">
             <motion.button
               className="bg-[#E63946] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center space-x-2 shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300 mb-4"
               whileHover={{ scale: 1.05 }}

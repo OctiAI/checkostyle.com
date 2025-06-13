@@ -70,9 +70,9 @@ const Belief: React.FC = () => {
                   <h3 className="text-xl font-bold text-gray-900 mt-2">{benefit.title}</h3>
                 </div>
               </motion.div>
-            ))}
+            ))} text-lg font-bold text-gray-900 mb-2 
 
-          <p className="text-xl md:text-2xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed mb-14">
+          <p className="text-xl md:text-2xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed mb-14 text-center">
            Just plug in CheckoStyle and launch a branded checkout in minutes.
           </p>
           

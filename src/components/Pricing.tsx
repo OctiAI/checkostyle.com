@@ -115,7 +115,10 @@ const Pricing: React.FC = () => {
                   </span>
                   <span className="text-gray-600">{plan.period}</span>
                 </div>
-              </div>
+              </div>          <p className="text-base text-gray-600 max-w-3xl text-center">
+            Used by 127+ DTC founders to <br />
+            double checkout conversion
+          </p>
 
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, featureIndex) => (

@@ -80,7 +80,7 @@ const Transformation: React.FC = () => {
                 transition={{ duration: 0.2 }}
               >
                 <Target className="h-8 w-8 text-green-500 mx-auto mb-4" />
-                <div className="text-3xl font-bold text-yellow-400  mb-2">+103%</div>
+                <div className="text-3xl font-bold text-gray-900 mb-2 #FACC15">+103%</div>
                 <div className="text-gray-600">Conversion Lift</div>
               </motion.div>
 
@@ -100,7 +100,7 @@ const Transformation: React.FC = () => {
               <div className="space-y-2 text-lg">
                 <div>1,000 visitors × 7% = 70 sales</div>
                 <div>1,000 visitors × 14% = 140 sales</div>
-                <div className="border-t border-white/20 pt-2 font-bold text-yellow-300">
+                <div className="border-t border-white/20 pt-2 font-bold text-yellow-400">
                   = 100% more revenue
                 </div>
               </div>

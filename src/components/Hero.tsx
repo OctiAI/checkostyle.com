@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             Your Stripe Checkout
             <br /> Might Be  
             <span className="text-5xl md:text-7xl" style={{ color: '#E63946' }}>
-             Killing
+              Killing
             </span>
             <br />
             Your Sales.

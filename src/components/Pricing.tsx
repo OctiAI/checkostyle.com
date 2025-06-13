@@ -99,8 +99,7 @@ const Pricing: React.FC = () => {
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold flex items-center space-x-1">
                     <Star className="h-4 w-4" />
-                    <span>Most Popular</span>YOU Trust
-With
+                    <span>Most Popular</span>
                   </div>
                 </div>
               )}

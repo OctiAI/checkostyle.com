@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
 
 
 
-            <div className="flex justify-center">
+            <div className="mb-10 flex justify-center">
               <img
                 src="https://media.discordapp.net/attachments/1382837308340043816/1382872720215113818/ChatGPT_Image_Jun_12_2025_08_02_22_PM.png?ex=684cbc15&is=684b6a95&hm=42bf7780e7a06b4b108679e2adf70016e09bcb9325dade80b870d05f4ef62b08&=&format=webp&quality=lossless&width=873&height=873"
                 alt="Melny Results Logo"

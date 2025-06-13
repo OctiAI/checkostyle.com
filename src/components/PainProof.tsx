@@ -70,7 +70,7 @@ const PainProof: React.FC = () => {
           <div className="relative">
             <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
               <TrendingUp className="h-4 w-4" />
-              <span>Conversion Booster</span>
+              <span>14.2% CVR in 72 hours</span>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-green-200">
               <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">CheckoStyle Checkout</h3>

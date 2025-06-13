@@ -72,7 +72,7 @@ const Belief: React.FC = () => {
               </motion.div>
             ))}
 
-          <p className="text-lg font-bold text-gray-900 mb-2 text-center mb-14">
+          <p className="text-xl md:text-2xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed mb-14">
            Just plug in CheckoStyle and launch a branded checkout in minutes.
           </p>
           

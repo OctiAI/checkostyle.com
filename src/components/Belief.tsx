@@ -88,53 +88,6 @@ const Belief: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* Visual Demo */}
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-2xl">
-              <div className="mb-6">
-                <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                </div>
-                <div className="bg-gray-100 h-4 rounded w-32 mb-2"></div>
-                <div className="text-sm text-gray-600">CheckoStyle Builder</div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-4 border-2 border-dashed border-blue-300">
-                  <div className="text-sm text-blue-600 mb-2">Drop your logo here</div>
-                  <div className="h-8 bg-blue-200 rounded w-20"></div>
-                </div>
-                
-                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 border-2 border-dashed border-green-300">
-                  <div className="text-sm text-green-600 mb-2">Customize colors</div>
-                  <div className="flex space-x-2">
-                    <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
-                    <div className="w-6 h-6 bg-green-500 rounded-full"></div>
-                    <div className="w-6 h-6 bg-purple-500 rounded-full"></div>
-                  </div>
-                </div>
-                
-                <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-4 border-2 border-dashed border-orange-300">
-                  <div className="text-sm text-orange-600 mb-2">Add trust badges</div>
-                  <div className="flex space-x-2">
-                    <div className="h-4 bg-orange-200 rounded w-12"></div>
-                    <div className="h-4 bg-orange-200 rounded w-16"></div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mt-6 bg-gradient-to-r from-green-500 to-green-600 h-12 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">Publish → Live</span>
-              </div>
-            </div>
 
             {/* Floating Elements */}
 

@@ -41,7 +41,6 @@ const Belief: React.FC = () => {
         </motion.div>
 
         <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-44">
-
           {/* Benefits List */}
           <motion.div
             className="space-y-8"

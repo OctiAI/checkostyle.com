@@ -36,7 +36,7 @@ const PainProof: React.FC = () => {
               <span>Conversion Killer</span>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 border-2 border-red-200">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Default Stripe Checkout</h3>
+              <h3 className="text-4xl font-bold text-gray-800 mb-6 text-center">Default Stripe Checkout</h3>
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg shadow-sm">
                   <div className="h-3 bg-gray-200 rounded mb-2"></div>

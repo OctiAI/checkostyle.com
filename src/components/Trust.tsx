@@ -98,7 +98,7 @@ const Trust: React.FC = () => {
               <span className="text-sm">99.9% Uptime SLA</span>
             </div>
           </div>
-          <h3 className="text-2xl font-bold mb-2">Your Payments Stay With Strip.e</h3>
+          <h3 className="text-2xl font-bold mb-2">Your Payments Stay With Stripe</h3>
           <p className="text-blue-100">We never touch your money. Just make the experience better.</p>
         </motion.div>
       </div>

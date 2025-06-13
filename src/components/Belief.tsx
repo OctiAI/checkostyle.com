@@ -49,7 +49,7 @@ const Belief: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-                      <p className="text-lg font-bold text-gray-900 mb-2 text-center mb-14">
+          <p className="text-lg font-bold text-gray-900 mb-2 text-center mb-14">
             You earned the click. You made the sale. Don’t lose them at the final screen.
           </p>
             
@@ -72,6 +72,9 @@ const Belief: React.FC = () => {
               </motion.div>
             ))}
 
+                      <p className="text-lg font-bold text-gray-900 mb-2 text-center mb-14">
+            You earned the click. You made the sale. Don’t lose them at the final screen.
+          </p>
           
           </motion.div>
 

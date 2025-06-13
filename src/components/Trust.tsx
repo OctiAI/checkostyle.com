@@ -82,6 +82,8 @@ const Trust: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
+           <h3 className="text-2xl font-bold mb-2">Your Payments Stay With Stripe</h3>
+          <p className="text-blue-100">We never touch your money. Just make the experience better.</p>
           <div className="flex items-center justify-center space-x-8 mb-6">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
@@ -98,8 +100,7 @@ const Trust: React.FC = () => {
               <span className="text-sm">99.9% Uptime SLA</span>
             </div>
           </div>
-          <h3 className="text-2xl font-bold mb-2">Your Payments Stay With Stripe</h3>
-          <p className="text-blue-100">We never touch your money. Just make the experience better.</p>
+         
         </motion.div>
       </div>
     </section>

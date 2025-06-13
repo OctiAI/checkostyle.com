@@ -93,7 +93,7 @@ const PainProof: React.FC = () => {
                   <span className="w-[160px]">✅ 100% Secure</span>
                   <span className="w-[200px]">✅ Drag & Drop Builder</span>
                 </div>
-                <div className="flex items-left justify-between">
+                <div className="flex items-left justify-around">
                   <span className="w-[160px]">✅ Trust signals</span>
                   <span className="w-[200px]">✅ Mobile Reponsiveness</span>
                 </div>

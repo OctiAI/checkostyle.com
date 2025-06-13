@@ -52,7 +52,7 @@ const Trust: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-416">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -71,7 +71,7 @@ const Trust: React.FC = () => {
             </motion.div>
           ))}
         </div>
-          <p className="text-base text-gray-600 text-center">
+          <p className="text-base text-gray-600 text-center mb-8">
             Used by 127+ DTC founders to  double checkout conversion
           </p>
 

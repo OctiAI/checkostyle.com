@@ -90,7 +90,7 @@ const PainProof: React.FC = () => {
               </div>
               <div className="mt-4 space-y-2 text-sm text-green-700">
                 <div className="flex items-left justify-around">
-                  <span className="w-[160px] ml-10">✅ Custom Tailored</span>
+                  <span className="w-[160px] ml-10">✅ Custom Tailored UI</span>
                   <span className="w-[200px]">✅ Drag & Drop Builder</span>
                 </div>
                 <div className="flex items-left justify-around">

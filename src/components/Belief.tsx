@@ -68,24 +68,7 @@ const Belief: React.FC = () => {
               </motion.div>
             ))}
 
-            <motion.div
-              className="bg-gradient-to-r from-green-500 to-green-600 rounded-2xl p-6 text-white"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-            >
-              <h3 className="text-xl font-bold mb-2">The Bottom Line</h3>
-              <p className="text-green-100 mb-4">
-                You've already invested in driving traffic. Don't let a bad checkout waste it.
-              </p>
-              <motion.button
-                className="bg-white text-green-600 px-6 py-3 rounded-full font-bold flex items-center space-x-2 hover:shadow-lg transition-all duration-300"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span>Fix Your Checkout Now</span>
-                <ArrowRight className="h-4 w-4" />
-              </motion.button>
-            </motion.div>
+          
           </motion.div>
 
 

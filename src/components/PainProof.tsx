@@ -31,7 +31,7 @@ const PainProof: React.FC = () => {
         >
           {/* Default Stripe - Pain Point */}
           <div className="relative">
-            <div className="absolute -top-2 -left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
+            <div className="absolute -top-4 -left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
               <AlertTriangle className="h-4 w-4" />
               <span>Conversion Killer</span>
             </div>
@@ -40,7 +40,7 @@ const PainProof: React.FC = () => {
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg shadow-sm">
                   <div className="h-3 bg-gray-200 rounded mb-2"></div>
-                  <div className="h-3 bg-gray-200 rounded w-2/3"></div>
+                  <div className="h-3 bg-gray-200 rounded w-1/3"></div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-sm">
                   <div className="h-10 bg-gray-100 rounded border"></div>

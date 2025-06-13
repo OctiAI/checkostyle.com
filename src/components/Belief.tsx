@@ -50,7 +50,7 @@ const Belief: React.FC = () => {
             viewport={{ once: true }}
           >
                       <p className="text-lg font-bold text-gray-900 mb-2 text-center mb-14">
-            You earned the click. You made the sale. Don’t lose them at the final screen.” (before the centered & boxed bullet points)
+            You earned the click. You made the sale. Don’t lose them at the final screen.
           </p>
             
             {benefits.map((benefit, index) => (

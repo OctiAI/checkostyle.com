@@ -71,7 +71,7 @@ const Trust: React.FC = () => {
             </motion.div>
           ))}
         </div>
-          <p className="text-base text-gray-600 text-center mb-8">
+          <p className="text-base text-gray-600 text-center mb-6">
             Used by 127+ DTC founders to  double checkout conversion
           </p>
 

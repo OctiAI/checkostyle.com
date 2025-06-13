@@ -60,7 +60,7 @@ const Transformation: React.FC = () => {
               </div>
               <div className="bg-white rounded-xl p-4 text-center border border-green-400 shadow-sm">  
                 <div className="text-2xl font-bold text-green-600 mb-1">14.2%</div>
-                <div className="text-sm text-gray-600">After CVR</div>
+                <div className="text-sm color-#FACC15">After CVR</div>
               </div>
             </div>
           </motion.div>

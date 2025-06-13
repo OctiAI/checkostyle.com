@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
               <img
                 src="https://media.discordapp.net/attachments/1382837308340043816/1382874052909207582/ChatGPT_Image_Jun_12_2025_08_07_41_PM.png?ex=684cbd52&is=684b6bd2&hm=3c3f3a5d8fc8605b1f14ec0097114c39288349fdf62772881dfe8556b1c5054f&=&format=webp&quality=lossless&width=873&height=873"
                 alt="Melny Results Logo"
-                className=className="w-32 sm:w-48 h-auto opacity-90"
+                className="w-32 sm:w-48 h-auto opacity-90"
 
               />
             </div>

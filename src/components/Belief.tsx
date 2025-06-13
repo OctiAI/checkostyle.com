@@ -40,7 +40,7 @@ const Belief: React.FC = () => {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mx-44 ">
+        <div className="grid lg:grid-cols-1 gap-12 items-center mx-44 ">
           {/* Benefits List */}
           <motion.div
             className="space-y-8"

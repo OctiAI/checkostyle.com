@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
               <span>Book a Setup Call</span>
           
             </motion.button>
-          <p className="text-bases text-gray-600 max-w-3xl text-center">
+          <p className="text-base text-gray-600 max-w-3xl text-center">
             Used by 127+ DTC founders to <br />
             double checkout conversion
           </p>

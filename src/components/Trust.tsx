@@ -52,7 +52,7 @@ const Trust: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -63,7 +63,7 @@ const Trust: React.FC = () => {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
             >
-              <div className={`w-12 h-12 bg-gradient-to-r ${feature.color} rounded-xl flex items-center justify-center  mb-12`}>
+              <div className={`w-12 h-12 bg-gradient-to-r ${feature.color} rounded-xl flex items-center justify-center mb-4`}>
                 <feature.icon className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
@@ -71,7 +71,7 @@ const Trust: React.FC = () => {
             </motion.div>
           ))}
         </div>
-          <p className="text-base text-gray-600 text-center  mb-12">
+          <p className="text-base text-gray-600 text-center">
             Used by 127+ DTC founders to  double checkout conversion
           </p>
 

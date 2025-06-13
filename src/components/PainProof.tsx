@@ -40,7 +40,7 @@ const PainProof: React.FC = () => {
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg shadow-sm">
                   <div className="h-3 bg-gray-200 rounded mb-2"></div>
-                  <div className="h-3 bg-gray-200 rounded w-1/3"></div>
+                  <div className="h-3 bg-gray-200 rounded w-2/3"></div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-sm">
                   <div className="h-10 bg-gray-100 rounded border"></div>

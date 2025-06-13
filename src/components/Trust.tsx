@@ -52,7 +52,7 @@ const Trust: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-416">
           {features.map((feature, index) => (
             <motion.div
               key={index}

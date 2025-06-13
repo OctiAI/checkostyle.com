@@ -90,11 +90,11 @@ const PainProof: React.FC = () => {
               </div>
               <div className="mt-4 space-y-2 text-sm text-green-700">
                 <div className="flex items-left justify-between">
-                  <span className="w-[200px]">✅ 100% Secure</span>
+                  <span className="w-[160px]">✅ 100% Secure</span>
                   <span className="w-[200px]">✅ Drag & Drop Builder</span>
                 </div>
                 <div className="flex items-left justify-between">
-                  <span className="w-[200px]">✅ Trust signals</span>
+                  <span className="w-[160px]">✅ Trust signals</span>
                   <span className="w-[200px]">✅ Mobile Reponsiveness</span>
                 </div>
               </div>

@@ -72,9 +72,6 @@ const Belief: React.FC = () => {
           </motion.div>
 
 
-            {/* Floating Elements */}
-
-          </motion.div>
         </div>
       </div>
     </section>

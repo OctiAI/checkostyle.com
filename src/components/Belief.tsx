@@ -49,6 +49,10 @@ const Belief: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
+                      <p className="text-lg font-bold text-gray-900 mb-2 text-center mb-14">
+            CheckoStyle overlays your existing Stripe Checkout — <br></br> giving you total visual control, brand presence, and trust.
+          </p>
+            
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}

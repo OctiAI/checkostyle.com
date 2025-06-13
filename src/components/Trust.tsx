@@ -71,7 +71,10 @@ const Trust: React.FC = () => {
             </motion.div>
           ))}
         </div>
-
+          <p className="text-base text-gray-600 max-w-3xl text-center">
+            Used by 127+ DTC founders to <br />
+            double checkout conversion
+          </p>
         {/* Trust Proof */}
         <motion.div
           className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 text-white text-center"

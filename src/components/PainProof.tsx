@@ -53,14 +53,7 @@ const PainProof: React.FC = () => {
                 <span className="text-white font-semibold">Complete Payment</span>
               </div>
               <div className="mt-4 space-y-2 text-sm text-gray-500">
-                <div className="flex items-center justify-around">
-                  <span className="w-[160px] ml-5">❌ No branding</span>
-                  <span className="w-[160px]">❌ Generic design</span>
-                </div>
-                <div className="flex items-center justify-around">
-                  <span className="w-[160px] ml-5">❌ Low trust signals</span>
-                  <span className="w-[160px]">❌ Poor mobile UX</span>
-                </div>
+            
               </div>
             </div>
           </div>
@@ -89,14 +82,7 @@ const PainProof: React.FC = () => {
                 <span className="text-white font-bold">Secure Checkout →</span>
               </div>
               <div className="mt-4 space-y-2 text-sm text-green-700">
-                <div className="flex items-left justify-around">
-                  <span className="w-[160px] ml-10">✅ Custom Tailored UI</span>
-                  <span className="w-[200px]">✅ Drag & Drop Builder</span>
-                </div>
-                <div className="flex items-left justify-around">
-                  <span className="w-[160px] ml-10">✅ 100% Secure</span>
-                  <span className="w-[200px]">✅ Mobile Reponsiveness</span>
-                </div>
+               
               </div>
             </div>
           </div>

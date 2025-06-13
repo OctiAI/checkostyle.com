@@ -17,7 +17,7 @@ const Transformation: React.FC = () => {
             Double Your Conversions —
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">
-              Without Touching Your Offer.
+              Without Changing Your Product or Price.
             </span>
           </h2>
         </motion.div>

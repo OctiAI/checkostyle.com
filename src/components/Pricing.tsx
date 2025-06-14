@@ -104,7 +104,8 @@ const Pricing: React.FC = () => {
     <section className="py-20 bg-white" id="pricing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <motion.div
-          className="shadow-[0_0_20px_rgba(255,251,235,0.6)]"
+            style={{ boxShadow: '0 0 20px rgba(255, 251, 235, 0.6)' }}
+
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

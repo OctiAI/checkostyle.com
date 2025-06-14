@@ -57,7 +57,7 @@ const FinalCTA: React.FC = () => {
   <div className="relative inline-block">
     <div className="w-6 h-6 text-gray-800 rounded-full flex items-center justify-center text-xl cursor-default group">
       ⓘ
-      <div className="absolute right-20 mt-2 w-[280px] text-sm text-white bg-gray-900 px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300 z-50">
+      <div className="absolute right-4 mt-2 w-[280px] text-sm text-white bg-gray-900 px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300 z-50">
         Number based on actual performance across 127+ DTC brands using CheckoStyle, with an average of 10,000 monthly visitors per brand.
       </div>
     </div>

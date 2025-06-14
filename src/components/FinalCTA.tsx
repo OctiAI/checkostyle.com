@@ -107,10 +107,11 @@ const FinalCTA: React.FC = () => {
             <Play className="h-6 w-6" />
             <span>Book a Setup Call</span>
           </motion.button>
-        </motion.div>
           <p className="text-lg text-dark-gray-600 max-w-3xl text-center">
             Your future self will thank you.
           </p>
+        </motion.div>
+          
         
         {/* Final Push */}
         <motion.div

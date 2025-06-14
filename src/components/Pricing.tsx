@@ -55,8 +55,8 @@ const Pricing: React.FC = () => {
   },
   {
     name: 'Enterprise',
-    price: '$399/m',
-    period: '',
+    price: '$399',
+    period: '/m',
     description: 'Starting at',
     features: [
       'Dedicated Success Manager',

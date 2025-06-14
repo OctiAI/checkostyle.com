@@ -55,9 +55,9 @@ const Pricing: React.FC = () => {
   },
   {
     name: 'Enterprise',
-    price: 'from $399/m',
+    price: '$399/m',
     period: '',
-    description: 'For teams and agencies',
+    description: 'Starting at',
     features: [
       'Dedicated Success Manager',
       'Whitelabeling & Reselling',

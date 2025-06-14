@@ -124,8 +124,8 @@ const Pricing: React.FC = () => {
       }`}
     >
       <span
-        className={`bg-white w-6 h-5 rounded-full shadow-md transform transition-transform duration-300 ${
-          billingCycle === 'yearly' ? 'translate-x-6' : 'translate-x-0'
+        className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-transform duration-300 ${
+          billingCycle === 'yearly' ? 'translate-x-7' : 'translate-x-0'
         }`}
       />
     </button>

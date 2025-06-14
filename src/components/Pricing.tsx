@@ -114,8 +114,8 @@ const Pricing: React.FC = () => {
             onClick={() => setBillingCycle('monthly')}
             className={`px-3 py-1 rounded-l-full border ${
               billingCycle === 'monthly'
-                ? 'bg-green-500 text-white border-green-50'
-                : 'bg-gray-200 text-gray-700 border-gray-20'
+                ? 'bg-green-50 text-white border-green-50'
+                : 'bg-gray-20 text-gray-70 border-gray-20'
             }`}
           >
             M
@@ -124,8 +124,8 @@ const Pricing: React.FC = () => {
             onClick={() => setBillingCycle('yearly')}
             className={`px-3 py-1 rounded-r-full border ${
               billingCycle === 'yearly'
-                ? 'bg-green-500 text-white border-green-50'
-                : 'bg-gray-200 text-gray-700 border-gray-20'
+                ? 'bg-green-50 text-white border-green-50'
+                : 'bg-gray-20 text-gray-70 border-gray-20'
             }`}
           >
             Y

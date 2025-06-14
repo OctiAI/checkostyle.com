@@ -109,8 +109,7 @@ const FinalCTA: React.FC = () => {
           </motion.button>
         </motion.div>
           <p className="text-lg text-dark-gray-600 max-w-3xl text-center">
-            Used by 127+ DTC founders to <br />
-            double checkout conversion
+            Your future self will thank you.
           </p>
         
         {/* Final Push */}

@@ -13,7 +13,7 @@ const PainProof: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          {/* <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          {/* <h2 className="text-4xdl md:text-5xl font-bold text-gray-900 mb-6">
             Which One Would <span className="text-blue-600">YOU</span> Trust 
             <br />With Your Card?
           </h2> */}

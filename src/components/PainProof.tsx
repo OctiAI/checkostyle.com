@@ -110,7 +110,7 @@ const PainProof: React.FC = () => {
               <div className="w-6 h-6 text-gray-700 rounded-full flex items-center justify-center text-xl font-bold cursor-default">
                 ⓘ
               </div>
-              <div className="absolute right-0 w-[280px] text-sm text-white bg-gray-900 px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+              <div className="absolute right-0 mt-0 ">
                 Number based on actual performance across 127+ DTC brands using CheckoStyle, with an average of 10,000 monthly visitors per brand.
               </div>
             </div>

@@ -46,8 +46,8 @@ const Trust: React.FC = () => {
             </span> Power. Your Brand’s Presence.<br /> Stripe Secure.&nbsp;
             
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-             CheckoStyle Optimized.
-            </span>
+             CheckoStyle
+            </span> Optimized.
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Built for founders who care about conversions.

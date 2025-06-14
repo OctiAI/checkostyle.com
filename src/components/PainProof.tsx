@@ -98,7 +98,7 @@ const PainProof: React.FC = () => {
 
         {/* Stats */}
         <motion.div
-          className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 pt-2 text-white text-center"
+          className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 pt-3 text-white text-center"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}

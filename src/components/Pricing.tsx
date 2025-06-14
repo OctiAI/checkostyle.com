@@ -109,37 +109,31 @@ const Pricing: React.FC = () => {
         </motion.div>
 
         {/* Billing Cycle Toggle */}
-       <div className="w-full flex justify-end">
-  <div className="flex flex-col items-center space-y-1">
-    {/* Label above the switch */}
-    <span className="text-xs font-semibold text-gray-500">m / y</span>
+<div className="w-full flex justify-end">
+  <div className="flex items-center space-x-4">
+    {/* Label: Monthly */}
+    <span className="text-sm font-medium text-gray-800">Monthly</span>
 
-    {/* Toggle Button Group */}
-    <div className="flex border rounded-full overflow-hidden shadow-sm">
-      <button
-        onClick={() => setBillingCycle('monthly')}
-        className={`px-4 py-1 text-sm font-medium transition-colors duration-200 ${
-          billingCycle === 'monthly'
-            ? 'bg-white text-gray-900'
-            : 'bg-blue-600 text-white'
+    {/* Toggle Switch */}
+    <button
+      onClick={() =>
+        setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')
+      }
+      className={`relative w-14 h-8 flex items-center rounded-full p-1 transition-colors duration-300 ${
+        billingCycle === 'yearly' ? 'bg-green-400' : 'bg-gray-300'
+      }`}
+    >
+      <span
+        className={`bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ${
+          billingCycle === 'yearly' ? 'translate-x-6' : 'translate-x-0'
         }`}
-      >
-        M
-      </button>
-      <button
-        onClick={() => setBillingCycle('yearly')}
-        className={`px-4 py-1 text-sm font-medium transition-colors duration-200 ${
-          billingCycle === 'yearly'
-            ? 'bg-white text-gray-900'
-            : 'bg-blue-600 text-white'
-        }`}
-      >
-        Y
-      </button>
-    </div>
+      />
+    </button>
+
+    {/* Label: Annual */}
+    <span className="text-sm font-medium text-gray-800">Annual</span>
   </div>
 </div>
-
 
         <div className="grid lg:grid-cols-4 gap-8 items-stretch">
           {plans.map((plan, index) => {

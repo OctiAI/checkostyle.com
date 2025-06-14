@@ -73,9 +73,9 @@ const Transformation: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 md-4">s
               <motion.div
-                className="bg-white rounded-2xl p-6 text-center border border-gray-200 shadow-lg z"
+                className="bg-white rounded-2xl p-6 text-center border border-gray-200 shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >

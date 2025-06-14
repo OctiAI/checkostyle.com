@@ -44,19 +44,19 @@ const FinalCTA: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="bg-white rounded-2xl p-6 text-center border-2 border-red-200 shadow-lg">
+          <div className="bg-white rounded-2xl p-6 text-center border-2 border-red-200 shadow-lg hover:shadow-[0_0_15px_rgba(255,223,93,0.6)] transition-shadow duration-300">
             <TrendingDown className="h-12 w-12 text-red-500 mx-auto mb-4" />
             <div className="text-3xl font-bold text-red-600 mb-2">67%</div>
             <div className="text-gray-700">abandon ugly checkouts within 30 seconds</div>
           </div>
           
-          <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg">
+          <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg hover:shadow-[0_0_15px_rgba(255,223,93,0.6)] transition-shadow duration-300">
             <Clock className="h-12 w-12 text-orange-500 mx-auto mb-4" />
             <div className="text-3xl font-bold text-orange-600 mb-2">$3,247</div>
             <div className="text-gray-700">average monthly revenue lost per 1k visitors</div>
           </div>
           
-          <div className="bg-white rounded-2xl p-6 text-center border-2 border-green-200 shadow-lg">
+          <div className="bg-white rounded-2xl p-6 text-center border-2 border-green-200 shadow-lg hover:shadow-[0_0_15px_rgba(255,223,93,0.6)] transition-shadow duration-300">
             <ArrowRight className="h-12 w-12 text-green-500 mx-auto mb-4" />
             <div className="text-3xl font-bold text-green-600 mb-2">5 min</div>
             <div className="text-gray-700">to fix your checkout and start converting</div>
@@ -93,7 +93,6 @@ const FinalCTA: React.FC = () => {
           </motion.button>
         </motion.div>
 
-   
         {/* Final Push */}
         <motion.div
           className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 text-center text-white"

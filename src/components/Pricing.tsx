@@ -216,8 +216,9 @@ const Pricing: React.FC = () => {
             we'll refund every penny.
             <br />
             <strong>No questions asked.</strong></p>
-          }}
+        
         </motion.div>
+          }}
       </div>
     </section>
   );

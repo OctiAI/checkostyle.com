@@ -150,7 +150,7 @@ const Pricing: React.FC = () => {
         >
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Crown className="h-8 w-8 text-yellow-500" />
-            <h3 className="text-2xl font-bold text-gray-9d00">
+            <h3 className="text-2xl font-bold text-gray-900">
               30-Day Money-Back Guarantee
             </h3>
           </div>

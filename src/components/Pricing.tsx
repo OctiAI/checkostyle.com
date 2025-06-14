@@ -17,7 +17,6 @@ const Pricing: React.FC = () => {
         'One Checkout Page',
       ],
       cta: 'Start with Tester',
-      popular: false,
       color: 'from-blue-500 to-blue-600',
     },
     {
@@ -36,7 +35,6 @@ const Pricing: React.FC = () => {
         'DFY Bonus Templates',
       ],
       cta: 'Upgrade to Pro',
-      popular: false,
       color: 'from-green-500 to-green-600',
     },
     {
@@ -51,7 +49,6 @@ const Pricing: React.FC = () => {
         'Satisfaction Guarantee',
       ],
       cta: 'Order DFY Service',
-      popular: true,
       color: 'from-purple-500 to-purple-600',
     },
     {
@@ -67,7 +64,6 @@ const Pricing: React.FC = () => {
         'Unlimited Checkouts & Accounts',
       ],
       cta: 'Talk to Sales',
-      popular: false,
       color: 'from-gray-700 to-gray-800',
     },
   ];

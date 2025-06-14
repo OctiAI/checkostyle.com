@@ -220,6 +220,8 @@ const Pricing: React.FC = () => {
                   {plan.cta}
                 </motion.button>
               </motion.div>
+                      </div>
+
             );
           })}
         </div>
@@ -244,7 +246,6 @@ const Pricing: React.FC = () => {
             <br />
             <strong>No questions asked.</strong>
           </p>
-        </div>
         </motion.div>
       </div>
     </section>

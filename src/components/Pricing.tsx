@@ -153,7 +153,7 @@ const Pricing: React.FC = () => {
             return (
               <motion.div
                 key={index}
-                className={`shadow-[0_0_20px_rgba(255,251,235,0.6)] relative flex flex-col h-full bg-white rounded-2xl border-2 ${
+                className={`relative flex flex-col h-full bg-white rounded-2xl border-2 ${
                   plan.popular
                     ? 'border-green-300 shadow-2xl'
                     : 'border-gray-200 shadow-lg'
@@ -221,7 +221,7 @@ const Pricing: React.FC = () => {
 
         {/* Guarantee */}
         <motion.div
-          className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 text-center border-2 border-blue-200"
+          className="shadow-[0_0_20px_rgba(255,251,235,0.6)] mt-16 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 text-center border-2 border-blue-200"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}

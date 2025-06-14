@@ -119,7 +119,7 @@ const Transformation: React.FC = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-600">Setup time</span>
-                  <span className="font-semibold text-green-600">Under 5 minutes</span>
+                  <span className="font-semibold text-green-600">⚡Under 5 minutes</span>
                 </div>
               </div>
             </div>

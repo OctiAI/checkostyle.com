@@ -112,7 +112,7 @@ const Pricing: React.FC = () => {
         <div className="flex justify-center mb-8">
           <button
             onClick={() => setBillingCycle('monthly')}
-            className={`px-3 py-2 rounded-l-full border ${
+            className={`px-3 py-1 rounded-l-full border ${
               billingCycle === 'monthly'
                 ? 'bg-green-500 text-white border-green-500'
                 : 'bg-gray-200 text-gray-700 border-gray-200'
@@ -122,7 +122,7 @@ const Pricing: React.FC = () => {
           </button>
           <button
             onClick={() => setBillingCycle('yearly')}
-            className={`px-3 py-2 rounded-r-full border ${
+            className={`px-3 py-1 rounded-r-full border ${
               billingCycle === 'yearly'
                 ? 'bg-green-500 text-white border-green-500'
                 : 'bg-gray-200 text-gray-700 border-gray-20'

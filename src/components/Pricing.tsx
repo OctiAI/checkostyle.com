@@ -91,7 +91,7 @@ const Pricing: React.FC = () => {
         };
       case 'DFY':
         return {
-          price: 'Free',
+          price: '$948/year',
           period: '',
           description: '$948/year (Best Value)',
         };

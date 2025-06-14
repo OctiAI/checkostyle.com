@@ -231,7 +231,6 @@ const Pricing: React.FC = () => {
         >
             <div
               className="inline-block text-center px-8 py-6 rounded-xl bg-red"
-              style={{ boxShadow: '0 0 20px rgba(255, 251, 235, 0.6)' }}
             >
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Crown className="h-8 w-8 text-yellow-500" />

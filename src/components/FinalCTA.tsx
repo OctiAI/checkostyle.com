@@ -54,6 +54,16 @@ const FinalCTA: React.FC = () => {
             <Clock className="h-12 w-12 text-orange-500 mx-auto mb-4" />
             <div className="text-3xl font-bold text-orange-600 mb-2">$3,247</div>
             <div className="text-gray-700">average monthly revenue lost per 1k visitors</div>
+
+            <div className="relative group inline-block align-middle ml-1">
+  <div className="w-5 h-5 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xs font-bold cursor-default">
+    i.
+  </div>
+  <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[280px] text-sm text-white bg-gray-900 px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+    Number based on actual performance across 127+ DTC brands using CheckoStyle, with an average of 10,000 monthly visitors per brand.
+  </div>
+</div>
+
           </div>
           
           <div className="bg-white rounded-2xl p-6 text-center border-2 border-green-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300">

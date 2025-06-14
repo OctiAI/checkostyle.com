@@ -130,7 +130,7 @@ const FinalCTA: React.FC = () => {
             <br />
             <strong className="text-white">Your future self will thank you.</strong>
           </p>
-          <div className="text-sm text-blue-200">
+          <div className="text-md text-blue-200">
             ⚡ No risk • ⚡ 30-day guarantee • ⚡ 5-minute setup
           </div>
         </motion.div>

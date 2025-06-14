@@ -67,13 +67,13 @@ const Transformation: React.FC = () => {
 
           {/* Stats Side */}
           <motion.div
-            className="space-y-6"
+            className="space-y-4"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-4">
               <motion.div
                 className="bg-white rounded-2xl p-6 text-center border border-gray-200 shadow-lg"
                 whileHover={{ scale: 1.05 }}

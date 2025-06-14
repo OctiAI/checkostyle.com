@@ -25,7 +25,7 @@ const Pricing: React.FC = () => {
     period: ' ($948/y)',
     description: '$79/m annually',
     features: [
-      '5 Designed Checkouts (They go live lol)',
+      '5 Designed Checkouts',
       'Unlimited Products',
       'A/B Split Testing',
       'Advanced Analytics including G-Analytics & Microsoft Clarity for free',

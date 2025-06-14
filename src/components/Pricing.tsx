@@ -118,7 +118,7 @@ const Pricing: React.FC = () => {
                 : 'bg-gray-200 text-gray-700 border-gray-200'
             }`}
           >
-            Monthly
+            M
           </button>
           <button
             onClick={() => setBillingCycle('yearly')}
@@ -128,7 +128,7 @@ const Pricing: React.FC = () => {
                 : 'bg-gray-200 text-gray-700 border-gray-200'
             }`}
           >
-            Yearly
+            Y
           </button>
         </div>
 

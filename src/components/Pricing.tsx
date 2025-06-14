@@ -109,7 +109,7 @@ const Pricing: React.FC = () => {
         </motion.div>
 
         {/* Billing Cycle Toggle */}
-        <div className="flex justify-center mb-0">
+        <div className="flex justify-center mb-8">
           <button
             onClick={() => setBillingCycle('monthly')}
             className={`px-3 py-1 rounded-l-full border ${

@@ -110,7 +110,7 @@ const FinalCTA: React.FC = () => {
 </motion.div>
 
           
-           <p className="text-md text-gray-700 max-w-10xl font-bold text-center mb-12">
+           <p className="text-md text-gray-700 max-w-10xl font-half-bold text-center mb-12">
             Your future self will thank you.
           </p>
         

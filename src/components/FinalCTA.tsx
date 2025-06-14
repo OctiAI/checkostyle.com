@@ -50,7 +50,7 @@ const FinalCTA: React.FC = () => {
             <div className="text-gray-700">abandon ugly checkouts within 30 seconds</div>
           </div>
           
-          <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300">
+          <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300">                                
             <Clock className="h-12 w-12 text-orange-500 mx-auto mb-4" />
             <div className="text-3xl font-bold text-orange-600 mb-2">$3,247</div>
             <div className="text-gray-700">average monthly revenue lost per 1k visitors</div>

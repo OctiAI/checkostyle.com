@@ -108,7 +108,7 @@ const FinalCTA: React.FC = () => {
             <span>Book a Setup Call</span>
           </motion.button>
         </motion.div>
-          <p className="text-xs text-dark-gray-600 max-w-3xl text-center">
+          <p className="text-lg text-dark-gray-600 max-w-3xl text-center">
             Used by 127+ DTC founders to <br />
             double checkout conversion
           </p>

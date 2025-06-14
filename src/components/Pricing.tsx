@@ -124,7 +124,7 @@ const Pricing: React.FC = () => {
             onClick={() => setBillingCycle('yearly')}
             className={`px-3 py-1 rounded-r-full border ${
               billingCycle === 'yearly'
-                ? 'bg-green-500 text-white border-green-50'
+                ? 'bg-green-50 text-white border-green-50'
                 : 'bg-gray-20 text-gray-70 border-gray-20'
             }`}
           >

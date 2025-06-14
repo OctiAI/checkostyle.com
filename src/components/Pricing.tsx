@@ -93,7 +93,7 @@ const Pricing: React.FC = () => {
         return {
           price: '$948',
           period: '/year',
-          description: 'DFY is free',
+          description: 'DFY comes free (save 500$)',
         };
       default:
         return {

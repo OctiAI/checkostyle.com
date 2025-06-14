@@ -23,7 +23,7 @@ const Pricing: React.FC = () => {
     name: 'Pro',
     price: '$129/month',
     period: ' ($948/y)',
-    description: '5 Designed Checkouts',
+    description: '$79/m annually',
     features: [
       '5 Designed Checkouts (They go live lol)',
       'Unlimited Products',

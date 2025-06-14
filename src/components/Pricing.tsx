@@ -168,6 +168,25 @@ const Pricing: React.FC = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
               >
+
+                {/* Badges */}
+                {plan.name === 'DFY' && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold flex items-center space-x-1">
+                      <Star className="h-4 w-4" />
+                      <span>Best Value</span>
+                    </div>
+                  </div>
+                )}
+                {plan.name === 'Tester' && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <div className="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-bold flex items-center space-x-1">
+                      <Star className="h-4 w-4" />
+                      <span>Most Popular</span>
+                    </div>
+                  </div>
+                )}
+                
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold flex items-center space-x-1">

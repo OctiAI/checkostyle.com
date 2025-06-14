@@ -220,7 +220,9 @@ const Pricing: React.FC = () => {
         </div>
 
         {/* Guarantee */}
-        <motion.div $1 className="$2 shadow-[0_0_20px_rgba(255,251,235,0.6)]"          initial={{ opacity: 0, scale: 0.95 }}
+        <motion.div
+          className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 text-center border-2 border-blue-200"
+          initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}

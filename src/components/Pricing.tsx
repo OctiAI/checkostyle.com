@@ -36,8 +36,8 @@ const Pricing: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* 4-Column Cards */}
+        <div className="grid md:grid-cols-4 gap-8">
           {/* Tester */}
           <motion.div
             className="border border-gray-200 rounded-2xl shadow-md p-8 text-center"
@@ -53,7 +53,7 @@ const Pricing: React.FC = () => {
             {featuresList([
               '30 Day Builder Access',
               'Live Support',
-              "One Checkout Page (Secretly doesn't go live)",
+              'One Checkout Page',
             ])}
             <button className="mt-8 px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">
               Start with Tester
@@ -72,18 +72,16 @@ const Pricing: React.FC = () => {
               Most Popular
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
-            <p className="text-gray-500 mb-4">
-              Most popular for growing businesses
-            </p>
+            <p className="text-gray-500 mb-4">Most popular for growing businesses</p>
             <div className="text-4xl font-bold text-gray-900">$129</div>
             <p className="text-sm text-gray-500 mb-6">
               /month or $79/month billed annually ($948/year)
             </p>
             {featuresList([
-              '5 Designed Checkouts (They go live lol)',
+              '5 Designed Checkouts',
               'Unlimited Products',
               'A/B Split Testing',
-              'Advanced Analytics (G-Analytics & Microsoft Clarity)',
+              'Advanced Analytics including G-Analytics & Microsoft Clarity for free',
               'Priority Support',
               'Advanced Builder',
               'Custom CSS',
@@ -94,7 +92,7 @@ const Pricing: React.FC = () => {
             </button>
           </motion.div>
 
-          {/* Enterprise */}
+          {/* DFY */}
           <motion.div
             className="border border-gray-200 rounded-2xl shadow-md p-8 text-center"
             initial={{ opacity: 0, y: 30 }}
@@ -102,14 +100,38 @@ const Pricing: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
+            <h3 className="text-xl font-bold text-gray-900 mb-2">DFY</h3>
+            <p className="text-gray-500 mb-4">Done-For-You Service</p>
+            <div className="text-4xl font-bold text-gray-900">$499</div>
+            <p className="text-sm text-gray-500 mb-6">One-Time + $79/m</p>
+            {featuresList([
+              'Free with $948/year Pro plan',
+              'CRO Service',
+              'We build it & integrate it',
+              'Unlimited Revisions',
+              'Satisfaction Guarantee',
+            ])}
+            <button className="mt-8 px-6 py-3 rounded-full bg-purple-600 text-white font-semibold hover:bg-purple-700 transition">
+              Get DFY Plan
+            </button>
+          </motion.div>
+
+          {/* Enterprise */}
+          <motion.div
+            className="border border-gray-200 rounded-2xl shadow-md p-8 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-xl font-bold text-gray-900 mb-2">Enterprise</h3>
             <p className="text-gray-500 mb-4">For teams and agencies</p>
-            <div className="text-3xl font-bold text-gray-900">From $399/m</div>
+            <div className="text-4xl font-bold text-gray-900">From $399/m</div>
             {featuresList([
               'Dedicated Success Manager',
               'Whitelabeling & Reselling',
               'Custom Integrations',
-              'Slack Support (VIP Level Support)',
+              'VIP Level Slack Support',
               'Unlimited Checkouts & Accounts',
             ])}
             <button className="mt-8 px-6 py-3 rounded-full bg-gray-800 text-white font-semibold hover:bg-gray-900 transition">
@@ -117,26 +139,6 @@ const Pricing: React.FC = () => {
             </button>
           </motion.div>
         </div>
-
-        {/* DFY Add-on */}
-        <motion.div
-          className="mt-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-8 text-center"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h3 className="text-2xl font-bold mb-2">DFY Plan</h3>
-          <p className="mb-4 text-blue-100 text-sm">
-            $499 One-Time + $79/m <br /> or Free with $948/year Pro plan
-          </p>
-          <ul className="text-blue-100 space-y-1 text-sm max-w-lg mx-auto">
-            <li>CRO Service</li>
-            <li>We build it & integrate it</li>
-            <li>Unlimited Revisions</li>
-            <li>Satisfaction Guarantee</li>
-          </ul>
-        </motion.div>
 
         {/* Guarantee */}
         <motion.div
@@ -153,10 +155,8 @@ const Pricing: React.FC = () => {
             </h3>
           </div>
           <p className="text-gray-700 text-lg">
-            If CheckoStyle doesn't increase your conversion rate within 30 days,
-            we'll refund every penny.
-            <br />
-            <strong>No questions asked.</strong>
+            If CheckoStyle doesn’t increase your conversion rate within 30 days,<br />
+            we’ll refund every penny. <strong>No questions asked.</strong>
           </p>
         </motion.div>
       </div>

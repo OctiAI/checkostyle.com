@@ -45,7 +45,7 @@ const FinalCTA: React.FC = () => {
           viewport={{ once: true }}
         >
           <div className="bg-white rounded-2xl p-6 text-center border-2 border-red-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300">
-            <TrendingDown className="h-12 w-12 text-red-500 mx-auto mb-4" transition-transform duration-300 hover:scale-[1.05] />
+            <TrendingDown className="h-12 w-12 text-red-500 mx-auto mb-4 transition-transform duration-300 hover:scale-[1.05]"  />
             <div className="text-3xl font-bold text-red-600 mb-2">67%</div>
             <div className="text-gray-700">abandon default checkouts  30 seconds</div>
           </div>

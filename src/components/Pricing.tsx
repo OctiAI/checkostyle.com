@@ -89,7 +89,8 @@ const Pricing: React.FC = () => {
   return (
     <section className="py-20 bg-white" id="pricing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div$1className="$2 shadow-[0_0_20px_rgba(255,251,235,0.6)]"
+        <motion.div
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -198,7 +199,7 @@ const Pricing: React.FC = () => {
 
         {/* Guarantee */}
         <motion.div
-          className="mt-16 bg-[#FFFBEB] rounded-2xl p-8 text-center border-2 border-blue-200"
+          className="mt-16 bg-[#FFFBEB] rounded-2xl p-8 text-center border-2 border-blue-200 shadow-[0_0_20px_rgba(255,251,235,0.6)]"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
@@ -215,7 +216,7 @@ const Pricing: React.FC = () => {
             we'll refund every penny.
             <br />
             <strong>No questions asked.</strong>
-          </p>
+          }}</p>
         </motion.div>
       </div>
     </section>

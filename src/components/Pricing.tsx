@@ -219,9 +219,10 @@ const Pricing: React.FC = () => {
                 >
                   {plan.cta}
                 </motion.button>
-              </motion.div>
-                      </div>
+                        </div>
 
+              </motion.div>
+              
             );
           })}
         </div>

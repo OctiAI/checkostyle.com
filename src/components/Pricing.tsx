@@ -218,7 +218,6 @@ const Pricing: React.FC = () => {
             <strong>No questions asked.</strong></p>
         
         </motion.div>
-          }}
       </div>
     </section>
   );

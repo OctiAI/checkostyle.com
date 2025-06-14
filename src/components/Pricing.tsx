@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { Check, Star, Zap, Crown } from 'lucide-react';
 
 const Pricing: React.FC = () => {
-const plans = [
+ 
+  const plans = [
   {
     name: 'Tester',
     price: '$9',
@@ -69,60 +70,7 @@ const plans = [
     color: 'from-gray-700 to-gray-800',
   },
 ];
-  const plans = [
-    {
-      name: 'Tester',
-      price: '$38',
-      period: '/month',
-      description: 'Perfect for getting started',
-      features: [
-        '1 Stripe account',
-        'Drag & drop builder',
-        'Mobile responsive',
-        'Live chat support',
-        'Basic analytics',
-      ],
-      cta: 'Start with Starter',
-      popular: false,
-      color: 'from-blue-500 to-blue-600',
-    },
-    {
-      name: 'Pro',
-      price: '$129',
-      period: '/month',
-      description: 'Most popular for growing businesses',
-      features: [
-        '3 Stripe accounts',
-        'Advanced builder',
-        'A/B testing',
-        'Priority support',
-        'Advanced analytics',
-        'Custom CSS',
-        'DFY bonus templates',
-      ],
-      cta: 'Upgrade My Checkout',
-      popular: true,
-      color: 'from-green-500 to-green-600',
-    },
-    {
-      name: 'Enterprise',
-      price: 'Contact Us',
-      period: '',
-      description: 'For teams and agencies',
-      features: [
-        'Unlimited accounts',
-        'White-label option',
-        'Strategy consultation',
-        'Slack integration',
-        'NDA available',
-        'Custom integrations',
-        'Dedicated success manager',
-      ],
-      cta: 'Talk to Sales',
-      popular: false,
-      color: 'from-gray-700 to-gray-800',
-    },
-  ];
+
 
   return (
     <section className="py-20 bg-white" id="pricing">

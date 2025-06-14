@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { Check, Crown } from 'lucide-react';
 
 const featuresList = (items: string[]) => (
-  <ul className="mt-6 space-y-2 text-sm text-gray-700">
+  <ul className="mt-4 space-y-3 text-sm text-gray-700">
     {items.map((item, i) => (
-      <li key={i} className="flex items-start space-x-2">
+      <li key={i} className="flex items-start">
         <Check className="w-4 h-4 mt-1 text-green-500" />
-        <span>{item}</span>
+        <span className="ml-2">{item}</span>
       </li>
     ))}
   </ul>
@@ -25,13 +25,13 @@ const Pricing: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Conversion{' '}
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            Choose Your{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">
-              Boost
+              Conversion Boost
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600">
             Every plan pays for itself with just a few extra sales.
           </p>
         </motion.div>
@@ -46,16 +46,17 @@ const Pricing: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Tester</h3>
-            <p className="text-gray-500 mb-4">Perfect for getting started</p>
-            <div className="text-4xl font-bold text-gray-900">$9</div>
-            <p className="text-sm text-gray-500 mb-6">One-Time</p>
+            <h3 className="text-lg font-bold text-gray-900">Tester</h3>
+            <p className="text-gray-500 mt-1">Perfect for getting started</p>
+            <div className="text-3xl font-bold text-gray-900 my-4">
+              $9<span className="text-base font-normal"> One-Time</span>
+            </div>
             {featuresList([
               '30 Day Builder Access',
               'Live Support',
               'One Checkout Page',
             ])}
-            <button className="mt-8 px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">
+            <button className="mt-6 w-full py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">
               Start with Tester
             </button>
           </motion.div>
@@ -68,26 +69,25 @@ const Pricing: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white text-xs font-bold px-4 py-1 rounded-full">
+            <div className="absolute -mt-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-4 py-1 rounded-full">
               Most Popular
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Pro</h3>
-            <p className="text-gray-500 mb-4">Most popular for growing businesses</p>
-            <div className="text-4xl font-bold text-gray-900">$129</div>
-            <p className="text-sm text-gray-500 mb-6">
-              /month or $79/month billed annually ($948/year)
-            </p>
+            <h3 className="text-lg font-bold text-gray-900">Pro</h3>
+            <p className="text-gray-500 mt-1">Most popular for growing businesses</p>
+            <div className="text-3xl font-bold text-gray-900 my-4">
+              $129<span className="text-base font-normal">/month</span>
+            </div>
             {featuresList([
               '5 Designed Checkouts',
               'Unlimited Products',
               'A/B Split Testing',
-              'Advanced Analytics including G-Analytics & Microsoft Clarity for free',
+              'Advanced Analytics including G-Analytics & Microsoft Clarity',
               'Priority Support',
               'Advanced Builder',
               'Custom CSS',
               'DFY Bonus Templates',
             ])}
-            <button className="mt-8 px-6 py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition">
+            <button className="mt-6 w-full py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition">
               Upgrade My Checkout
             </button>
           </motion.div>
@@ -100,10 +100,11 @@ const Pricing: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl font-bold text-gray-900 mb-2">DFY</h3>
-            <p className="text-gray-500 mb-4">Done-For-You Service</p>
-            <div className="text-4xl font-bold text-gray-900">$499</div>
-            <p className="text-sm text-gray-500 mb-6">One-Time + $79/m</p>
+            <h3 className="text-lg font-bold text-gray-900">DFY</h3>
+            <p className="text-gray-500 mt-1">Done-For-You Service</p>
+            <div className="text-3xl font-bold text-gray-900 my-4">
+              $499<span className="text-base font-normal"> One-Time + $79/m</span>
+            </div>
             {featuresList([
               'Free with $948/year Pro plan',
               'CRO Service',
@@ -111,7 +112,7 @@ const Pricing: React.FC = () => {
               'Unlimited Revisions',
               'Satisfaction Guarantee',
             ])}
-            <button className="mt-8 px-6 py-3 rounded-full bg-purple-600 text-white font-semibold hover:bg-purple-700 transition">
+            <button className="mt-6 w-full py-3 rounded-full bg-purple-600 text-white font-semibold hover:bg-purple-700 transition">
               Get DFY Plan
             </button>
           </motion.div>
@@ -124,9 +125,11 @@ const Pricing: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Enterprise</h3>
-            <p className="text-gray-500 mb-4">For teams and agencies</p>
-            <div className="text-4xl font-bold text-gray-900">From $399/m</div>
+            <h3 className="text-lg font-bold text-gray-900">Enterprise</h3>
+            <p className="text-gray-500 mt-1">For teams and agencies</p>
+            <div className="text-3xl font-bold text-gray-900 my-4">
+              From $399/m
+            </div>
             {featuresList([
               'Dedicated Success Manager',
               'Whitelabeling & Reselling',
@@ -134,7 +137,7 @@ const Pricing: React.FC = () => {
               'VIP Level Slack Support',
               'Unlimited Checkouts & Accounts',
             ])}
-            <button className="mt-8 px-6 py-3 rounded-full bg-gray-800 text-white font-semibold hover:bg-gray-900 transition">
+            <button className="mt-6 w-full py-3 rounded-full bg-gray-800 text-white font-semibold hover:bg-gray-900 transition">
               Talk to Sales
             </button>
           </motion.div>
@@ -148,15 +151,15 @@ const Pricing: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="flex items-center justify-center space-x-2 mb-4">
+          <div className="flex items-center justify-center mb-4 space-x-2">
             <Crown className="h-8 w-8 text-yellow-500" />
             <h3 className="text-2xl font-bold text-gray-900">
               30-Day Money-Back Guarantee
             </h3>
           </div>
           <p className="text-gray-700 text-lg">
-            If CheckoStyle doesn’t increase your conversion rate within 30 days,<br />
-            we’ll refund every penny. <strong>No questions asked.</strong>
+            If CheckoStyle doesn’t increase your conversion rate within 30 days, we’ll
+            refund every penny. <strong>No questions asked.</strong>
           </p>
         </motion.div>
       </div>

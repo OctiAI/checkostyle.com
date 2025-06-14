@@ -47,7 +47,7 @@ const FinalCTA: React.FC = () => {
           <div className="bg-white rounded-2xl p-6 text-center border-2 border-red-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300">
             <TrendingDown className="h-12 w-12 text-red-500 mx-auto mb-4" />
             <div className="text-3xl font-bold text-red-600 mb-2">67%</div>
-            <div className="text-gray-700">abandon ugly checkouts within 30 seconds</div>
+            <div className="text-gray-700">abandon default checkouts within 30 seconds</div>
           </div>
           
           <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300">                                

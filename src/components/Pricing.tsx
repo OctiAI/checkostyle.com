@@ -94,7 +94,7 @@ const Pricing: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid lg:grid-cols-4 gap-8 items-stretch">
           {plans.map((plan, index) => (
             <motion.div
               key={index}

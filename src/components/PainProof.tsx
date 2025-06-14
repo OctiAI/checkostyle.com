@@ -118,7 +118,6 @@ const PainProof: React.FC = () => {
 
           
           <h3 className="text-2xl font-bold mb-5">The Reality Check</h3>
-          <h4 className="text-l ">ⓘ Based on data from 127+ founders using CheckoStyle</h4>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="text-4xl font-bold text-yellow-300">67%</div>

@@ -241,6 +241,10 @@ const Pricing: React.FC = () => {
             <br />
             <strong>No questions asked.</strong>
           </p>
+            <div
+    className="inline-block text-center px-8 py-6 rounded-xl bg-white"
+    style={{ boxShadow: '0 0 20px rgba(255, 251, 235, 0.6)' }}
+  ></div>
         </motion.div>
       </div>
     </section>

@@ -109,7 +109,7 @@ const Pricing: React.FC = () => {
         </motion.div>
 
         {/* Billing Cycle Toggle */}
-<div className="w-full flex justify-end mb-10">
+<div className="w-full flex justify-end lg:mb-10">
   <div className="flex items-center space-x-4">
     {/* Label: Monthly */}
     <span className="text-sm font-medium text-gray-800">Monthly</span>

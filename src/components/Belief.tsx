@@ -49,7 +49,7 @@ const Belief: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-          <p className="text-xl md:text-2xl text-gray-600 mb-14 max-w-4xl mx-auto leading-relaxed text-center">
+          <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-4xl mx-auto leading-relaxed text-center">
             You earned the click. You made the sale. Don’t lose them at the final screen.
           </p>
             

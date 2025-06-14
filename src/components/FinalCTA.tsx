@@ -51,7 +51,7 @@ const FinalCTA: React.FC = () => {
           </div>
 
           
-          <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300">                                
+          <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300 transition-transform duration-300 hover:scale-[1.05]">                                
             
            <div className="w-full flex justify-end">
   <div className="relative group inline-block">

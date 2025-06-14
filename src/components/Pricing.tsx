@@ -111,10 +111,7 @@ const Pricing: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-            <div
-    className="inline-block text-center px-8 py-6 rounded-xl bg-white"
-    style={{ boxShadow: '0 0 20px rgba(255, 251, 235, 0.6)' }}
-  ></div>
+          
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Choose Your
             <br />

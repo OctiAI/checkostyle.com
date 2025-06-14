@@ -43,7 +43,7 @@ const Belief: React.FC = () => {
         <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-44">
           {/* Benefits List */}
           <motion.div
-            className="space-y-4"
+            className="space-y-8"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}

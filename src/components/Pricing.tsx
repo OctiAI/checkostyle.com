@@ -109,28 +109,37 @@ const Pricing: React.FC = () => {
         </motion.div>
 
         {/* Billing Cycle Toggle */}
-        <div className="flex justify-center mb-6">
-          <button
-            onClick={() => setBillingCycle('monthly')}
-            className={`px-3 py-1 rounded-l-full border ${
-              billingCycle === 'monthly'
-                ? 'bg-green-500 text-white border-green-50'
-                : 'bg-gray-200 text-gray-700 border-gray-50'
-            }`}
-          >
-            M
-          </button>
-          <button
-            onClick={() => setBillingCycle('yearly')}
-            className={`px-3 py-1 rounded-r-full border ${
-              billingCycle === 'yearly'
-                ? 'bg-green-500 text-white border-green-50'
-                : 'bg-gray-200 text-gray-70 border-gray-50'
-            }`}
-          >
-            Y
-          </button>
-        </div>
+       <div className="w-full flex justify-end">
+  <div className="flex flex-col items-center space-y-1">
+    {/* Label above the switch */}
+    <span className="text-xs font-semibold text-gray-500">m / y</span>
+
+    {/* Toggle Button Group */}
+    <div className="flex border rounded-full overflow-hidden shadow-sm">
+      <button
+        onClick={() => setBillingCycle('monthly')}
+        className={`px-4 py-1 text-sm font-medium transition-colors duration-200 ${
+          billingCycle === 'monthly'
+            ? 'bg-white text-gray-900'
+            : 'bg-blue-600 text-white'
+        }`}
+      >
+        M
+      </button>
+      <button
+        onClick={() => setBillingCycle('yearly')}
+        className={`px-4 py-1 text-sm font-medium transition-colors duration-200 ${
+          billingCycle === 'yearly'
+            ? 'bg-white text-gray-900'
+            : 'bg-blue-600 text-white'
+        }`}
+      >
+        Y
+      </button>
+    </div>
+  </div>
+</div>
+
 
         <div className="grid lg:grid-cols-4 gap-8 items-stretch">
           {plans.map((plan, index) => {

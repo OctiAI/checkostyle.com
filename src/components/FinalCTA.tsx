@@ -79,36 +79,36 @@ const FinalCTA: React.FC = () => {
           </div>
         </motion.div>
 
-{/* CTA Buttons */}
-<motion.div
-  className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-2 w-full"
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6, delay: 0.3 }}
-  viewport={{ once: true }}
->
-  <motion.button
-    className="w-full sm:flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-5 rounded-full font-bold text-xl flex items-center justify-center space-x-3 shadow-2xl hover:shadow-3xl transition-all duration-300 min-w-[240px]"
-    whileHover={{
-      scale: 1.05,
-      boxShadow: "0 25px 50px rgba(34, 197, 94, 0.4)",
-    }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <span>Build My Checkout Now</span>
-    <ArrowRight className="h-6 w-6" />
-  </motion.button>
-
-  <motion.button
-    className="w-full sm:flex-1 bg-white text-gray-800 px-6 py-5 rounded-full font-bold text-xl flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl border-2 border-gray-200 transition-all duration-300 min-w-[240px]"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <Play className="h-6 w-6" />
-    <span>Book a Setup Call</span>
-  </motion.button>
-</motion.div>
-
+        {/* CTA Buttons */}
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-2"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          <motion.button
+            className="bg-gradient-to-r from-green-500 to-green-600 text-white px-12 py-5 rounded-full font-bold text-xl flex items-center space-x-3 shadow-2xl hover:shadow-3xl transition-all duration-300"
+            whileHover={{ 
+              scale: 1.05, 
+              boxShadow: "0 25px 50px rgba(34, 197, 94, 0.4)" 
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span>Build My Checkout Now</span>
+            <ArrowRight className="h-6 w-6" />
+          </motion.button>
+          
+          <motion.button
+            className="bg-white text-gray-800 px-12 py-5 rounded-full font-bold text-xl flex items-center space-x-3 shadow-xl hover:shadow-2xl border-2 border-gray-200 transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Play className="h-6 w-6" />
+            <span>Book a Setup Call</span>
+          </motion.button>
+       
+        </motion.div>
           
            <p className="text-xs text-dark-gray-600 max-w-10xl text-center mb-14">
             Your future self will thank you.

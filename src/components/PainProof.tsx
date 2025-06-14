@@ -104,6 +104,17 @@ const PainProof: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
+          <div className="w-full flex justify-end">
+  <div className="relative group inline-block">
+    <div className="w-6 h-6 text-gray-700 rounded-full flex items-center justify-center text-xl font-bold cursor-default">
+      ⓘ
+    </div>
+    <div className="absolute right-0 mt-2 w-[280px] text-sm text-white bg-gray-900 px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+      Number based on actual performance across 127+ DTC brands using CheckoStyle, with an average of 10,000 monthly visitors per brand.
+    </div>
+  </div>
+</div>
+
           <h3 className="text-2xl font-bold">The Reality Check</h3>
           <h4 className="text-l mb-5">ⓘ Based on data from 127+ founders using CheckoStyle</h4>
           <div className="grid md:grid-cols-3 gap-8">

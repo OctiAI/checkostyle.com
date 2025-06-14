@@ -44,12 +44,12 @@ const Belief: React.FC = () => {
           {/* Benefits List */}
           <motion.div
             className="space-y-8"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-          <p className="text-xl md:text-2xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed mb-14 text-center">
+          <p className="text-xl md:text-2xl text-gray-600 mb-2 max-w-4xl  leading-relaxed mb-14 text-center">
             You earned the click. You made the sale. Don’t lose them at the final screen.
           </p>
             

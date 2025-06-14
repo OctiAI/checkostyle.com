@@ -40,7 +40,7 @@ const Belief: React.FC = () => {
           </h2>
         </motion.div>
 
-        <div className="mx-24 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-44">
+        <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-44">
           {/* Benefits List */}
           <motion.div
             className="space-y-8"

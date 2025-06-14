@@ -176,7 +176,7 @@ const Pricing: React.FC = () => {
                   </div>
                 </div>
 
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-0">
                   {plan.features.map((feature, fi) => (
                     <li key={fi} className="flex items-center space-x-3">
                       <Check className="h-5 w-5 text-green-500 flex-shrink-0" />

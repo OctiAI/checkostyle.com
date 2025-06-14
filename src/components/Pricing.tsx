@@ -125,8 +125,7 @@ const Pricing: React.FC = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Every plan pays for itself with just a few extra sales.
           </p>
-                      </div>
-
+              </div>
         </motion.div>
 
         {/* Billing Cycle Toggle */}
@@ -221,10 +220,7 @@ const Pricing: React.FC = () => {
                 >
                   {plan.cta}
                 </motion.button>
-                        </div>
-
               </motion.div>
-              
             );
           })}
         </div>
@@ -249,6 +245,7 @@ const Pricing: React.FC = () => {
             <br />
             <strong>No questions asked.</strong>
           </p>
+        </div>
         </motion.div>
       </div>
     </section>

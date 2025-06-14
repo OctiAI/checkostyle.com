@@ -67,7 +67,7 @@ const Transformation: React.FC = () => {
 
           {/* Stats Side */}
           <motion.div
-            className="space-y-4"
+            className="space-y-2"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}

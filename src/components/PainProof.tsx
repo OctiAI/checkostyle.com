@@ -19,7 +19,7 @@ const PainProof: React.FC = () => {
           </h2> */}
 
       <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Customers Don’t Like  <span style={{ color: '#E63946' }} >Default Checkout</span>. <br/>
+            Customers Don’t Like  <span style={{ color: '#E63946' }} >Default Checkout.</span> <br/>
         <span className="text-blue-600"> Here’s What They Do Like.</span> 
         </h2>
 

@@ -124,7 +124,7 @@ const Pricing: React.FC = () => {
       }`}
     >
       <span
-        className={`bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ${
+        className={`bg-white w-6 h-4 rounded-full shadow-md transform transition-transform duration-300 ${
           billingCycle === 'yearly' ? 'translate-x-6' : 'translate-x-0'
         }`}
       />

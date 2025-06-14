@@ -45,6 +45,7 @@ const Pricing: React.FC = () => {
       period: ' One-Time',
       description: 'Free with $948/year',
       features: [
+        'Everything in Pro',
         'CRO Service',
         'We build it & integrate it',
         'Unlimited Revisions',

@@ -81,7 +81,7 @@ const FinalCTA: React.FC = () => {
 
 {/* CTA Buttons */}
 <motion.div
-  className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-2 w-full"
+  className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-4 w-full"
   initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, delay: 0.3 }}
@@ -110,7 +110,7 @@ const FinalCTA: React.FC = () => {
 </motion.div>
 
           
-           <p className="text-sm text-gray-600 max-w-10xl text-center mb-14">
+           <p className="text-sm text-gray-600 max-w-10xl text-center mb-12">
             Your future self will thank you.
           </p>
         

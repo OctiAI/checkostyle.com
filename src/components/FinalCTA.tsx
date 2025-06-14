@@ -122,7 +122,7 @@ const FinalCTA: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold mb-2">
+          <h3 className="text-2xl font-bold mb-0">
             The Choice Is Simple
           </h3>
           <p className="text-blue-100 text-lg mb-6">

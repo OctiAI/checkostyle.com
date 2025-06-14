@@ -3,6 +3,72 @@ import { motion } from 'framer-motion';
 import { Check, Star, Zap, Crown } from 'lucide-react';
 
 const Pricing: React.FC = () => {
+const plans = [
+  {
+    name: 'Tester',
+    price: '$9',
+    period: ' One-Time',
+    description: '30 Day Builder Access',
+    features: [
+      '30 Day Builder Access',
+      'Live Support',
+      "One Checkout Page (Secretly doesn't go live)",
+    ],
+    cta: 'Start with Tester',
+    popular: false,
+    color: 'from-blue-500 to-blue-600',
+  },
+  {
+    name: 'Pro',
+    price: '$129/m OR $79/m annually',
+    period: ' ($948/y)',
+    description: '5 Designed Checkouts',
+    features: [
+      '5 Designed Checkouts (They go live lol)',
+      'Unlimited Products',
+      'A/B Split Testing',
+      'Advanced Analytics including G-Analytics & Microsoft Clarity for free',
+      'Priority Support',
+      'Advanced Builder',
+      'Custom CSS',
+      'DFY Bonus Templates',
+    ],
+    cta: 'Upgrade to Pro',
+    popular: false,
+    color: 'from-green-500 to-green-600',
+  },
+  {
+    name: 'DFY',
+    price: '$499 One-Time',
+    period: ' and then $79/m or Free and $948/year (Best Value)',
+    description: 'CRO Service & Unlimited Revisions',
+    features: [
+      'CRO Service',
+      'We build it & integrate it',
+      'Unlimited Revisions',
+      'Satisfaction Guarantee',
+    ],
+    cta: 'Order DFY Service',
+    popular: true,
+    color: 'from-purple-500 to-purple-600',  // pick a gradient that fits your theme
+  },
+  {
+    name: 'Enterprise',
+    price: 'from $399/m',
+    period: '',
+    description: 'For teams and agencies',
+    features: [
+      'Dedicated Success Manager',
+      'Whitelabeling & Reselling',
+      'Custom Integrations',
+      'Slack Support (VIP Level Support)',
+      'Unlimited Checkouts & Accounts',
+    ],
+    cta: 'Talk to Sales',
+    popular: false,
+    color: 'from-gray-700 to-gray-800',
+  },
+];
   const plans = [
     {
       name: 'Tester',

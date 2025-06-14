@@ -50,7 +50,7 @@ const Transformation: React.FC = () => {
               </blockquote>
             </div>
 
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-4">
               <div className="bg-white rounded-xl p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-2xl font-bold text-red-500 mb-1">7%</div>
                 <div className="text-sm text-gray-600">Before CVR</div>
@@ -67,7 +67,7 @@ const Transformation: React.FC = () => {
 
           {/* Stats Side */}
           <motion.div
-            className="space-y-2"
+            className="space-y-6"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}

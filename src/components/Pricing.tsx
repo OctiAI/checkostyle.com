@@ -69,7 +69,6 @@ const Pricing: React.FC = () => {
   },
 ];
 
-  ];
 
   return (
     <section className="py-20 bg-white" id="pricing">

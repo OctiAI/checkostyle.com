@@ -51,7 +51,7 @@ const FinalCTA: React.FC = () => {
           </div>
 
           
-          <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300 transition-transform duration-300 hover:scale-[1.05]">                                
+          <div className="bg-white rounded-2xl p-6 text-center border-2 border-orange-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300 transition-transform duration-300 hover:scale-[1.04]">                                
             
            <div className="w-full flex justify-end">
   <div className="relative group inline-block">
@@ -72,7 +72,7 @@ const FinalCTA: React.FC = () => {
             <div className="text-gray-700">average monthly revenue lost per 1k visitors</div>
           </div>
           
-          <div className="bg-white rounded-2xl p-6 text-center border-2 border-green-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300 transition-transform duration-300 hover:scale-[1.05]">
+          <div className="bg-white rounded-2xl p-6 text-center border-2 border-green-200 shadow-lg hover:shadow-[0_0_5px_rgba(255,223,93,0.6)] transition-shadow duration-300 transition-transform duration-300 hover:scale-[1.04]">
             <ArrowRight className="h-12 w-12 text-green-500 mx-auto mb-4" />
             <div className="text-3xl font-bold text-green-600 mb-2">5 min</div>
             <div className="text-gray-700">to fix your checkout and start converting</div>

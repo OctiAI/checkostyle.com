@@ -125,6 +125,8 @@ const Pricing: React.FC = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Every plan pays for itself with just a few extra sales.
           </p>
+                      </div>
+
         </motion.div>
 
         {/* Billing Cycle Toggle */}

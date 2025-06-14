@@ -43,10 +43,10 @@ const Trust: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-700">
               Stripe’s Power.
-            </span> Your Brand’s Presence.<br /> Stripe Secure. 
+            </span> Your Brand’s Presence.<br /> Stripe Secure.  &nbsp;
             
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-             CheckoStyle Optimized. &nbsp;
+             CheckoStyle Optimized.
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

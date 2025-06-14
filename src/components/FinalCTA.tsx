@@ -19,7 +19,7 @@ const FinalCTA: React.FC = () => {
             transition={{ duration: 2, repeat: Infinity }}
           >
             <Clock className="h-4 w-4" />
-            <span className="font-semibold">Every day you wait = money lost</span>
+            <span className="font-semibold">Every day you wait & click ignore = money forever lost.</span>
           </motion.div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">

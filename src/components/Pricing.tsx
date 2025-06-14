@@ -183,8 +183,7 @@ const Pricing: React.FC = () => {
                     </div>
                   </div>
                 )}
-                
-          
+                    
 
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">

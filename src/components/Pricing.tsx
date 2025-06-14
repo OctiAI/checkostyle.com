@@ -88,7 +88,7 @@ const Pricing: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="pricing">
+    <section className="py-10 bg-white" id="pricing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <motion.div
           className="text-center mb-16"

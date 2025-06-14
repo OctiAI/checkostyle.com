@@ -100,7 +100,7 @@ const FinalCTA: React.FC = () => {
   </motion.button>
 
   <motion.button
-    className="w-full sm:flex-1 bg-white text-gray-800 px-6 py-5 rounded-full font-bold text-xl flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl border-2 border-gray-200 transition-all duration-300 min-w-[240px]"
+    className="w-full sm:flex-1 bg-white text-gray-800 px-6 py-5 rounded-full font-bold text-xl flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl border-2 border-gray-200 transition-all duration-300 min-w-[240px] max-w-[360px]"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >

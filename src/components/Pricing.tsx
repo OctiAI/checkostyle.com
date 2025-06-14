@@ -42,7 +42,7 @@ const Pricing: React.FC = () => {
     {
       name: 'DFY',
       price: '$499',
-      period: '/One-Time',
+      period: '/one-time',
       description: 'Free with $948/year (Best Value)',
       features: [
         'CRO Service',

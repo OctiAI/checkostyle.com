@@ -88,7 +88,7 @@ const FinalCTA: React.FC = () => {
   viewport={{ once: true }}
 >
   <motion.button
-    className="w-full sm:flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-5 rounded-full font-bold text-xl flex items-center justify-center space-x-3 shadow-2xl hover:shadow-3xl transition-all duration-300 min-w-[240px] max-w-[240px]"
+    className="w-full sm:flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-5 rounded-full font-bold text-xl flex items-center justify-center space-x-3 shadow-2xl hover:shadow-3xl transition-all duration-300 min-w-[240px] max-w-[360px]"
     whileHover={{
       scale: 1.05,
       boxShadow: "0 25px 50px rgba(34, 197, 94, 0.4)",

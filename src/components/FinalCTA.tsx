@@ -113,6 +113,7 @@ const FinalCTA: React.FC = () => {
            <p className="text-lg text-dark-gray-600 max-w-3xl text-center">
             Your future self will thank you.
           </p>
+        
         {/* Final Push */}
         <motion.div
           className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 text-center text-white"

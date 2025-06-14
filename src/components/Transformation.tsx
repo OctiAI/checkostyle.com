@@ -50,7 +50,7 @@ const Transformation: React.FC = () => {
               </blockquote>
             </div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-6">
               <div className="bg-white rounded-xl p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-2xl font-bold text-red-500 mb-1">7%</div>
                 <div className="text-sm text-gray-600">Before CVR</div>

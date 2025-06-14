@@ -199,7 +199,7 @@ const Pricing: React.FC = () => {
 
         {/* Guarantee */}
         <motion.div
-          className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 text-center border-2 border-blue-400 shadow-[0_4px_24px_rgba(255,251,235,1)]
+          className="mt-16 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 text-center border-2 border-blue-400 shadow-[0_4px_24px_rgba(200,160,50,1)]
 
 "
           initial={{ opacity: 0, scale: 0.95 }}

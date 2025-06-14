@@ -13,7 +13,7 @@ const Pricing: React.FC = () => {
     features: [
       '30 Day Builder Access',
       'Live Support',
-      "One Checkout Page (Secretly doesn't go live)",
+      "One Checkout Page",
     ],
     cta: 'Start with Tester',
     popular: false,

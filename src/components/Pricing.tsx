@@ -215,8 +215,8 @@ const Pricing: React.FC = () => {
             If CheckoStyle doesn't increase your conversion rate within 30 days,
             we'll refund every penny.
             <br />
-            <strong>No questions asked.</strong>
-          }}</p>
+            <strong>No questions asked.</strong></p>
+          }}
         </motion.div>
       </div>
     </section>

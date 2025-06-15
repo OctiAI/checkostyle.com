@@ -50,7 +50,7 @@ const Trust: React.FC = () => {
             </span> Optimized.<br />  <motion.span
    className="bg-clip-text bg-gradient-to-r from-green-500 to-blue-600"
    style={{ backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }} 
-   initial={{ backgroundSize: '100% 0%', color: '#000' }} 
+   initial={{ backgroundSize: '100% 0%', color: '#111827' }} 
    whileInView={{ backgroundSize: '100% 100%', color: '#111827' }} 
    transition={{ delay: 0.8, duration: 0.4, ease: 'easeInOut' }} 
    viewport={{ once: true }} 

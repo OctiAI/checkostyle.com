@@ -52,7 +52,7 @@ const Trust: React.FC = () => {
    style={{ backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }} 
    initial={{ backgroundSize: '100% 0%', color: '#000' }} 
    whileInView={{ backgroundSize: '100% 100%', color: 'transparent' }} 
-   transition={{ delay: 0.4, duration: 0.4, ease: 'easeInOut' }} 
+   transition={{ delay: 0.8, duration: 0.4, ease: 'easeInOut' }} 
    viewport={{ once: true }} 
  > 
    Your Brand’s Presence. 

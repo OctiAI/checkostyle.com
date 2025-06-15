@@ -48,15 +48,38 @@ const Trust: React.FC = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
              CheckoStyle
             </span> Optimized.<br />  <motion.span
-   className="bg-clip-text bg-gradient-to-r from-green-500 to-blue-600"
-   style={{ backgroundPosition: 'top', backgroundRepeat: 'no-repeat' }} 
-   initial={{ backgroundSize: '100% 0%', color: '#111827' }} 
-   whileInView={{ backgroundSize: '100% 100%', color: 'transparent' }} 
-   transition={{ delay: 0.8, duration: 0.8, ease: 'easeInOut' }} 
-   viewport={{ once: true }} 
- > 
-   Your Brand’s Presence. 
- </motion.span>
+  style={{
+    // Clip both layers to the text
+    backgroundClip: 'text',
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',
+    // Layer 1: fallback gray; Layer 2: your gradient
+    backgroundImage: `
+      linear-gradient(#111827, #111827),
+      linear-gradient(to right, #10B981, #3B82F6)
+    `,
+    // Both start at top, no-repeat
+    backgroundPosition: 'top, top',
+    backgroundRepeat: 'no-repeat, no-repeat',
+  }}
+  initial={{
+    // Layer1 full height, Layer2 zero height
+    backgroundSize: '100% 100%, 0% 0%',
+  }}
+  whileInView={{
+    // Layer2 grows to full height, “dropping” from top
+    backgroundSize: '100% 100%, 100% 100%',
+  }}
+  transition={{
+    delay: 0.8,
+    duration: 0.8,
+    ease: 'easeInOut',
+  }}
+  viewport={{ once: true }}
+>
+  Your Brand’s Presence.
+</motion.span>
+
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Built for founders who care about conversions.

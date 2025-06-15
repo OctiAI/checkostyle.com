@@ -49,26 +49,24 @@ const Trust: React.FC = () => {
              CheckoStyle
             </span> Optimized.<br />  <motion.span
   style={{
-    // Clip both layers to the text
-    backgroundClip: 'text',
     WebkitBackgroundClip: 'text',
+    backgroundClip: 'text',
     color: 'transparent',
-    // Layer 1: fallback gray; Layer 2: your gradient
+    // Layer 1: solid gray; Layer 2: the gradient
     backgroundImage: `
       linear-gradient(#111827, #111827),
       linear-gradient(to right, #10B981, #3B82F6)
     `,
-    // Both start at top, no-repeat
-    backgroundPosition: 'top, top',
+    backgroundSize: '100% 100%, 100% 100%',
     backgroundRepeat: 'no-repeat, no-repeat',
   }}
   initial={{
-    // Layer1 full height, Layer2 zero height
-    backgroundSize: '100% 100%, 0% 0%',
+    // Gray layer at 0, gradient fully above the text (hidden)
+    backgroundPosition: '0% 0%, 0% -100%',
   }}
   whileInView={{
-    // Layer2 grows to full height, “dropping” from top
-    backgroundSize: '100% 100%, 100% 100%',
+    // Slide gradient into place
+    backgroundPosition: '0% 0%, 0% 0%',
   }}
   transition={{
     delay: 0.8,
@@ -79,6 +77,7 @@ const Trust: React.FC = () => {
 >
   Your Brand’s Presence.
 </motion.span>
+
 
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

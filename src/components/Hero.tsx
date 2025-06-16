@@ -19,10 +19,10 @@ const Hero: React.FC = () => {
 
 
 
-            <div className="mb-0 sm:mb-12 flex justify-center">
+            <div className="mb-0 sm:mb-10 flex justify-center">
               <img
-                      src="https://checkostyle.com/images/CS_logo.webp"
-                  alt="CheckoStyle Logo"
+                src="https://checkostyle.com/images/CS_logo.webp"
+                alt="CheckoStyle Logo"
                 className="w-36 h-auto opacity-90 sm:px-20"
               />
             </div>

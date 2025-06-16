@@ -85,7 +85,7 @@ const Trust: React.FC = () => {
           viewport={{ once: true }}
         >
           <div className="flex items-center justify-center space-x-8 mb-6">
-            <div className="flex flex-col items-center space-x-2">
+            <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
                 <span className="text-blue-600 font-bold text-sm">S</span>
               </div>

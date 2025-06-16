@@ -68,7 +68,7 @@ const PainProof: React.FC = () => {
 
           {/* CheckoStyle - Solution */}
           <div className="relative">
-            <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-1">
+            <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full font-semibold flex items-center space-x-1">
               <TrendingUp className="h-4 w-4" />
               <span>14.2% CVR in 72 hours</span>
             </div>
@@ -89,7 +89,7 @@ const PainProof: React.FC = () => {
               <div className="mt-6 bg-gradient-to-r from-green-500 to-green-600 h-12 rounded-lg flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold">Secure Checkout →</span>
               </div>
-              <div className="mt-4 space-y-2 text-sm text-green-700">
+              <div className="mt-4 space-y-2 text-green-700">
                
               </div>
             </div>

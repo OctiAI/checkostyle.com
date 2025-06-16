@@ -87,7 +87,7 @@ const Trust: React.FC = () => {
           <div className="flex flex-col sm:flex-row sm:items-center justify-center space-x-8 mb-6 gap-4 sm:gap-0">
             <div className="flex items-center space-x-2 ml-8 ">
               <div className="w-6 h-6 bg-white rounded-md flex items-center justify-center">
-                <span className="text-blue-600 font-bold text-sm">S</span>
+                <span className="text-blue-600 font-bold">S</span>
               </div>
               <span>Stripe Security</span>
             </div>

@@ -35,8 +35,7 @@ const Pricing: React.FC = () => {
         'Custom CSS',
         'DFY Bonus Templates',
       ],
-      cta: 'Get Pro Plan
-',
+      cta: 'Get Pro Plan',
       popular: false,
       color: 'from-green-500 to-green-600',
     },

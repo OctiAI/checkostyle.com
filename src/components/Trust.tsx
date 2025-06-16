@@ -93,11 +93,11 @@ const Trust: React.FC = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Shield className="h-6 w-6 text-green-400" />
-              <span className="text-sm">SOC 2 Compliant</span>
+              <span>SOC 2 Compliant</span>
             </div>
             <div className="flex items-center space-x-2">
               <CheckCircle className="h-6 w-6 text-green-400" />
-              <span className="text-sm">99.9% Uptime SLA</span>
+              <span>99.9% Uptime SLA</span>
             </div>
           </div>
           <h3 className="text-2xl font-bold mb-2">Your Payments Stay With Stripe</h3>

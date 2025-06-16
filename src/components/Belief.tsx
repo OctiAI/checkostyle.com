@@ -35,7 +35,7 @@ const Belief: React.FC = () => {
             You've Done the Hard Part.
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">
-              Now Fix the <span className="itatic">Final Step.</span>
+              Now Fix the <span className="italic">Final Step.</span>
             </span>
           </h2>
         </motion.div>

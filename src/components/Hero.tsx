@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
 
         <div className="flex flex-col items-center">
             <motion.button
-              className="w-full sm:w-auto bg-[#E63946] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center space-x-2 px-20 shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300 mb-4" 
+              className="w-full sm:w-auto bg-[#E63946] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300 mb-4" 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

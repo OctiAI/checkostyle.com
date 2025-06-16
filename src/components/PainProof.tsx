@@ -32,7 +32,7 @@ const PainProof: React.FC = () => {
 
         <motion.div
           className="grid lg:grid-cols-2 gap-12 items-center mb-16"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}

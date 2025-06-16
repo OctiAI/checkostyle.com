@@ -56,7 +56,7 @@ const Belief: React.FC = () => {
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
-                className="flex items-start space-x-4 bg-white rounded-2xl p-6 border border-gray-200 shadow-lg">
+                className="flex items-start space-x-4 bg-white rounded-2xl p-6 border border-gray-200 shadow-lg"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}

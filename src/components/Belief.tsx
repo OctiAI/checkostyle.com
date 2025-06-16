@@ -11,7 +11,7 @@ const Belief: React.FC = () => {
     },
     {
       icon: Code,
-      title: "No dev required", 
+      title: "Launch with zero coding", 
       description: "Drag, drop, done. Our visual builder handles all the technical stuff."
     },
     {

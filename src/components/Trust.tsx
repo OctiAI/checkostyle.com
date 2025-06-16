@@ -40,14 +40,9 @@ const Trust: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6  mx-auto max-w-4xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-700">
-              Stripe
-            </span>  Secure.&nbsp;
-            
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-             CheckoStyle
-            </span> Optimized.<br />  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">Your Brand’s Presence.</span>
+              Stripe </span>  Secure.&nbsp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> CheckoStyle </span> Optimized.<br />  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">Your Brand’s Presence.</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Built for founders who care about conversions.

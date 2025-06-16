@@ -53,14 +53,14 @@ const Transformation: React.FC = () => {
             <div className="grid grid-cols-3 gap-4">
               <div className="bg-white rounded-xl p-4 text-center border border-gray-200 shadow-sm">
                 <div className="text-2xl font-bold text-red-500 mb-1">7%</div>
-                <div className="text-sm text-gray-600">Before CVR</div>
+                <div className="text-gray-600">Before CVR</div>
               </div>
               <div className="flex items-center justify-center">
                 <TrendingUp className="h-8 w-8 text-green-500" />
               </div>
               <div className="bg-white rounded-xl p-4 text-center border border-green-400 shadow-lg">  
                 <div className="text-2xl font-bold text-green-600 mb-1">14.2%</div>
-                <div className="text-sm text-gray-600">After CVR</div>
+                <div className="text-gray-600">After CVR</div>
               </div>
             </div>
           </motion.div>

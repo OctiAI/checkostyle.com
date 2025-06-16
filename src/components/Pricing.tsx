@@ -217,7 +217,7 @@ const Pricing: React.FC = () => {
             </h3>
           </div>
           <p className="text-gray-700 text-lg">
-            If CheckoStyle's DFY doesn't increase your conversion rate within 30 days,
+            If CheckoStyle doesn't increase your conversion rate within 30 days,
             we'll refund every penny.
             <br />
             <strong>No questions asked.</strong></p>

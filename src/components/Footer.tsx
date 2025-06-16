@@ -25,11 +25,11 @@ const Footer: React.FC = () => {
             <div className="flex space-x-6">
               <div className="flex items-center space-x-2">
                 <Shield className="h-5 w-5 text-green-400" />
-                <span className="text-sm text-gray-300">Stripe Certified</span>
+                <span className="text-gray-300">Stripe Certified</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="h-5 w-5 text-blue-400" />
-                <span className="text-sm text-gray-300">5-Min Setup</span>
+                <span className="text-gray-300">5-Min Setup</span>
               </div>
             </div>
           </div>

@@ -132,7 +132,7 @@ const Pricing: React.FC = () => {
     </button>
 
     {/* Label: Annual */}
-    <span className="text-sm font-medium text-gray-800">Annual</span>
+    <span className="font-medium text-gray-800">Annual</span>
   </div>
 </div>
 

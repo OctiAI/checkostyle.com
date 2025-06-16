@@ -113,7 +113,7 @@ const Pricing: React.FC = () => {
 <div className="w-full flex justify-end mb-6 lg:mb-8">
   <div className="flex items-center space-x-4">
     {/* Label: Monthly */}
-    <span className="text-sm font-medium text-gray-800">Monthly</span>
+    <span className="font-medium text-gray-800">Monthly</span>
 
     {/* Toggle Switch */}
     <button

@@ -151,7 +151,7 @@ const Pricing: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ scale: 1.5 }}
               >
                 {/* Badges */}
                 {plan.name === 'DFY' && (

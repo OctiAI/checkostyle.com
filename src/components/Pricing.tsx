@@ -175,7 +175,7 @@ ${plan.name === 'Enterprise' ? 'order-4 lg:order-4' : ''}
 
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
-                  <p className="text-gray-600 mb-4">{description}</p>
+                  <p className="text-gray-600 text-2xl mb-4">{description}</p>
                   <div className="mb-4">
                     <span className="text-4xl font-bold text-gray-900">{price}</span>
                     <span className="text-gray-600">{period}</span>

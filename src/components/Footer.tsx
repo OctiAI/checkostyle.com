@@ -59,10 +59,10 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-400 text-sm">
+          <div className="text-gray-400">
             © 2025 CheckoStyle. All rights reserved.
           </div>
-          <div className="flex space-x-6 text-sm text-gray-400 mt-4 md:mt-0">
+          <div className="flex space-x-6 text-gray-400 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-white transition-colors">Cookies</a>

@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
               <img
                 src="https://checkostyle.com/images/CS_logo.webp"
                 alt="CheckoStyle Logo"
-                className="w-20 me:w-36 h-auto opacity-90"
+                className="w-20 lg:w-36 h-auto opacity-90"
               />
             </div>
           

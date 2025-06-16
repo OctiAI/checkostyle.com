@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
              <span style={{ color: '#E63946' }}>Your </span> Stripe Checkout
             <br />Might Be&nbsp;
 
-            <span className="text-rose-500">
+            <span className="text-rose-700">
               Killing
             </span>
             <br />

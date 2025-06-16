@@ -24,7 +24,7 @@ const Pricing: React.FC = () => {
       name: 'Pro',
       price: '$129',
       period: '/month',
-      description: 'Highest Quality Design Menu',
+      description: ' $1548/year',
       features: [
         '5 Designed Checkouts',
         'Unlimited Products',

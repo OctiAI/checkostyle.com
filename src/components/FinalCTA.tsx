@@ -22,7 +22,7 @@ const FinalCTA: React.FC = () => {
             <span className="font-semibold">Every day you wait & click ignore = money forever lost.</span>
           </motion.div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight max-w-60">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight max-w-80">
             Every Click You Lose at Checkout
     
             Is Money You <span className="text-red-600">Earned</span>— 

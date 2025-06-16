@@ -51,7 +51,7 @@ const Pricing: React.FC = () => {
         'Unlimited Revisions',
         'Satisfaction Guarantee',
       ],
-      cta: 'Order DFY Service',
+      cta: 'Launch Now',
       popular: true,
       color: 'from-purple-500 to-purple-600',
     },

@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-        <div className="flex sm:flex-row gap-50 justify-end">
+        <div className="flex sm:flex-row gap-20 justify-end">
 
           <div>
             <h3 className="font-bold text-white mb-4">Product</h3>

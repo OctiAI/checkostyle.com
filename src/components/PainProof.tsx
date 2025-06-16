@@ -60,7 +60,7 @@ const PainProof: React.FC = () => {
               <div className="mt-6 bg-blue-600 h-12 rounded-lg flex items-center justify-center">
                 <span className="text-white font-semibold">Complete Payment</span>
               </div>
-              <div className="mt-4 space-y-2 text-sm text-gray-500">
+              <div className="mt-4 space-y-2 text-gray-500">
             
               </div>
             </div>

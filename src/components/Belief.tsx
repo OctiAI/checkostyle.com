@@ -64,7 +64,7 @@ const Belief: React.FC = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl p-3 flex-shrink-0">
-                  <benefit.icon className="h-6 w-6 text-white align-items-flex-end" />
+                  <benefit.icon className="h-6 w-6 text-white self-end" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">{benefit.title}</h3>

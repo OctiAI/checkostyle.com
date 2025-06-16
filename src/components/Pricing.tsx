@@ -143,10 +143,10 @@ const Pricing: React.FC = () => {
               <motion.div
                 key={index}
                 className={`relative flex flex-col h-full bg-white rounded-2xl border-2 ${
-                  plan.popular
-                    ? 'border-green-300 shadow-xl'
-                    : 'border-gray-200 shadow-lg'
-                } p-8 transition-all duration-300 hover:shadow-2xl`}
+    plan.popular ? 'border-green-300 shadow-xl' : 'border-gray-200 shadow-lg'
+  } p-8 transition-all duration-300 hover:shadow-2xl ${
+    plan.name === 'Tester' ? 'order-3 lg:order-1' : ''
+  }`
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1 }}

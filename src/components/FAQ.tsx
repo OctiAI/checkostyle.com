@@ -114,7 +114,7 @@ const faqs = [
             Book a free 15-minute call with our team. We'll answer your questions and show you exactly how CheckoStyle can boost your conversions.
           </p>
           <motion.button
-            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 x-60"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 x-48"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

@@ -16,7 +16,7 @@ const Pricing: React.FC = () => {
         'Live Support',
         'One Checkout Page',
       ],
-      cta: 'Start with Tester',
+      cta: 'Get access for $9',
       popular: false,
       color: 'from-blue-500 to-blue-600',
     },

@@ -166,7 +166,7 @@ ${plan.name === 'Enterprise' ? 'order-4 lg:order-4' : ''}
                 )}
                 {plan.name === 'Tester' && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-red-100 text-red-600 px-8 py-2 rounded-full font-bold flex items-center space-x-1">
+                    <div className="bg-red-100 text-red-600 px-4 py-2 rounded-full font-bold flex items-center space-x-1">
                       <Star className="h-4 w-4" />
                       <span>Most Popular</span>
                     </div>

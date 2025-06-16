@@ -136,7 +136,7 @@ const Pricing: React.FC = () => {
   </div>
 </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 items-stretch">
+        <div className="grid lg:grid-cols-4 gap-8 items-stretch">
           {plans.map((plan, index) => {
             const { price, period, description } = getPriceInfo(plan);
             return (

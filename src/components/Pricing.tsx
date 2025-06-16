@@ -81,7 +81,7 @@ const Pricing: React.FC = () => {
       case 'Pro':
         return { price: '$79', period: '/month', description: '($948/year)' };
       case 'DFY':
-        return { price: '39', period: '/month ', description: ' $948/year (Best Value)' };
+        return { price: '$39', period: '/month ', description: ' $948/year (Best Value)' };
       default:
         return { price: plan.price, period: plan.period, description: plan.description };
     }

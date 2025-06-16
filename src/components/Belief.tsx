@@ -54,7 +54,7 @@ const Belief: React.FC = () => {
           </p>
             
             {benefits.map((benefit, index) => (
-                          <motion.div
+               <motion.div
                 key={index}
                 className="flex items-center space-x-4 bg-white rounded-2xl p-6 border border-gray-200 shadow-lg"
                 initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ const Belief: React.FC = () => {
                   <benefit.icon className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-base font-semibold text-gray-900">{benefit.title}</h3>
+                  <h3 className="text-base font-bold text-gray-900">{benefit.title}</h3>
                 </div>
             </motion.div>
 

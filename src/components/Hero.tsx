@@ -92,15 +92,15 @@ const Hero: React.FC = () => {
             <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
               <span className="text-white font-bold">S</span>
             </div>
-            <span className="text-sm text-gray-700 font-medium">Seemless Integration</span>
+            <span className="text-gray-700 font-medium">Seemless Integration</span>
           </div>
           <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
             <Shield className="h-5 w-5 text-green-500" />
-            <span className="text-sm text-gray-700 font-medium">30-Day Guarantee</span>
+            <span className="text-gray-700 font-medium">30-Day Guarantee</span>
           </div>
           <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
             <Clock className="h-5 w-5 text-blue-500" />
-            <span className="text-sm text-gray-700 font-medium">5-Min Setup</span>
+            <span className="text-gray-700 font-medium">5-Min Setup</span>
           </div>
         </motion.div>
           

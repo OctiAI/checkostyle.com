@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
         >
           <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
             <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-              <span className="text-white text-xs font-bold">S</span>
+              <span className="text-white font-bold">S</span>
             </div>
             <span className="text-sm text-gray-700 font-medium">Seemless Integration</span>
           </div>

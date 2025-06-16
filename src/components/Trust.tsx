@@ -40,7 +40,7 @@ const Trust: React.FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6  mx-auto max-w-4xl">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6  mx-auto max-w-8xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-700">
               Stripe </span>  Secure. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> CheckoStyle </span> Optimized. <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600"><br/>Your Brand’s Presence.</span>
           </h2>

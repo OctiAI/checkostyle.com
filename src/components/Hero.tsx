@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
 
             <div className="mb-0 sm:mb-12 flex justify-center">
               <img
-                      src="https://checkostyle.com/assets"
+                      src="https://checkostyle.com/public/assets"
                   alt="CheckoStyle Logo"
                 className="w-36 h-auto opacity-90"
               />

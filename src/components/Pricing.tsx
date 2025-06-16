@@ -142,12 +142,7 @@ const Pricing: React.FC = () => {
             return (
               <motion.div
                 key={index}
-                className={`relative flex flex-col h-full bg-white rounded-2xl border-2 
-                    ${plan.name === 'Tester' ? 'order-3 lg:order-1' : ''
-  }`}plan.name === 'Tester' ? 'order-3 lg:order-1' : ''
-    
-
-                ${
+                className={`relative flex flex-col h-full bg-white rounded-2xl border-2 ${
                   plan.popular
                     ? 'border-green-300 shadow-xl'
                     : 'border-gray-200 shadow-lg'

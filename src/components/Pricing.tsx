@@ -89,7 +89,7 @@ const Pricing: React.FC = () => {
 
   return (
     <section className="py-20 bg-white" id="pricing">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px- lg:mx-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <motion.div
           className="text-center mb-8"
           initial={{ opacity: 0, y: 30 }}
@@ -136,7 +136,7 @@ const Pricing: React.FC = () => {
   </div>
 </div>
 
-        <div className="grid lg:grid-cols-4 gap-8 items-stretch">
+        <div className="grid lg:grid-cols-2 gap-8 items-stretch">
           {plans.map((plan, index) => {
             const { price, period, description } = getPriceInfo(plan);
             return (

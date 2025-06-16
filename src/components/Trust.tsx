@@ -69,7 +69,7 @@ const Trust: React.FC = () => {
                 <feature.icon className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>

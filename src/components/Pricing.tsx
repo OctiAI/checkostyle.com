@@ -105,7 +105,7 @@ const Pricing: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Every plan pays for itself with just a few extra sales.
+            Every plan pays for itself..
           </p>
         </motion.div>
 

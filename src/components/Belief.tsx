@@ -54,23 +54,22 @@ const Belief: React.FC = () => {
           </p>
             
             {benefits.map((benefit, index) => (
-             <motion.div
+              <motion.div
                 key={index}
-                className="flex items-center space-x-4 bg-white rounded-2xl p-6 border border-gray-200 shadow-lg"
+                className="displayflex items-start space-x-4 bg-white rounded-2xl p-6 border border-gray-200 shadow-lg"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
               >
-                <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl p-3 flex-shrink-0 flex items-center justify-center">
-                  <benefit.icon className="h-6 w-6 text-white" />
+                <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl p-3 flex-shrink-0">
+                  <benefit.icon className="h-6 w-6 text-white self-center" />
                 </div>
-                <div>
-                  <h3 className="text-base font-semibold text-gray-900">{benefit.title}</h3>
+                <div className="h-full">
+                  <h3 className="text-xl font-bold text-gray-900">{benefit.title}</h3>
                 </div>
-            </motion.div>
-
+              </motion.div>
             ))}  
 
           <p className="text-xl md:text-2xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed mb-14 text-center">

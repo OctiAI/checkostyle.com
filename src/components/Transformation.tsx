@@ -41,7 +41,7 @@ const Transformation: React.FC = () => {
                   <p className="text-gray-600">SaaS Founder</p>
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-700 leading-relaxed">
+              <blockquote className="text-lg text-gray-700">
                 "I was losing sleep over my 7% conversion rate. Same traffic, same product, but customers kept bouncing at checkout. 
                 <br /><br />
                 Switched to CheckoStyle and hit <strong className="text-green-600">14.2% CVR</strong> in the first week. 

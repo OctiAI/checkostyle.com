@@ -35,7 +35,6 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-        <div >
 
           <div>
             <h3 className="font-bold text-white mb-4">Product</h3>
@@ -69,7 +68,6 @@ const Footer: React.FC = () => {
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-white transition-colors">Cookies</a>
           </div>
-        </div>
       </div>
     </footer>
   );

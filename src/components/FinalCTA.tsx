@@ -63,7 +63,7 @@ const FinalCTA: React.FC = () => {
               </div>
             </div>
 
-            <Clock className="h-12 w-12 text-orange-500 mx-auto mb-4 mt-6" />
+            <Clock className="h-12 w-12 text-orange-500 mx-auto mb-4" />
             <div className="text-3xl font-bold text-orange-600 mb-2">$3,247</div>
             <div className="text-gray-700">average monthly revenue lost per 1k visitors</div>
           </div>

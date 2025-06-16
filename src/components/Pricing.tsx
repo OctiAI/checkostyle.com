@@ -186,7 +186,7 @@ ${plan.name === 'Enterprise' ? 'order-4 lg:order-4' : ''}
                   {plan.features.map((feature, fi) => (
                     <li key={fi} className="flex items-center space-x-3">
                       <Check className="h-5 w-5 text-green-500 flex-shrink-0" />
-                      <span className="text-gray-700 text-sm">{feature}</span>
+                      <span className="text-gray-700 text-text-">{feature}</span>
                     </li>
                   ))}
                 </ul>

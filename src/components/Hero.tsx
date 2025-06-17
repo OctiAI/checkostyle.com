@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         <div className="text-center">
             <div className="mb-0 sm:mb-12 flex justify-center">
               <img
-                src="https://checkostyle.com/images/CS_logo.webp"
+                src="https://checkostyle.com/images/CS_icon.webp"
                 alt="CheckoStyle Logo"
                 className="w-28 sm:w-36 h-auto opacity-90"
               />

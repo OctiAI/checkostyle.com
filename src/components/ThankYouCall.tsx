@@ -31,7 +31,7 @@ const ThankYouCall = () => {
 
         {/* Billing toggle */}
         <div className="w-full flex justify-end mb-6 lg:mb-8">
-          <div className="flex items-center space-x-4  md:mr-26">
+          <div className="flex items-center space-x-4 mr-6 md:mr-26">
             {/* Label: Monthly */}
             <span className="font-medium text-gray-800">Monthly</span>
             {/* Toggle Switch */}

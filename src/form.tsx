@@ -7,7 +7,5 @@ import Form from './components/Form';
 
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
       <Form/>
-  </StrictMode>
 );

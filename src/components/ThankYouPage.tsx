@@ -60,7 +60,8 @@ const ThankYouPage = () => {
 
                     {/* Cross-out line animating right-to-left */}
                     <motion.div
-                      className="text-2xl text-gray-400 line-through"
+                      className="absolute bottom-6 left-0 right-0 h-1 text-2xl text-gray-400 line-through"
+
                       initial={{ scaleX: 1 }}
                       animate={{ scaleX: 0 }}
                       transition={{ duration: 0.6, ease: 'easeInOut' }}

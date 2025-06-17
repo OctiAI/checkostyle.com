@@ -51,7 +51,7 @@ const ThankYouPage = () => {
       animate={{ opacity: 1, x: 0, color: '#9CA3AF', scale: 1 }}
       transition={{ duration: 0.8 }}
     >
-      Normally $499
+     $499
     </motion.span>
     <motion.span
       className="text-5xl font-bold text-orange-600"

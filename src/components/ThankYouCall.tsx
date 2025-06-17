@@ -31,31 +31,26 @@ const ThankYouCall = () => {
 
         {/* Billing toggle */}
         <div className="w-full flex justify-end mb-6 lg:mb-8">
-  <div className="flex items-center space-x-4">
-    {/* Label: Monthly */}
-    <span className="font-medium text-gray-800">Monthly</span>
-
-    {/* Toggle Switch */}
-    <button
-      onClick={() =>
-        setAnnual(false ? true : false)
-      }
-
-      className={`relative w-14 h-7 flex items-center rounded-full p-1 transition-colors duration-300 ${
-        billingCycle === 'yearly' ? 'bg-green-400' : 'bg-gray-300'
-      }`}
-    >
-      <span
-        className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-transform duration-300 ${
-          billingCycle === 'yearly' ? 'translate-x-7' : 'translate-x-0'
-        }`}
-      />
-    </button>
-
-    {/* Label: Annual */}
-    <span className="font-medium text-gray-800">Annual</span>
-  </div>
-</div>
+          <div className="flex items-center space-x-4">
+            {/* Label: Monthly */}
+            <span className="font-medium text-gray-800">Monthly</span>
+        
+            {/* Toggle Switch */}
+            <button
+              onClick={() =>
+                setAnnual(false ? true : false)
+              }
+              className={`relative w-14 h-7 flex items-center rounded-full p-1 transition-colors duration-300 ${
+                billingCycle === 'yearly' ? 'bg-green-400' : 'bg-gray-300'
+              }`}
+            >
+              <span
+                className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-transform duration-300 ${
+                  billingCycle === 'yearly' ? 'translate-x-7' : 'translate-x-0'
+                }`}
+              />
+            </button>
+       
 
         {/* Offer Box */}
         <div className="max-w-2xl mx-auto">

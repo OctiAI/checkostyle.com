@@ -57,7 +57,7 @@ const ThankYouCall = () => {
           <div className="relative bg-white rounded-2xl border-2 border-green-300 shadow-xl p-8 transition-all duration-300 hover:shadow-2xl">
             {/* Popular Badge */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-2 py-2 rounded-full font-bold flex items-center space-x-2">
+              <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full font-bold flex items-center space-x-2">
                 <Star className="h-4 w-4" />
                 <span>Limited Time</span>
               </div>

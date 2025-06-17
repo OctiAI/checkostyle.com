@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Check, Star, Crown, Calendar, Zap } from 'lucide-react';
 
 const ThankYouCall = () => {
+  const [annual, setAnnual] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
       <div className="max-w-4xl mx-auto px-4 py-16">
@@ -27,6 +29,26 @@ const ThankYouCall = () => {
           </p>
         </div>
 
+        {/* Billing toggle */}
+        <div className="flex justify-center mb-6 space-x-4">
+          <button
+            onClick={() => setAnnual(false)}
+            className={`px-4 py-2 rounded-full ${
+              !annual ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-700'
+            }`}
+          >
+            Monthly
+          </button>
+          <button
+            onClick={() => setAnnual(true)}
+            className={`px-4 py-2 rounded-full ${
+              annual ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-700'
+            }`}
+          >
+            Annual
+          </button>
+        </div>
+
         {/* Offer Box */}
         <div className="max-w-2xl mx-auto">
           <div className="relative bg-white rounded-2xl border-2 border-green-300 shadow-xl p-8 transition-all duration-300 hover:shadow-2xl">
@@ -41,18 +63,22 @@ const ThankYouCall = () => {
             <div className="text-center mb-6">
               <h3 className="text-3xl font-bold text-gray-900 mb-2">Pro Plan</h3>
               <p className="text-gray-600 mb-4">Full Access to all Features</p>
+
+              {/* Price display */}
               <div className="mb-4">
-                <div className="flex items-center justify-center space-x-4">
-                  <div className="text-center">
-                    <span className="text-4xl font-bold text-gray-900">$129</span>
-                    <span className="text-gray-600">/month</span>
-                  </div>
-                  <div className="text-2xl text-gray-400">or</div>
-                  <div className="text-center">
-                    <span className="text-4xl font-bold text-green-600">$79</span>
-                    <span className="text-gray-600">/month</span>
-                    <div className="text-sm text-green-600 font-medium">billed annually</div>
-                  </div>
+                <div className="text-center">
+                  {!annual ? (
+                    <>
+                      <span className="text-4xl font-bold text-gray-900">$129</span>
+                      <span className="text-gray-600">/month</span>
+                    </>
+                  ) : (
+                    <>
+                      <span className="text-4xl font-bold text-green-600">$79</span>
+                      <span className="text-gray-600">/month</span>
+                      <div className="text-sm text-green-600 font-medium">billed annually</div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

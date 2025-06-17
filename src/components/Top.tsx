@@ -230,4 +230,4 @@ ${plan.name === 'Enterprise' ? 'order-4 lg:order-4' : ''}
   );
 };
 
-export default Pricing;
+export default Top;

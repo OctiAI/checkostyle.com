@@ -61,7 +61,7 @@ const ThankYouPage = () => {
                       className="absolute bottom-6 left-0 right-0 h-1 bg-gray-400 mx-auto"
                       style={{ left: '50%', width: '100%' }}
                       initial={{ scaleX: 1 }}
-                      animate={{ scaleX: 0 }}}
+                      animate={{ scaleX: 0 }}
                       transition={{ duration: 0.6, ease: 'easeInOut' }}
                     />
                     {/* New price flying in */}

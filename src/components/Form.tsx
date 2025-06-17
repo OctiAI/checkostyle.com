@@ -30,7 +30,7 @@ const FormPage = () => {
                   height: '432px',
                   border: 'none',
                 }}  
-                data-redirect="https://checkostyle.com/ThankYouPage"
+                data-redirect="https://checkostyle.com/ThankYouPage.html"
                 id="inline-kD2OmZH9OUzy6bR8FV0P" 
                 data-layout="{'id':'INLINE'}"
                 data-trigger-type="alwaysShow"

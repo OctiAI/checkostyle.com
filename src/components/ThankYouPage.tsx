@@ -41,7 +41,7 @@ const ThankYouPage = () => {
   <motion.span
     className="text-5xl font-bold text-orange-600"
   >
-    Normally $499
+    $499
   </motion.span>
 ) : (
   <div className="flex items-center justify-center space-x-4">

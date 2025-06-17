@@ -40,11 +40,11 @@ const ThankYouPage = () => {
                 {!priceChanged ? (
                   <motion.span
                     className="text-5xl font-bold text-orange-600"
-                    initial={{ opacity: 1, x: 20 }}
+                    initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, ease: 'easeOut' }}
                   >
-                
+                    $499
                   </motion.span>
                 ) : (
                   <>
@@ -52,7 +52,7 @@ const ThankYouPage = () => {
                     <motion.span
                       className="text-5xl font-bold text-orange-600 absolute"
                       initial={{ x: 0, scale: 1, opacity: 1 }}
-                      animate={{ x: -20, scale: 0.8, opacity: 1 }}
+                      animate={{ x: -20, scale: 0.8, opacity: 0 }}
                       transition={{ duration: 0.6, ease: 'easeInOut' }}
                     >
                       $499
@@ -62,7 +62,7 @@ const ThankYouPage = () => {
                     <motion.div
                       className="absolute bottom-6 left-0 right-0 h-1 bg-gray-400"
                       initial={{ scaleX: 1 }}
-                      animate={{ scaleX: 1 }}
+                      animate={{ scaleX: 0 }}
                       transition={{ duration: 0.6, ease: 'easeInOut' }}
                       style={{ transformOrigin: 'right' }}
                     />

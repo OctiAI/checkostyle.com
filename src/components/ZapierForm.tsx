@@ -103,7 +103,7 @@ const ZapierForm = () => {
           value={formData.email}
           onChange={handleChange}
           placeholder="you@example.com"
-          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400  mb-10"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 mb-12"
         />
       </div>
 

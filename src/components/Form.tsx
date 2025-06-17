@@ -1,117 +1,75 @@
 import React from 'react';
-import { Check, Star, Crown, Calendar, Zap } from 'lucide-react';
+import { Shield, Check, RotateCcw } from 'lucide-react';
 
-const ThankYouCall = () => {
+const FormPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
       <div className="max-w-4xl mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center mb-6">
-            <div className="bg-gradient-to-r from-green-500 to-blue-600 p-3 rounded-2xl">
-              <Calendar className="h-8 w-8 text-white" />
-            </div>
-          </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Thanks! Your strategy call
+            Your Checkout Is
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">
-              is confirmed.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
+              Leaking Sales
             </span>
+            —Let's Fix It.
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-8">
-            Want to fix your checkout today?
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Skip the wait—unlock full builder access and brand your Stripe checkout in minutes.
+          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8">
+            Book a 15-minute strategy call and discover how a branded, high-converting checkout can double your CVR.
           </p>
         </div>
 
-        {/* Offer Box */}
-        <div className="max-w-2xl mx-auto">
-          <div className="relative bg-white rounded-2xl border-2 border-green-300 shadow-xl p-8 transition-all duration-300 hover:shadow-2xl">
-            {/* Popular Badge */}
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-full font-bold flex items-center space-x-2">
-                <Star className="h-4 w-4" />
-                <span>Limited Time</span>
-              </div>
-            </div>
-
-            <div className="text-center mb-6">
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">Pro Plan</h3>
-              <p className="text-gray-600 mb-4">Full Access to all Features</p>
-              <div className="mb-4">
-                <div className="flex items-center justify-center space-x-4">
-                  <div className="text-center">
-                    <span className="text-4xl font-bold text-gray-900">$129</span>
-                    <span className="text-gray-600">/month</span>
-                  </div>
-                  <div className="text-2xl text-gray-400">or</div>
-                  <div className="text-center">
-                    <span className="text-4xl font-bold text-green-600">$79</span>
-                    <span className="text-gray-600">/month</span>
-                    <div className="text-sm text-green-600 font-medium">billed annually</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <ul className="space-y-3 mb-8">
-              {[
-                '5 Designed Checkouts',
-                'Unlimited Products',
-                'A/B Split Testing',
-                'Advanced Analytics including G-Analytics & Microsoft Clarity for free',
-                'Priority Support',
-                'Advanced Builder',
-                'Custom CSS',
-                'DFY Bonus Templates'
-              ].map((feature, index) => (
-                <li key={index} className="flex items-center space-x-3">
-                  <Check className="h-5 w-5 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700">{feature}</span>
-                </li>
-              ))}
-            </ul>
-
-            <button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 hover:scale-105 mb-4">
-              Get Pro Plan Now
-            </button>
-
-            {/* Special Note */}
-            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 border border-yellow-200">
-              <div className="flex items-center space-x-2 mb-2">
-                <Zap className="h-5 w-5 text-orange-500" />
-                <span className="font-semibold text-gray-900">Special Bonus</span>
-              </div>
-              <p className="text-gray-700 text-sm">
-                Any Pro subscription before your call comes with a <strong>free 1:1 audit</strong> (valued at $499). Cancel anytime.
-              </p>
+        {/* Form Container */}
+        <div className="max-w-2xl mx-auto mb-12">
+          <div className="bg-white rounded-2xl shadow-xl border-2 border-green-300 p-8">
+            <div className="bg-gray-50 rounded-xl p-4" style={{ minHeight: '432px' }}>
+              <iframe  src="https://link.greatlakesmarketingandsoftwaresolutions.com/widget/form/kD2OmZH9OUzy6bR8FV0P"
+                style={{
+                  width: '100%',
+                  height: '432px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                id="inline-kD2OmZH9OUzy6bR8FV0P" 
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="CS - Form"
+                data-height="432"
+                data-layout-iframe-id="inline-kD2OmZH9OUzy6bR8FV0P"
+                data-form-id="kD2OmZH9OUzy6bR8FV0P"
+                title="CS - Form"
+              />
             </div>
           </div>
         </div>
 
-        {/* Additional Trust Elements */}
-        <div className="mt-12 text-center">
-          <div className="flex items-center justify-center space-x-8 text-sm text-gray-600">
-            <div className="flex items-center space-x-2">
-              <Crown className="h-4 w-4 text-yellow-500" />
-              <span>30-Day Guarantee</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Check className="h-4 w-4 text-green-500" />
-              <span>Cancel Anytime</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Zap className="h-4 w-4 text-blue-500" />
-              <span>Instant Access</span>
-            </div>
+        {/* Trust Badges */}
+        <div className="flex items-center justify-center space-x-8">
+          <div className="flex items-center space-x-2 text-gray-700">
+            <Shield className="h-5 w-5 text-green-500" />
+            <span className="font-medium">100% secure</span>
+          </div>
+          <div className="flex items-center space-x-2 text-gray-700">
+            <Check className="h-5 w-5 text-blue-500" />
+            <span className="font-medium">No obligation</span>
+          </div>
+          <div className="flex items-center space-x-2 text-gray-700">
+            <RotateCcw className="h-5 w-5 text-purple-500" />
+            <span className="font-medium">7-day guarantee</span>
           </div>
         </div>
       </div>
+
+      {/* Form Embed Script */}
+      <script src="https://link.greatlakesmarketingandsoftwaresolutions.com/js/form_embed.js"></script>
     </div>
   );
 };
 
-export default ThankYouCall;
+export default FormPage;

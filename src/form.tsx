@@ -1,0 +1,41 @@
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+
+
+import React from 'react';
+import Hero from './components/Hero';
+import PainProof from './components/PainProof';
+import Transformation from './components/Transformation';
+import Trust from './components/Trust';
+import Belief from './components/Belief';
+import Pricing from './components/Pricing';
+import FAQ from './components/FAQ';
+import FinalCTA from './components/FinalCTA';
+import Footer from './components/Footer';
+
+function App() {
+  return (
+    <div className="min-h-screen">
+      <Hero />
+      <PainProof />
+      <Transformation />
+      <Trust />
+      <Belief />
+      <Pricing />
+      <FAQ />
+      <FinalCTA />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+        <div className="min-h-screen">
+        </div>
+    <App />
+  </StrictMode>
+);

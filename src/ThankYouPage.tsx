@@ -7,6 +7,6 @@ import ThankYouPage from './components/ThankYouPage.tsx';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-      <Form/>
+      <ThankYouPage/>
     </StrictMode>
 );

@@ -31,7 +31,7 @@ const ThankYouPage = () => {
         {/* Main Offer */}
         <div className="max-w-3xl mx-auto mb-12">
           <div className="relative bg-white rounded-3xl border-4 border-orange-400 shadow-2xl p-6 transition-all duration-300">
-            <div className="text-center mb-8">s
+            <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 DFY Checkout Makeover
               </h2>

@@ -34,7 +34,6 @@ const ThankYouCall = () => {
           <div className="flex items-center space-x-4">
             {/* Label: Monthly */}
             <span className="font-medium text-gray-800">Monthly</span>
-        
             {/* Toggle Switch */}
             <button
               onClick={() =>
@@ -50,7 +49,10 @@ const ThankYouCall = () => {
                 }`}
               />
             </button>
-       
+          {/* Label: Annual */}
+          <span className="font-medium text-gray-800">Annual</span>
+        </div>
+      </div>
 
         {/* Offer Box */}
         <div className="max-w-2xl mx-auto">

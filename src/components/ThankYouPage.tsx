@@ -18,7 +18,7 @@ const ThankYouPage = () => {
           <div className="flex items-center justify-center mb-6">
             <div className="bg-gradient-to-r from-green-200 to-blue-300 rounded-full">
               <img
-                src="https://checkostyle.com/images/CS_logo.webp"
+                src="https://checkostyle.com/images/CS_icon.webp"
                 alt="CheckoStyle Logo"
                 className="w-28 sm:w-36 h-auto opacity-90"
               />

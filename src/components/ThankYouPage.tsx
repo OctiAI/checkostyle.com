@@ -120,13 +120,11 @@ const ThankYouPage = () => {
         </div>
 
         {/* Final Reminder */}
-        <div className="text-center mb-12">
+      <div className="text-center bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
           <p className="text-lg mb-4">
-            <strong>Last reminder:</strong> Take advantage of this offer before you close the page, or it&apos;s gone... forever...
+            <strong>Last reminder:</strong> Take advantage of this offer before you close the page, or it's gone.. forever…
           </p>
-          <p className="text-2xl font-script font-bold text-gray-900 background-color">
-            Looking forward to your success
-          </p>
+          <p className="text-2xl font-script">Looking forward to your success 🥂</p>
         </div>
       </div>
     </div>

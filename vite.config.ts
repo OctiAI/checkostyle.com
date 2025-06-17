@@ -10,6 +10,7 @@ export default defineConfig({
         main:    resolve(__dirname, 'index.html'),
         thankyou: resolve(__dirname, 'thankyoupage.html'),
         thankyouCall: resolve(__dirname, 'thankyoucall.html'),
+        bookacall: resolve(__dirname, 'bookacall.html'),        
       }
     }
   }

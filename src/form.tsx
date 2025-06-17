@@ -7,7 +7,6 @@ import Top from './components/Top';
 import Form from './components/Form';
 import Pitch from './components/Pitch';
 
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
         <div className="min-h-screen">

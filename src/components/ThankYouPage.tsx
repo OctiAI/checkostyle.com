@@ -35,7 +35,7 @@ const ThankYouPage = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 DFY Checkout Makeover
               </h2>
-              <div className="mb-4 h-16 flex items-center justify-center relative">
+              <div className="mb-2 h-16 flex items-center justify-center relative">
                 {!priceChanged ? (
                   <span className="text-5xl font-bold text-orange-600 transition-all duration-500">
                     $499

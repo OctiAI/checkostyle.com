@@ -36,11 +36,9 @@ const ThankYouCall = () => {
             <span className="font-medium text-gray-800">Monthly</span>
             {/* Toggle Switch */}
             <button
-              onClick={() =>
-                setAnnual(false ? true : false)
-              }
+            onClick={() => setAnnual(prev => !prev)}
               className={`relative w-14 h-7 flex items-center rounded-full p-1 transition-colors duration-300 ${
-                billingCycle === 'yearly' ? 'bg-green-400' : 'bg-gray-300'
+               annual ? 'bg-green-400' : 'bg-gray-300'
               }`}
             >
               <span

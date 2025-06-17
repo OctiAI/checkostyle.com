@@ -92,7 +92,7 @@ const FinalCTA: React.FC = () => {
             whileTap={{ scale: 0.95 }}
                 onClick={() => {
                     setTimeout(() => {
-                      window.location.href = `https://checkostyle.com/checkout.html?=CSp-${plan.name}`;
+                      window.location.href = `https://checkostyle.com/checkout.html?=CSp-Tester`;
                     }, 200);
                   }}
           >

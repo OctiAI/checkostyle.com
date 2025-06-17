@@ -45,6 +45,10 @@ const ZapierForm = () => {
   };
 
   if (submitted) {
+        setTimeout(() => {
+      window.location.href = 'https://checkostyle.com/thankyoucall.html';
+    }, 200);
+    
     return (
       <div className="max-w-md mx-auto bg-white rounded-2xl shadow-lg p-8 text-center">
         <h2 className="text-2xl font-bold mb-4">Thanks!</h2>
@@ -52,9 +56,7 @@ const ZapierForm = () => {
       </div>
     );
 
-    setTimeout(() => {
-      window.location.href = 'https://checkostyle.com/thankyoucall.html';
-    }, 200);
+
   }
 
   return (

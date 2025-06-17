@@ -58,7 +58,7 @@ const ThankYouPage = () => {
                     </motion.span>
                     {/* Cross-out line animating right-to-left */}
                     <motion.div
-                      className="absolute bottom-6 h-1 bg-gray-400"
+                      className="absolute bottom-6 left-0 right-0 h-1 bg-gray-400 mx-auto"
                       style={{ left: '50%', width: '100%' }}
                       initial={{ width: '100%' }}
                       animate={{ width: 0, left: '50%' }}

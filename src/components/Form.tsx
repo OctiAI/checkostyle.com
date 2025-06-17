@@ -23,7 +23,7 @@ const FormPage = () => {
         {/* Form Container */}
         <div className="max-w-2xl mx-auto mb-12">
           <div className="bg-white rounded-2xl shadow-xl border-2 border-green-300">
-            <div className="bg-gray-50 rounded-xl" style={{ minHeight: '432px' }}>
+            <div className="bg-gray-50 rounded-2xl" style={{ minHeight: '432px' }}>
               <iframe  src="https://link.greatlakesmarketingandsoftwaresolutions.com/widget/form/kD2OmZH9OUzy6bR8FV0P"
                 style={{
                   width: '100%',

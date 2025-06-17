@@ -45,7 +45,7 @@ const ThankYouPage = () => {
                   >
                     $499
                   </motion.span>
-                )
+                ) : (
                    <>
                     {/* Animate old price shifting and fading */}
                     <motion.span

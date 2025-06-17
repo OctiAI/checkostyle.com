@@ -28,10 +28,10 @@ const FormPage = () => {
         <div className="max-w-2xl mx-auto mb-12">
           <div>
             <div className="bg-gray-50 rounded-2xl" style={{ minHeight: '432px' }}>
-              <iframe const container = document.getElementById('root')
-if (container) {
-  createRoot(container).render(<ZapierForm />)
-} />
+               <iframe
+  src="https://checkostyle.com/form"
+  style="width:100%;height:600px;border:none"
+></iframe
             </div>
           </div>
         </div>

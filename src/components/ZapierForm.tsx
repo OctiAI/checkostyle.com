@@ -111,7 +111,7 @@ const ZapierForm = () => {
       <button
         type="submit"
         disabled={submitting}
-        className=" w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-6 rounded-lg transition-opacity disabled:opacity-50"
+        className=" w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 mt-10 rounded-lg transition-opacity disabled:opacity-50"
       >
         {submitting ? 'Submitting…' : 'Book My Free Call'}
       </button>

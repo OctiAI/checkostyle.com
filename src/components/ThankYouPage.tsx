@@ -40,7 +40,7 @@ const ThankYouPage = () => {
                {!priceChanged ? (
   <motion.span
     className="text-5xl font-bold text-orange-600"
-    initial={{ opacity: 0.4, x: 20 }}
+    initial={{ opacity: 0.4, x: -40 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.6, ease: 'easeOut' }}
   >

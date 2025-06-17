@@ -24,14 +24,13 @@ const FormPage = () => {
         <div className="max-w-2xl mx-auto mb-12">
           <div>
             <div className="bg-gray-50 rounded-2xl" style={{ minHeight: '432px' }}>
-              <iframe  src="https://link.greatlakesmarketingandsoftwaresolutions.com/widget/form/kD2OmZH9OUzy6bR8FV0P"
+              <iframe  src="https://link.greatlakesmarketingandsoftwaresolutions.com/widget/form/kD2OmZH9OUzy6bR8FV0P?redirect=https://checkostyle.com/ThankYouPage"
                 style={{
                   width: '100%',
                   height: '432px',
                   border: 'none',
-                }}
-                  data-redirect="https://checkostyle.com/ThankYouPage"
-
+                }}  
+                data-redirect="https://checkostyle.com/ThankYouPage"
                 id="inline-kD2OmZH9OUzy6bR8FV0P" 
                 data-layout="{'id':'INLINE'}"
                 data-trigger-type="alwaysShow"

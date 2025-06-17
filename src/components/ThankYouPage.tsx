@@ -49,7 +49,7 @@ const ThankYouPage = () => {
       className="text-2xl text-gray-400 line-through"
       initial={{ opacity: 1, x: 120, color: '#EA580C', scale: 1.5  }}
       animate={{ opacity: 1, x: 0, color: '#9CA3AF', scale: 1 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 1.4 }}
     >
       Normally $499
     </motion.span>

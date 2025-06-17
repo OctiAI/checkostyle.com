@@ -31,7 +31,7 @@ const FormPage = () => {
                   <iframe
                   src="https://checkostyle.com/form"
                   style="width:100%;height:600px;border:none"
-                ></iframe
+                />
             </div>
           </div>
         </div>

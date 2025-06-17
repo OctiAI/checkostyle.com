@@ -1,11 +1,8 @@
 import React from 'react';
 import { Shield, Check, RotateCcw } from 'lucide-react';
-import { createRoot } from 'react-dom/client'
-import ZapierForm from './ZapierForm'
+import ZapierForm from './ZapierForm';
 
-
-
-const FormPage = () => {
+const FormPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
       <div className="max-w-4xl mx-auto px-4 py-16">
@@ -20,21 +17,14 @@ const FormPage = () => {
             —Let's Fix It.
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8">
-            Book a 15-minute strategy call and discover how a branded, high-converting checkout can double your CVR.
+            Book a 15-minute strategy call and discover how a branded, high-converting
+            checkout can double your CVR.
           </p>
         </div>
 
-        {/* Form Container */}
+        {/* Inline Zapier form */}
         <div className="max-w-2xl mx-auto mb-12">
-          <div>
-            <div className="bg-gray-50 rounded-2xl" style={{ minHeight: '432px' }}>
-                <iframe
-                  src="./ZapierForm.tsx"
-                  className="w-full h-[600px] border-none rounded-2xl shadow-lg"
-                  title="Book My Free Call"
-                />
-            </div>
-          </div>
+          <ZapierForm />
         </div>
 
         {/* Trust Badges */}
@@ -53,8 +43,6 @@ const FormPage = () => {
           </div>
         </div>
       </div>
-
-      {/* Form Embed Script */}
     </div>
   );
 };

@@ -44,7 +44,7 @@ const ThankYouPage = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, ease: 'easeOut' }}
                   >
-                    $499
+                <span className="text-2xl text-gray-400 line-through">Normally $499</span>
                   </motion.span>
                 ) : (
                   <>

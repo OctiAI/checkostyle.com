@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { Check, Shield, Clock, Headphones, Star, Crown, Zap, CheckCircle } from 'lucide-react';
 
 const ThankYouPage = () => {
@@ -36,7 +37,7 @@ const ThankYouPage = () => {
                 DFY Checkout Makeover
               </h2>
               <div className="mb-4 h-16 flex items-center justify-center relative">
-                 {!priceChanged ? (
+                {!priceChanged ? (
                   <motion.span
                     className="text-5xl font-bold text-orange-600"
                     initial={{ opacity: 0, x: 20 }}
@@ -56,7 +57,7 @@ const ThankYouPage = () => {
                     >
                       $499
                     </motion.span>
-                
+
                     {/* Cross-out line animating right-to-left */}
                     <motion.div
                       className="absolute bottom-6 left-0 right-0 h-1 bg-gray-400"
@@ -65,7 +66,7 @@ const ThankYouPage = () => {
                       transition={{ duration: 0.6, ease: 'easeInOut' }}
                       style={{ transformOrigin: 'right' }}
                     />
-                
+
                     {/* New price flying in */}
                     <motion.span
                       className="text-5xl font-bold text-orange-600 absolute"
@@ -99,7 +100,7 @@ const ThankYouPage = () => {
             </div>
 
             <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-6 rounded-2xl font-bold text-xl hover:shadow-lg transition-all duration-300 hover:scale-105 mb-6">
-              Upgrade to DFY for $249 →
+              🟧 Upgrade to DFY for $249 →
             </button>
 
             {/* Urgency Message */}
@@ -117,28 +118,28 @@ const ThankYouPage = () => {
         </div>
 
         {/* Trust Signals */}
-          <div className="grid mx-auto sm:mx-40 md:grid-cols-3 gap-6 text-center mb-10">
-            <div className="flex flex-col items-center space-y-3">
-              <div className="bg-blue-100 p-4 rounded-full">
-                <Shield className="h-8 w-8 text-blue-600" />
-              </div>
-              <h4 className="font-bold text-gray-900">100% Stripe-secure</h4>
+        <div className="grid mx-auto sm:mx-40 md:grid-cols-3 gap-6 text-center mb-10">
+          <div className="flex flex-col items-center space-y-3">
+            <div className="bg-blue-100 p-4 rounded-full">
+              <Shield className="h-8 w-8 text-blue-600" />
             </div>
-            
-            <div className="flex flex-col items-center space-y-3">
-              <div className="bg-green-100 p-4 rounded-full">
-                <Crown className="h-8 w-8 text-green-600" />
-              </div>
-              <h4 className="font-bold text-gray-900">7-day money-back</h4>
-            </div>
-            
-            <div className="flex flex-col items-center space-y-3">
-              <div className="bg-purple-100 p-4 rounded-full">
-                <Headphones className="h-8 w-8 text-purple-600" />
-              </div>
-              <h4 className="font-bold text-gray-900">Priority support</h4>
-            </div>
+            <h4 className="font-bold text-gray-900">100% Stripe-secure</h4>
           </div>
+          
+          <div className="flex flex-col items-center space-y-3">
+            <div className="bg-green-100 p-4 rounded-full">
+              <Crown className="h-8 w-8 text-green-600" />
+            </div>
+            <h4 className="font-bold text-gray-900">7-day money-back</h4>
+          </div>
+          
+          <div className="flex flex-col items-center space-y-3">
+            <div className="bg-purple-100 p-4 rounded-full">
+              <Headphones className="h-8 w-8 text-purple-600" />
+            </div>
+            <h4 className="font-bold text-gray-900">Priority support</h4>
+          </div>
+        </div>
 
         {/* Simple Guarantee Banner */}
         <div className="text-center mb-12">

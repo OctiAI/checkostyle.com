@@ -50,7 +50,6 @@ const FormPage = () => {
       </div>
 
       {/* Form Embed Script */}
-      <script src="https://link.greatlakesmarketingandsoftwaresolutions.com/js/form_embed.js"></script>
     </div>
   );
 };

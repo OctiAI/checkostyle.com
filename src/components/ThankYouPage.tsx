@@ -50,9 +50,9 @@ const ThankYouPage = () => {
   <div className="flex items-center justify-center space-x-4">
     <motion.span
       className="text-2xl text-gray-400 line-through"
-      initial={{ opacity: 0.4, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.3 }}
+      initial={{ opacity: 0.4, x: -60, color: blue }}
+      animate={{ opacity: 1, x: 0, color: pink }}
+      transition={{ duration: 0.4 }}
     >
       Normally $499
     </motion.span>

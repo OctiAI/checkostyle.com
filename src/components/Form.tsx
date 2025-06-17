@@ -3,10 +3,7 @@ import { Shield, Check, RotateCcw } from 'lucide-react';
 import { createRoot } from 'react-dom/client'
 import ZapierForm from './ZapierForm'
 
-const container = document.getElementById('root')
-if (container) {
-  createRoot(container).render(<ZapierForm />)
-}
+
 
 const FormPage = () => {
   return (
@@ -31,27 +28,10 @@ const FormPage = () => {
         <div className="max-w-2xl mx-auto mb-12">
           <div>
             <div className="bg-gray-50 rounded-2xl" style={{ minHeight: '432px' }}>
-              <iframe  src="https://link.greatlakesmarketingandsoftwaresolutions.com/widget/form/kD2OmZH9OUzy6bR8FV0P?redirect=https://checkostyle.com/ThankYouPage.html"
-                style={{
-                  width: '100%',
-                  height: '432px',
-                  border: 'none',
-                }}  
-                data-redirect="https://checkostyle.com/ThankYouPage.html"
-                id="inline-kD2OmZH9OUzy6bR8FV0P" 
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="CS - Form"
-                data-height="432"
-                data-layout-iframe-id="inline-kD2OmZH9OUzy6bR8FV0P"
-                data-form-id="kD2OmZH9OUzy6bR8FV0P"
-                title="CS - Form"
-              />
+              <iframe const container = document.getElementById('root')
+if (container) {
+  createRoot(container).render(<ZapierForm />)
+} />
             </div>
           </div>
         </div>

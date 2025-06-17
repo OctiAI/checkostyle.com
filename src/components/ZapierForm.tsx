@@ -52,9 +52,9 @@ const ZapierForm = () => {
       </div>
     );
 
-      setTimeout(() => {
-    window.location.href = 'https://checkostyle.com/thankyoucall.html';
-  }, 200);
+    setTimeout(() => {
+      window.location.href = 'https://checkostyle.com/thankyoucall.html';
+    }, 200);
   }
 
   return (

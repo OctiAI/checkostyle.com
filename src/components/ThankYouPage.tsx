@@ -95,7 +95,6 @@ const ThankYouPage = () => {
                 <Shield className="h-8 w-8 text-blue-600" />
               </div>
               <h4 className="font-bold text-gray-900">100% Stripe-secure</h4>
-              <p className="text-gray-600 text-sm">your data stays safe</p>
             </div>
             
             <div className="flex flex-col items-center space-y-3">
@@ -103,7 +102,6 @@ const ThankYouPage = () => {
                 <Crown className="h-8 w-8 text-green-600" />
               </div>
               <h4 className="font-bold text-gray-900">7-day money-back</h4>
-              <p className="text-gray-600 text-sm">guarantee on DFY</p>
             </div>
             
             <div className="flex flex-col items-center space-y-3">
@@ -111,7 +109,6 @@ const ThankYouPage = () => {
                 <Headphones className="h-8 w-8 text-purple-600" />
               </div>
               <h4 className="font-bold text-gray-900">Priority support</h4>
-              <p className="text-gray-600 text-sm">for immediate answers</p>
             </div>
           </div>
 

@@ -17,7 +17,11 @@ const ThankYouPage = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">
             <div className="bg-gradient-to-r from-green-500 to-blue-600 p-4 rounded-full">
-              <span className="text-4xl">🎉</span>
+              <img
+                src="https://checkostyle.com/images/CS_logo.webp"
+                alt="CheckoStyle Logo"
+                className="w-28 sm:w-36 h-auto opacity-90"
+              />
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">

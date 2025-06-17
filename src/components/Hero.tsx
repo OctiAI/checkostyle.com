@@ -15,8 +15,7 @@ const Hero: React.FC = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 sm:pb-16">
         <div className="text-center">
-            <div className="mb-0 sm:mb-12 flex justify-cent                src="https://checkostyle.com/images/CS_icon.webp"
-er">
+            <div className="mb-0 sm:mb-12 flex justify-center">
               <img
                 src="https://checkostyle.com/images/CS_logo.webp"
                 alt="CheckoStyle Logo"

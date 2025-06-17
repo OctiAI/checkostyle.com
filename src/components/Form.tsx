@@ -4,7 +4,7 @@ import { Check, Star, Crown, Calendar, Zap } from 'lucide-react';
 const ThankYouCall = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
-      <div className="max-w-4xl mx-auto px-4 py-189">
+      <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">

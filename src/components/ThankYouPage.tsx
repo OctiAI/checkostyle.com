@@ -63,6 +63,7 @@ const ThankYouPage = () => {
                       initial={{ scaleX: 1 }}
                       animate={{ scaleX: 0 }}
                       transition={{ duration: 0.6, ease: 'easeInOut' }}
+                      style={{ transformOrigin: 'right' }}
                     />
                     {/* New price flying in */}
                     <motion.span

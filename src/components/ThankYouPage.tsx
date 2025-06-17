@@ -41,14 +41,34 @@ const ThankYouPage = () => {
                     $499
                   </span>
                 ) : (
-                  <div className="flex items-center justify-center space-x-4 transition-all duration-500">
-                    <span className="text-2xl text-gray-400 line-through">
-                      Normally $499
-                    </span>
-                    <span className="text-5xl font-bold text-orange-600">
+                   <>
+                    {/* Animate old price shifting and fading */}
+                    <motion.span
+                      className="text-5xl font-bold text-orange-600 absolute"
+                      initial={{ x: 0, scale: 1, color: '#F97316' }}
+                      animate={{ x: -20, scale: 0.8, color: '#9CA3AF' }}
+                      transition={{ duration: 0.6, ease: 'easeInOut' }}
+                    >
+                      $499
+                    </motion.span>
+                    {/* Cross-out line animating right-to-left */}
+                    <motion.div
+                      className="absolute bottom-6 h-1 bg-gray-400"
+                      style={{ left: '50%', width: '100%' }}
+                      initial={{ width: '100%' }}
+                      animate={{ width: 0, left: '50%' }}
+                      transition={{ duration: 0.6, ease: 'easeInOut' }}
+                    />
+                    {/* New price flying in */}
+                    <motion.span
+                      className="text-5xl font-bold text-orange-600 absolute"
+                      initial={{ x: 50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
+                    >
                       $249
-                    </span>
-                  </div>
+                    </motion.span>
+                  </>
                 )}
               </div>
               <p className="text-lg text-gray-600">

@@ -89,20 +89,31 @@ const ThankYouPage = () => {
         </div>
 
         {/* Trust Signals */}
-        <div className="flex items-center justify-center space-x-12 mb-12">
-          <div className="flex flex-col items-center">
-            <Shield className="h-10 w-10 text-blue-600 mb-2" />
-            <h4 className="font-bold text-gray-900">100% Stripe-secure</h4>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div className="flex flex-col items-center space-y-3">
+              <div className="bg-blue-100 p-4 rounded-full">
+                <Shield className="h-8 w-8 text-blue-600" />
+              </div>
+              <h4 className="font-bold text-gray-900">100% Stripe-secure</h4>
+              <p className="text-gray-600 text-sm">your data stays safe</p>
+            </div>
+            
+            <div className="flex flex-col items-center space-y-3">
+              <div className="bg-green-100 p-4 rounded-full">
+                <Crown className="h-8 w-8 text-green-600" />
+              </div>
+              <h4 className="font-bold text-gray-900">7-day money-back</h4>
+              <p className="text-gray-600 text-sm">guarantee on DFY</p>
+            </div>
+            
+            <div className="flex flex-col items-center space-y-3">
+              <div className="bg-purple-100 p-4 rounded-full">
+                <Headphones className="h-8 w-8 text-purple-600" />
+              </div>
+              <h4 className="font-bold text-gray-900">Priority support</h4>
+              <p className="text-gray-600 text-sm">for immediate answers</p>
+            </div>
           </div>
-          <div className="flex flex-col items-center">
-            <Crown className="h-12 w-12 text-green-600 mb-2" />
-            <h4 className="font-bold text-gray-900">7-day money-back</h4>
-          </div>
-          <div className="flex flex-col items-center">
-            <Headphones className="h-10 w-10 text-purple-600 mb-2" />
-            <h4 className="font-bold text-gray-900">Priority support</h4>
-          </div>
-        </div>
 
         {/* Simple Guarantee Banner */}
         <div className="text-center mb-12">

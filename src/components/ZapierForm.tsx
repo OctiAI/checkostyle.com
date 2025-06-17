@@ -45,7 +45,7 @@ const ZapierForm = () => {
   };
 
   if (submitted) {
-        setTimeout(() => {
+    setTimeout(() => {
       window.location.href = 'https://checkostyle.com/thankyoucall.html';
     }, 200);
     

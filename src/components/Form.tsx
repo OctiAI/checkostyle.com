@@ -1,7 +1,7 @@
 import React from 'react';
 import { Shield, Check, RotateCcw } from 'lucide-react';
 import { createRoot } from 'react-dom/client'
-import ZapierForm from 'ZapierForm'
+import ZapierForm from './ZapierForm'
 
 const container = document.getElementById('root')
 if (container) {

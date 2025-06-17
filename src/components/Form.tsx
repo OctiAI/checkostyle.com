@@ -3,6 +3,11 @@ import { Shield, Check, RotateCcw } from 'lucide-react';
 import { createRoot } from 'react-dom/client'
 import ZapierForm from './components/ZapierForm'
 
+const container = document.getElementById('root')
+if (container) {
+  createRoot(container).render(<ZapierForm />)
+}
+
 const FormPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">

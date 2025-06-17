@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Check, RotateCcw } from 'lucide-react';
+import ZapierForm from './components/ZapierForm'
 
 const FormPage = () => {
   return (

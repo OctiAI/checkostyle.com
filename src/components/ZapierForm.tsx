@@ -58,7 +58,7 @@ const ZapierForm = () => {
     >
       {/* Full Name */}
       <div>
-        <label className="block text-gray-700 font-medium mb-1" htmlFor="name">
+        <label className="block text-gray-700 font-medium mb-1 mt-6" htmlFor="name">
           Full Name
         </label>
         <input

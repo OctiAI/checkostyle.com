@@ -20,7 +20,7 @@ const ThankYouPage = () => {
               <img
                 src="https://checkostyle.com/images/CS_icon.webp"
                 alt="CheckoStyle Logo"
-                className="w-16 sm:w-16 p-2 h-auto opacity-90 rounded-4xl"
+                className="w-16 sm:w-16 p-2 h-auto opacity-90 rounded-2xl"
               />
             </div>
           </div>

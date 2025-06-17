@@ -89,7 +89,7 @@ const ThankYouPage = () => {
         </div>
 
         {/* Trust Signals */}
-          <div className="grid mx-40 md:grid-cols-3 gap-6 text-center mb-10">
+          <div className="grid mx-auto sm-mx-40 md:grid-cols-3 gap-6 text-center mb-10">
             <div className="flex flex-col items-center space-y-3">
               <div className="bg-blue-100 p-4 rounded-full">
                 <Shield className="h-8 w-8 text-blue-600" />

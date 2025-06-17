@@ -57,7 +57,7 @@ const ThankYouPage = () => {
       className="text-5xl font-bold text-orange-600"
       initial={{ opacity: 0, x: 60 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
+      transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}
     >
       $249
     </motion.span>

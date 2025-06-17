@@ -20,15 +20,17 @@ const ZapierForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
+
+    // use form-encoded data to avoid CORS preflight
+    const params = new URLSearchParams();
+    params.append('full_name', formData.name);
+    params.append('phone',     formData.phone);
+    params.append('email',     formData.email);
+
     try {
       const res = await fetch(ZAPIER_WEBHOOK_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          full_name: formData.name,
-          phone: formData.phone,
-          email: formData.email
-        })
+        body: params
       });
       if (res.ok) {
         setSubmitted(true);
@@ -86,7 +88,7 @@ const ZapierForm = () => {
           value={formData.phone}
           onChange={handleChange}
           placeholder="(555) 123-4567"
-          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400  mb-6"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 mb-6"
         />
       </div>
 
@@ -111,7 +113,7 @@ const ZapierForm = () => {
       <button
         type="submit"
         disabled={submitting}
-        className=" w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg transition-opacity disabled:opacity-50 mb-4"
+        className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg transition-opacity disabled:opacity-50 mb-4"
       >
         {submitting ? 'Submitting…' : 'Book My Free Call'}
       </button>

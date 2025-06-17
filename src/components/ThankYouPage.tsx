@@ -114,8 +114,7 @@ const ThankYouPage = () => {
               <p className="text-gray-600 text-sm">for immediate answers</p>
             </div>
           </div>
-        </div>
-      </div>  
+ 
 
         {/* Simple Guarantee Banner */}
         <div className="text-center mb-12">

@@ -50,7 +50,7 @@ const ThankYouPage = () => {
   <div className="flex items-center justify-center space-x-4">
     <motion.span
       className="text-2xl text-gray-400 line-through"
-      initial={{ opacity: 0, x: -20 }}
+      initial={{ opacity: 0.4, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >

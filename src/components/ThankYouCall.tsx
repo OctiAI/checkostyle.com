@@ -37,7 +37,9 @@ const ThankYouCall = () => {
 
     {/* Toggle Switch */}
     <button
-                  onClick={() => setAnnual(false)}
+      onClick={() =>
+        setAnnual(false ? true : false)
+      }
 
       className={`relative w-14 h-7 flex items-center rounded-full p-1 transition-colors duration-300 ${
         billingCycle === 'yearly' ? 'bg-green-400' : 'bg-gray-300'

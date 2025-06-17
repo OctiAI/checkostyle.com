@@ -126,7 +126,7 @@ const ThankYouPage = () => {
           </p>
           <p className="text-2xl font-script text-gray-900 background-color">
             Looking forward to your success <span className="bg-black
-"></span>🥂
+">🥂</span>
           </p>
         </div>
       </div>

@@ -36,11 +36,16 @@ const ThankYouPage = () => {
                 DFY Checkout Makeover
               </h2>
               <div className="mb-4 h-16 flex items-center justify-center relative">
-                {!priceChanged ? (
-                  <span className="text-5xl font-bold text-orange-600 transition-all duration-500">
+                 {!priceChanged ? (
+                  <motion.span
+                    className="text-5xl font-bold text-orange-600"
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, ease: 'easeOut' }}
+                  >
                     $499
-                  </span>
-                ) : (
+                  </motion.span>
+                )
                    <>
                     {/* Animate old price shifting and fading */}
                     <motion.span

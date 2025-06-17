@@ -9,7 +9,7 @@ import Top from './components/Top';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
         <div className="min-h-screen">
-          <Top/>
+          <Form/>
         </div>
   </StrictMode>
 );

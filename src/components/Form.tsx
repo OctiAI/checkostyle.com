@@ -24,7 +24,7 @@ const FormPage = () => {
         <div className="max-w-2xl mx-auto mb-12">
           <div>
             <div className="bg-gray-50 rounded-2xl" style={{ minHeight: '432px' }}>
-              <iframe  src="https://link.greatlakesmarketingandsoftwaresolutions.com/widget/form/kD2OmZH9OUzy6bR8FV0P?redirect=https://checkostyle.com/ThankYouPage"
+              <iframe  src="https://link.greatlakesmarketingandsoftwaresolutions.com/widget/form/kD2OmZH9OUzy6bR8FV0P?redirect=https://checkostyle.com/ThankYouPage.html"
                 style={{
                   width: '100%',
                   height: '432px',

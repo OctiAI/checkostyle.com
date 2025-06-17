@@ -117,6 +117,12 @@ const faqs = [
             className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 w-full sm:w-64"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => {
+  setTimeout(() => {
+    window.location.href = 'https://checkostyle.com/bookacall.html';
+  }, 200);
+}}
+
           >
             Book Free Call
           </motion.button>

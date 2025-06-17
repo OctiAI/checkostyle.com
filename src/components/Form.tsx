@@ -29,7 +29,7 @@ const FormPage = () => {
                   width: '100%',
                   height: '432px',
                   border: 'none',
-                  borderRadius: '8px'
+                  borderRadius: 'rounded-2xl'
                 }}
                 id="inline-kD2OmZH9OUzy6bR8FV0P" 
                 data-layout="{'id':'INLINE'}"

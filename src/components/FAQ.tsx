@@ -118,10 +118,10 @@ const faqs = [
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => {
-  setTimeout(() => {
-    window.location.href = 'https://checkostyle.com/bookacall.html';
-  }, 200);
-}}
+              setTimeout(() => {
+                window.location.href = 'https://checkostyle.com/bookacall.html';
+              }, 200);
+            }}
 
           >
             Book Free Call

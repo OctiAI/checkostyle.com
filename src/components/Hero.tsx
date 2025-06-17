@@ -62,15 +62,20 @@ const Hero: React.FC = () => {
           >
 
         <div className="flex flex-col items-center">
-            <motion.button
-              className="w-full sm:w-auto bg-[#E63946] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center space-x-2 px-20 sm:px-8 shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300 mb-4" 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Play className="h-5 w-5" />
-              <span>Book a Setup Call</span>
-          
-            </motion.button>
+       <motion.button
+          className="w-full sm:w-auto bg-[#E63946] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl border border-gray-200 transition-all duration-300 mb-4"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => {
+            setTimeout(() => {
+              window.location.href = 'https://checkostyle.com/bookacall.html';
+            }, 200);
+          }}
+        >
+          <Play className="h-5 w-5" />
+          <span>Book a Setup Call</span>
+        </motion.button>
+
           <p className="text-dark-gray-600 max-w-3xl text-center">
             Used by 127+ DTC founders to <br />
             double checkout conversion

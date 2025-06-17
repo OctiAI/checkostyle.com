@@ -91,7 +91,7 @@ const ZapierForm = () => {
       </div>
 
       {/* Email */}
-      <div className="mb-14">
+      <div>
         <label className="block text-gray-700 font-medium mb-1" htmlFor="email">
           Email<span className="text-red-500">*</span>
         </label>

@@ -44,7 +44,7 @@ const ThankYouPage = () => {
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.6, ease: 'easeOut' }}
   >
-    $499
+    Normally $499
   </motion.span>
 ) : (
   <div className="flex items-center justify-center space-x-4">

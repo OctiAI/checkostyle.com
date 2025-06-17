@@ -28,7 +28,11 @@ const FormPage = () => {
         <div className="max-w-2xl mx-auto mb-12">
           <div>
             <div className="bg-gray-50 rounded-2xl" style={{ minHeight: '432px' }}>
-               
+                <iframe
+        src="/form"
+        className="w-full h-[600px] border-none rounded-2xl shadow-lg"
+        title="Book My Free Call"
+      />
             </div>
           </div>
         </div>

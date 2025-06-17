@@ -16,7 +16,7 @@ const ThankYouPage = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">
-            <div className="bg-gradient-to-r from-green-500 to-blue-600 p-4 rounded-full">
+            <div className="bg-gradient-to-r from-green-500 to-blue-600 rounded-full">
               <img
                 src="https://checkostyle.com/images/CS_logo.webp"
                 alt="CheckoStyle Logo"

@@ -124,8 +124,9 @@ const ThankYouPage = () => {
           <p className="text-lg mb-4">
             <strong>Last reminder:</strong> Take advantage of this offer before you close the page, or it&apos;s gone... forever...
           </p>
-          <p className="text-2xl font-script text-gray-900">
-            Looking forward to your success 🥂
+          <p className="text-2xl font-script text-gray-900 background-color">
+            Looking forward to your success <span className="bg-black
+"></span>🥂
           </p>
         </div>
       </div>

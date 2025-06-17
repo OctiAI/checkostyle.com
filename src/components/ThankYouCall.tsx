@@ -43,7 +43,7 @@ const ThankYouCall = () => {
             >
               <span
                 className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-transform duration-300 ${
-                  billingCycle === 'yearly' ? 'translate-x-7' : 'translate-x-0'
+                  annual ? 'translate-x-7' : 'translate-x-0'
                 }`}
               />
             </button>

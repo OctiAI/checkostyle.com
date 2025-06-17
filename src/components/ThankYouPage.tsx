@@ -50,8 +50,8 @@ const ThankYouPage = () => {
                     {/* Animate old price shifting and fading */}
                     <motion.span
                       className="text-5xl font-bold text-orange-600 absolute"
-                      initial={{ x: 0, scale: 1, color: '#F97316' }}
-                      animate={{ x: -20, scale: 0.8, color: '#9CA3AF' }}
+                      initial={{ x: 0, scale: 1, opacity: 1  }}
+                      animate={{ x: -20, scale: 0.8, opacity: 5  }}
                       transition={{ duration: 0.6, ease: 'easeInOut' }}
                     >
                       $499

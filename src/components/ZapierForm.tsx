@@ -51,6 +51,10 @@ const ZapierForm = () => {
         <p>We’ve received your info and will be in touch shortly.</p>
       </div>
     );
+
+      setTimeout(() => {
+    window.location.href = 'https://checkostyle.com/thankyoucall.html';
+  }, 200);
   }
 
   return (

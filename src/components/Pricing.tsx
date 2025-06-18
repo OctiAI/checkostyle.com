@@ -60,7 +60,7 @@ const Pricing: React.FC = () => {
     },
     {
       name: 'Enterprise',      
-      plan_ID: 'CS_checko_Enterprise_M',
+      plan_ID: 'CS_checko_enterprise_m',
       price: '$399',
       period: '/month',
       description: 'Starting at',

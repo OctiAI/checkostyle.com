@@ -43,6 +43,7 @@ const Pricing: React.FC = () => {
     },
     {
       name: 'DFY',
+      plan_ID: 'CS_checko_DFY_M',
       price: '$499',
       period: ' One-Time',
       description: 'Free with $948/year plan',

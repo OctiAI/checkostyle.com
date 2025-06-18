@@ -8,8 +8,7 @@ const Pricing: React.FC = () => {
   const plans = [
     {
       name: 'Tester',
-            plan_ID: 'CS_checko_Tester_M',
-
+      plan_ID: 'CS_checko_Tester_M',
       price: '$9',
       period: ' One-Time',
       description: '30 Day Builder Access',

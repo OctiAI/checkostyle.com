@@ -59,7 +59,8 @@ const Pricing: React.FC = () => {
       color: 'from-purple-500 to-purple-600',
     },
     {
-      name: 'Enterprise',
+      name: 'Enterprise',      
+      plan_ID: 'CS_checko_Enterprise_M',
       price: '$399',
       period: '/month',
       description: 'Starting at',

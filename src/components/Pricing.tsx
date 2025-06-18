@@ -23,7 +23,7 @@ const Pricing: React.FC = () => {
     },
     {
       name: 'Pro',
-      plan_ID: 'CS_checko_Pro_M',
+      plan_ID: 'CS_checko_pro_m',
       price: '$129',
       period: '/month',
       description: 'Full Access to all Features',

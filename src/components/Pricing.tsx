@@ -83,7 +83,7 @@ const Pricing: React.FC = () => {
     }
     switch (plan.name) {
       case 'Pro':
-        return { price: '$79', period: '/month', description: 'Billed at $948/year' , plan_ID: 'CS_checko_DFY_Y' };
+        return { price: '$79', period: '/month', description: 'Billed at $948/year' , plan_ID: 'CS_checko_Pro_Y' };
       case 'DFY':
         return { price: '$79', period: '/month ', description: ' $948/year (Best Value)', plan_ID: 'CS_checko_DFY_Y'};
       default:

@@ -201,7 +201,7 @@ ${plan.name === 'Enterprise' ? 'order-4 lg:order-4' : ''}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => {
                     setTimeout(() => {
-                      window.location.href = `https://checkostyle.com/checkout.html?=${plan_ID}`;
+                      window.location.href = `https://checkostyle.com/checkout.html?=${plan.plan_ID}`;
                     }, 200);
                   }}
                 >

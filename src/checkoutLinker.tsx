@@ -3,13 +3,9 @@ import CheckoutPage from './components/checkout';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <CheckoutPage />
   </StrictMode>
 );
 
-
-function App() {
-  return <CheckoutPage />;
-}
 
 export default App;

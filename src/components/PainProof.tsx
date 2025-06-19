@@ -62,7 +62,7 @@ const PainProof: React.FC = () => {
                    <img src="https://checkostyle.com/images/newCS.webp"></img>
               <div className="mt-4 space-y-2 text-gray-500">
 
-            
+               </div>
             </div>
           </div>
         </motion.div>

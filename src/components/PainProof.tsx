@@ -51,10 +51,8 @@ const PainProof: React.FC = () => {
             <div className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full font-semibold flex items-center space-x-1">
               <TrendingUp className="h-4 w-4" />
               <span>14.2% CVR in 72 hours</span>
-            </div>
-            <img src="https://checkostyle.com/images/newCS.webp"></img>
+            <img src="https://checkostyle.com/images/oldCS.webp"></img>
 
-            </div>
             </div>
           </div>
         </motion.div>

@@ -55,6 +55,7 @@ const PainProof: React.FC = () => {
             <img src="https://checkostyle.com/images/newCS.webp"></img>
 
             </div>
+            </div>
           </div>
         </motion.div>
 

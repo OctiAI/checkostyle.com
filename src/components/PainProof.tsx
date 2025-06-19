@@ -52,26 +52,8 @@ const PainProof: React.FC = () => {
               <TrendingUp className="h-4 w-4" />
               <span>14.2% CVR in 72 hours</span>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-green-200">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">CheckoStyle Checkout</h3>
-              <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
-                  <div className="h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded mb-2"></div>
-                  <div className="h-3 bg-gradient-to-r from-blue-400 to-purple-400 rounded w-2/3 opacity-70"></div>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
-                  <div className="h-10 bg-gradient-to-r from-gray-50 to-blue-50 rounded border-2 border-blue-200"></div>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-md border border-blue-100">
-                  <div className="h-10 bg-gradient-to-r from-gray-50 to-blue-50 rounded border-2 border-blue-200"></div>
-                </div>
-              </div>
-              <div className="mt-6 bg-gradient-to-r from-green-500 to-green-600 h-12 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold">Secure Checkout →</span>
-              </div>
-              <div className="mt-4 space-y-2 text-green-700">
-               
-              </div>
+            <img src="https://checkostyle.com/images/newCS.webp"></img>
+
             </div>
           </div>
         </motion.div>

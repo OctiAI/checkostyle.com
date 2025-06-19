@@ -50,7 +50,6 @@ const PainProof: React.FC = () => {
             
               </div>
             </div>
-          </div>
 
           {/* CheckoStyle - Solution */}
           <div className="relative">

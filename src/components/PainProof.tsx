@@ -44,23 +44,8 @@ const PainProof: React.FC = () => {
               <span>Conversion Killer</span>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 border-2 border-red-200">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Default Stripe Checkout</h3>
-              <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <div className="h-3 bg-gray-200 rounded mb-2"></div>
-                  <div className="h-3 bg-gray-200 rounded w-2/3"></div>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <div className="h-10 bg-gray-100 rounded border"></div>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <div className="h-10 bg-gray-100 rounded border"></div>
-                </div>
-              </div>
-              <div className="mt-6 bg-blue-600 h-12 rounded-lg flex items-center justify-center">
-                <span className="text-white font-semibold">Complete Payment</span>
-              </div>
-              <div className="mt-4 space-y-2 text-gray-500">
+                         <img src="https://checkostyle.com/images/oldCS.webp"></img>
+
             
               </div>
             </div>

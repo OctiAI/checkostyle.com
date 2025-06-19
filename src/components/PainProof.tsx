@@ -43,7 +43,7 @@ const PainProof: React.FC = () => {
               <AlertTriangle className="h-4 w-4" />
               <span>Conversion Killer</span>
             </div>
-            <div className="bg-gray-50 rounded-2xl p-8 border-2 border-red-200">
+            <div className="bg-gray-50 rounded-2xlborder-2 border-red-200">
             <img className="rounded-2xl" src="https://checkostyle.com/images/oldCS.webp"></img>
 
               <div className="mt-4 space-y-2 text-gray-500">

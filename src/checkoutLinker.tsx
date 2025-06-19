@@ -1,5 +1,5 @@
 import React from 'react';
-import CheckoutPage from './components/CheckoutPage';
+import CheckoutPage from './components/checkout.tsx';
 
 function App() {
   return <CheckoutPage />;

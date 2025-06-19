@@ -39,7 +39,7 @@ const PainProof: React.FC = () => {
         >
           {/* Default Stripe - Pain Point */}
           <div className="relative">
-            <div className="absolute -top-4 -left-4 bg-red-500 text-white px-3 py-1 rounded-full font-semibold flex items-center space-x-1">
+            <div className="absolute-top-4-left-4 bg-red-500 text-white px-3 py-1 rounded-full font-semibold flex items-center space-x-1">
               <AlertTriangle className="h-4 w-4" />
               <span>Conversion Killer</span>
             </div>

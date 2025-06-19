@@ -62,7 +62,7 @@ const CheckoutPage = () => {
               <div className="text-center mb-8">
                 <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Try CheckoStyle for Just{' '}
-                  <span className="text-green-600">$9</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">$9</span>
                 </h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Get 30-day access to our full drag-and-drop checkout builder—no subscription, no commitment.

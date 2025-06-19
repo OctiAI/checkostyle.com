@@ -59,14 +59,7 @@ const PainProof: React.FC = () => {
               <span>14.2% CVR in 72 hours</span>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-green-200">
-                       <img src="https://checkostyle.com/images/oldCS.webp"></img>
-
-              </div>
-              <div className="mt-6 bg-gradient-to-r from-green-500 to-green-600 h-12 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold">Secure Checkout →</span>
-              </div>
-              <div className="mt-4 space-y-2 text-green-700">
-               
+           
               </div>
             </div>
           </div>

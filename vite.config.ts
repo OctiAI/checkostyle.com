@@ -11,7 +11,7 @@ export default defineConfig({
         thankyou: resolve(__dirname, 'thankyoupage.html'),
         thankyouCall: resolve(__dirname, 'thankyoucall.html'),
         bookacall: resolve(__dirname, 'bookacall.html'),        
-        bookacall: resolve(__dirname, 'checkout.html'),        
+        checkout: resolve(__dirname, 'checkout.html'),        
       }
     }
   }

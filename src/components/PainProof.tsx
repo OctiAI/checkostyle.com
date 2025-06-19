@@ -60,6 +60,7 @@ const PainProof: React.FC = () => {
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-green-200">
                    <img src="https://checkostyle.com/images/newCS.webp"></img>
+              <div className="mt-4 space-y-2 text-gray-500">
 
             
             </div>

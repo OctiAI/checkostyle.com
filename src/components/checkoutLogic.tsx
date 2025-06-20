@@ -15,7 +15,7 @@ import { Lock, CreditCard } from 'lucide-react';
 const BACKEND = "https://api.checkostyle.com";
 // const BACKEND = "http://localhost:3090";
 // Initialize Stripe.js once
-const stripePromise = loadStripe('pk_test_51RV0mtEI1EWPJSDAgGI6ZYoD63MI8Q3bHtWaiQugx1EhRSHPkhevciFQKMuoTSFEI5MewX28cQEFdroYAz36SMmP00xQdULRgM');
+const stripePromise = loadStripe('pk_live_51QnPa5RoGKTuFXtOojWjniXOxD6jfuTxdXQxnbuZNE9Hq14NJb9d8KMyUS6P0IaTm5WK9zt1qD685TvFFSbe01OI00JvtkwAlO');
 
 interface FeatureItem {
   icon: string;

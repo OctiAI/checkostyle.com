@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useMemo } from 'react';
+
 import { 
   CreditCard, 
   Shield, 
@@ -11,17 +12,68 @@ import {
   Calendar,
   DollarSign,
   Award,
-  Zap
+  Zap,
+  FileText,
+  Repeat,
+  BarChart2,
+  LifeBuoy,
+  Code,
 } from 'lucide-react';
-import { CheckoutPageWrapper } from './checkoutLogic';
+import { CheckoutPageWrapper, useCartData } from './checkoutLogic';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 
+const iconMap: Record<string, React.ComponentType<any>> = {
+  CreditCard,
+  Shield, 
+  CheckCircle, 
+  DollarSign,
+  Calendar,
+  Smartphone,
+  MessageCircle,
+  ShoppingCart,
+  Lock,
+  X,
+  Award,
+  Zap,
+  FileText,
+  Repeat,
+  BarChart2,
+  LifeBuoy,
+  Code,
+};
+
+const iconColorMap: Record<string, string> = {
+  DollarSign:     'text-green-600',
+  Calendar:       'text-blue-600',
+  Smartphone:     'text-purple-600',
+  MessageCircle:  'text-orange-600',
+  ShoppingCart:   'text-indigo-600',
+  CheckCircle:    'text-green-600',  // or another default
+  Lock:           'text-green-600',
+  X:              'text-red-600',    // maybe red for cancel
+  FileText:       'text-blue-600',
+  Repeat:         'text-purple-600',
+  BarChart2:      'text-orange-600',
+  LifeBuoy:       'text-red-500',
+  Code:           'text-indigo-600',
+  // add other icon-color pairs as needed
+};
+
+
 const CheckoutPage: React.FC = () => {
   // Extract plan ID from the URL
-  const planId = window.location.search.replace('?', '');
+const planId = useMemo(() => {
+  return window.location.search.replace('?', '');
+
+}, []);
+console.log("planId:", planId);
+
+
+  const { data: planData, loading, error } = useCartData(planId);
+  console.log(JSON.stringify(planData, null, 2));
   // Initialize Stripe.js
-  const stripePromise = loadStripe('pk_live_51QnPa5RoGKTuFXtOojWjniXOxD6jfuTxdXQxnbuZNE9Hq14NJb9d8KMyUS6P0IaTm5WK9zt1qD685TvFFSbe01OI00JvtkwAlO');
+  const stripePromise = loadStripe('pk_test_51RV0mtEI1EWPJSDAgGI6ZYoD63MI8Q3bHtWaiQugx1EhRSHPkhevciFQKMuoTSFEI5MewX28cQEFdroYAz36SMmP00xQdULRgM');
 
   return (
     <Elements stripe={stripePromise}>
@@ -44,94 +96,89 @@ const CheckoutPage: React.FC = () => {
             <div className="grid lg:grid-cols-2 gap-0">
               {/* Left Side - Plan Details */}
               <div className="p-8 lg:p-12 bg-gray-50 border-r border-gray-200">
-                {/* Headline */}
-                <div className="text-center mb-8">
-                  <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Try CheckoStyle for Just{' '}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">
-                      $9
-                    </span>
-                  </h1>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    Get 30-day access to our full drag-and-drop checkout builder—no subscription, no commitment.
-                  </p>
-                </div>
+                {loading ? (
+                  <p className="text-center text-gray-500">Loading plan details…</p>
+                ) : error || !planData ? (
+                  <p className="text-center text-red-500">Failed to load plan details.</p>
+                ) : (
+                  (() => {
+                    const display = planData.cart_display;
+                    // Choose bullet/icon colors based on planId if desired:
+                    const bulletColor = 'text-green-600';
+                    const footerIconColor = 'text-blue-600';
 
-                {/* Plan Inclusions */}
-                <div className="space-y-4 mb-8">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-6">What's included:</h3>
-                  
-                  <div className="flex items-start space-x-3">
-                    <DollarSign className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-900">One-Time $9 Payment</p>
-                      <p className="text-sm text-gray-600">No hidden fees or recurring charges</p>
-                    </div>
-                  </div>
+                    return (
+                      <>
+                        {/* HEADLINE & SUBHEADLINE */}
+                        <div className="text-center mb-8">
+                          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                            {display.headline}
+                            {<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">{display.headline_span}</span>}
+                          </h1>
+                          {display.sub_headline && (
+                            <p className="text-lg text-gray-600 leading-relaxed">
+                              {display.sub_headline}
+                            </p>
+                          )}
+                        </div>
 
-                  <div className="flex items-start space-x-3">
-                    <Calendar className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-900">30-Day Full Builder Access</p>
-                      <p className="text-sm text-gray-600">Complete access to all builder features</p>
-                    </div>
-                  </div>
+                        {/* FEATURES */}
+                        {display.main_label && (
+                          <h3 className="font-semibold text-gray-900 mb-6 text-xl">
+                            {display.main_label}
+                          </h3>
+                        )}
+                        <ul className="space-y-4 mb-8">
+                          {display.features.map((feat) => {
+                            const IconComponent = iconMap[feat.icon] || CheckCircle;
+                            const colorClass = iconColorMap[feat.icon] || 'text-green-600';
 
-                  <div className="flex items-start space-x-3">
-                    <Smartphone className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-900">Mobile-Responsive Templates</p>
-                      <p className="text-sm text-gray-600">Looks perfect on every device</p>
-                    </div>
-                  </div>
+                            return (
+                              <li key={feat.heading} className="flex items-start space-x-3">
+                                <IconComponent
+                                  className={`w-5 h-5 ${colorClass} mt-1 flex-shrink-0`}
+                                />
+                                <div>
+                                  <p className="font-medium text-gray-900">{feat.heading}</p>
+                                  {feat.text && (
+                                    <p className="text-sm text-gray-600">{feat.text}</p>
+                                  )}
+                                </div>
+                              </li>
+                            );
+                          })}
+                        </ul>
 
-                  <div className="flex items-start space-x-3">
-                    <MessageCircle className="w-5 h-5 text-orange-600 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-900">Live Chat Support</p>
-                      <p className="text-sm text-gray-600">Get help when you need it</p>
-                    </div>
-                  </div>
 
-                  <div className="flex items-start space-x-3">
-                    <ShoppingCart className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-gray-900">One Branded Checkout Page</p>
-                      <p className="text-sm text-gray-600">Preview mode included</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Trust Signals */}
-                <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
-                  <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
-                    <Shield className="w-5 h-5 text-blue-600 mr-2" />
-                    Your Security & Satisfaction
-                  </h4>
-                  
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <Lock className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                      <p className="text-sm text-gray-700">
-                        <strong>100% Stripe-Powered</strong> — we never touch your card data
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                      <p className="text-sm text-gray-700">
-                        <strong>Cancel within 7 days</strong> for full refund
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <X className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                      <p className="text-sm text-gray-700">
-                        <strong>One-time payment</strong>, no auto-renew
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                        {/* FOOTER “Secure & ...” */}
+                        {display.footing && (
+                          <div className="bg-blue-50 rounded-xl p-6 border border-blue-100 mb-8">
+                            <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
+                              <Shield className={`w-5 h-5 ${footerIconColor} mr-2`} />
+                              {display.footing}
+                            </h4>
+                            <ul className="space-y-2">
+                              {display.footing_points.map((pt) => {
+                                const IconComponent = iconMap[pt.icon] || CheckCircle;
+                                return (
+                                  <li key={pt.heading} className="flex items-start space-x-3">
+                                    <IconComponent
+                                      className={`w-4 h-4 ${bulletColor} mt-1.5 flex-shrink-0`}
+                                    />
+                                    <div>
+                                      <span className="text-sm font-bold text-gray-700 flex-shrink-0">{pt.heading}</span>
+                                        <span className="text-sm text-gray-700 flex-shrink-0">{pt.text}</span>
+                                    </div>
+                                  </li>
+                                );
+                              })}
+                          </ul>
+                          </div>
+                        )}
+                      </>
+                    );
+                  })()
+                )}
               </div>
 
               {/* Right Side - Payment Form */}

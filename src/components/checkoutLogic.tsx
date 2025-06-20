@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// checkoutLogic.tsx
+import React, { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import {
   Elements,
@@ -9,18 +10,98 @@ import {
   useElements
 } from '@stripe/react-stripe-js';
 import { Lock, CreditCard } from 'lucide-react';
-      
-// const BACKEND = "http://localhost:3090";
+
+// Backend base URL
 const BACKEND = "https://api.checkostyle.com";
+// const BACKEND = "http://localhost:3090";
+// Initialize Stripe.js once
+const stripePromise = loadStripe('pk_test_51RV0mtEI1EWPJSDAgGI6ZYoD63MI8Q3bHtWaiQugx1EhRSHPkhevciFQKMuoTSFEI5MewX28cQEFdroYAz36SMmP00xQdULRgM');
 
-// Initialize Stripe.js
-const stripePromise = loadStripe('pk_live_51QnPa5RoGKTuFXtOojWjniXOxD6jfuTxdXQxnbuZNE9Hq14NJb9d8KMyUS6P0IaTm5WK9zt1qD685TvFFSbe01OI00JvtkwAlO');
-
-interface CheckoutFormProps {
-  planId: string;
+interface FeatureItem {
+  icon: string;
+  heading: string;
+  text?: string;
+}
+interface Footing_points {
+  icon: string;
+  heading: string;
+  text?: string;
+}
+interface CartDisplay {
+  headline: string;
+  headline_span: string;
+  sub_headline?: string;
+  main_label?: string;
+  features: FeatureItem[];
+  footing?: string;
+  footing_points: Footing_points[];
+}
+interface PlanData {
+  cartItem_1?: { unit_amount: number; payment_interval: string; /* ...other if needed */ };
+  cartItem_2?: { unit_amount: number; payment_interval: string; /* ... */ };
+  // ...potentially more cartItem_X
+  cart_fields: string[];
+  cart_display: CartDisplay;
+  // other fields returned by backend, e.g. cart_description, auth, etc.
+  [key: string]: any;
 }
 
-// Shared styling for all Elements
+// Hook to fetch plan data (including our structured cart_display) from backend
+export function useCartData(planId: string) {
+  const [data, setData] = useState<PlanData | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!planId) {
+      setData(null);
+      setLoading(false);
+      return;
+    }
+    let isMounted = true;
+    setLoading(true);
+    setError(null);
+
+    // POST to backend endpoint that returns the plan data, including cart_display
+    fetch(`${BACKEND}/create-checkout-session`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        itemID: planId,
+        auth_code: 'check_admin__auth_code'
+      }),
+    })
+      .then(async (res) => {
+        if (!res.ok) {
+          const errText = await res.text();
+          throw new Error(`Error ${res.status}: ${errText}`);
+        }
+        return res.json();
+      })
+      .then((json) => {
+        // Expect json to be the planData object as in checkoutMap[planId]
+        if (isMounted) {
+          setData(json as PlanData);
+          setLoading(false);
+        }
+      })
+      .catch((err) => {
+        if (isMounted) {
+          console.error("useCartData fetch error:", err);
+          setError(err.message || 'Failed to load plan data');
+          setLoading(false);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [planId]);
+
+  return { data, loading, error };
+}
+
+// Shared styling for Stripe Elements
 const ELEMENT_OPTIONS = {
   style: {
     base: {
@@ -36,7 +117,12 @@ const ELEMENT_OPTIONS = {
   }
 };
 
-const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId }) => {
+interface CheckoutFormProps {
+  planId: string;
+  cart_fields?: string[]; // optional: if you want to render dynamic extra fields
+}
+
+const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
   const stripe = useStripe();
   const elements = useElements();
   const [name, setName]       = useState('');
@@ -57,24 +143,19 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId }) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email }),
       });
-
       const setupJson = await setupRes.json();
-      // backend might return { clientSecret } or { setupIntentClientSecret }
       const clientSecret =
         setupJson.clientSecret ?? setupJson.setupIntentClientSecret;
       if (!clientSecret) {
-        throw new Error(
-          'Missing SetupIntent client secret in /create-setup-intent response'
-        );
+        throw new Error('Missing SetupIntent client secret in response');
       }
-
       if (setupJson.error) {
         throw new Error(setupJson.error);
       }
       // 2) Confirm card setup
       const cardNumberEl = elements.getElement(CardNumberElement)!;
       const { setupIntent, error: confirmError } = await stripe.confirmCardSetup(
-      clientSecret,
+        clientSecret,
         {
           payment_method: {
             card: cardNumberEl,
@@ -88,7 +169,12 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId }) => {
       const subRes = await fetch(`${BACKEND}/dynamic-checkout`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ plan: planId, name, email, setupIntentId: setupIntent.id  }),
+        body: JSON.stringify({
+          plan: planId,
+          name,
+          email,
+          setupIntentId: setupIntent.id
+        }),
       });
       const { success, message } = await subRes.json();
       if (!success) throw new Error(message || 'Subscription failed');
@@ -96,6 +182,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId }) => {
       // 4) Redirect on success
       window.location.href = '/thankyoupage.html';
     } catch (err: any) {
+      console.error("CheckoutForm error:", err);
       setError(err.message);
       setLoading(false);
     }
@@ -135,6 +222,32 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId }) => {
         />
       </div>
 
+      {/* Additional dynamic fields if you wish */}
+      {cart_fields && cart_fields.length > 0 && (
+        <div>
+          {cart_fields.map((field) => {
+            // Customize rendering based on field name pattern. For example:
+            if (field === 'CUSTOM__how-did-you-learn-about-us') {
+              return (
+                <div key={field}>
+                  <label htmlFor={field} className="block text-sm font-medium text-gray-700 mb-2">
+                    How did you learn about us?
+                  </label>
+                  <input
+                    id={field}
+                    type="text"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+                    placeholder="e.g. Google, friend, etc."
+                  />
+                </div>
+              );
+            }
+            // Add other custom fields as needed; otherwise skip or render generically.
+            return null;
+          })}
+        </div>
+      )}
+
       {/* Card Details */}
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-2">Card Details</label>
@@ -149,7 +262,6 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId }) => {
               <CreditCard className="w-5 h-5" />
             </div>
           </div>
-
           {/* Expiry + CVC */}
           <div className="grid grid-cols-2 gap-3">
             <CardExpiryElement
@@ -172,7 +284,21 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId }) => {
         className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 rounded-lg flex items-center justify-center space-x-2"
       >
         <Lock className="w-5 h-5" />
-        <span>{loading ? 'Processing…' : 'Start My 30-Day Test →'}</span>
+        {(() => {
+          switch (window.location.search.replace('?', '')) {
+            case 'CS_checko_tester_m':
+              return <span>Start My 30-Day Test →</span>;  
+            case 'CS_checko_pro_m':
+            case 'CS_checko_pro_y':
+              return <span>Start My Pro Plan →</span>;
+            case 'CS_checko_dfy_m':
+            case 'CS_checko_dfy_y':
+              return <span>Order DFY Service →</span>;
+            case 'CS_checko_enterprise_m':
+              return <span>Book My Enterprise Call →</span>;
+          
+          }
+        })()}
       </button>
 
       {/* Terms */}
@@ -190,6 +316,7 @@ export const CheckoutPageWrapper: React.FC<{ planId?: string }> = ({ planId }) =
   const id = planId ?? window.location.search.replace('?', '');
   return (
     <Elements stripe={stripePromise}>
+      {/* If desired, you can also call useCartData here and pass cart_fields into CheckoutForm */}
       <CheckoutForm planId={id} />
     </Elements>
   );

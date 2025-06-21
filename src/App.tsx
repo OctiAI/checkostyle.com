@@ -14,7 +14,6 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen">
-      <MetaPixel />
       <Hero />
       <PainProof />
       <Transformation />

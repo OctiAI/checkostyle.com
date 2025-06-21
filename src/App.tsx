@@ -9,7 +9,6 @@ import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 
-import MetaPixel from './components/metaPixel';
 
 
 function App() {

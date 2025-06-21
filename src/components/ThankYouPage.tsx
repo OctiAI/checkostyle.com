@@ -42,31 +42,31 @@ const ThankYouPage = () => {
               </h2>
               <div className="mb-4 h-16 flex items-center justify-center relative">
                {!priceChanged ? (
-  <motion.span
-    className="text-5xl font-bold text-orange-600"
-  >
-     Normally $499
-  </motion.span>
-) : (
-  <div className="flex items-center justify-center space-x-4">
-    <motion.span
-      className="text-2xl text-gray-400 line-through"
-      initial={{ opacity: 1, x: 70, color: '#EA580C', scale: 2  }}
-      animate={{ opacity: 1, x: 0, color: '#9CA3AF', scale: 1 }}
-      transition={{ duration: 0.8 }}
-    >
-      Normally $499
-    </motion.span>
-    <motion.span
-      className="text-5xl font-bold text-orange-600"
-      initial={{ opacity: 0, x: 60 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}
-    >
-      $249
-    </motion.span>
-  </div>
-)}
+                  <motion.span
+                    className="text-5xl font-bold text-orange-600"
+                  >
+                     Normally $499
+                  </motion.span>
+                ) : (
+                  <div className="flex items-center justify-center space-x-4">
+                    <motion.span
+                      className="text-2xl text-gray-400 line-through"
+                      initial={{ opacity: 1, x: 70, color: '#EA580C', scale: 2  }}
+                      animate={{ opacity: 1, x: 0, color: '#9CA3AF', scale: 1 }}
+                      transition={{ duration: 0.8 }}
+                    >
+                      Normally $499
+                    </motion.span>
+                    <motion.span
+                      className="text-5xl font-bold text-orange-600"
+                      initial={{ opacity: 0, x: 60 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}
+                    >
+                      $249
+                    </motion.span>
+                  </div>
+                )}
 
               </div>
               <p className="text-lg text-gray-600">

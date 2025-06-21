@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Hero />
+      <Hero />
       <PainProof />
       <Transformation />
       <Trust />

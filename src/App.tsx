@@ -9,6 +9,9 @@ import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 
+import MetaPixel from './components/MetaPixel';
+
+
 function App() {
   return (
     <div className="min-h-screen">

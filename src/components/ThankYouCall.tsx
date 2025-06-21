@@ -107,7 +107,7 @@ const ThankYouCall = () => {
             <button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300 hover:scale-105 mb-4"
                   onClick={() => {
                     setTimeout(() => {
-                      window.location.href = `https://checkostyle.com/checkout.html?CS_checko_dfy_m`;
+                      window.location.href = `https://checkostyle.com/checkout.html?CS_checko_pro_m`;
                     }, 200);
                   }}>
               Get Pro Plan Now

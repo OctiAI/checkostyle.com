@@ -8,6 +8,7 @@ import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
+import Footer from './components/metaPixel';
 
 
 

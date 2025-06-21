@@ -89,6 +89,11 @@ const ThankYouPage = () => {
             </div>
 
             <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-6 rounded-2xl font-bold text-xl hover:shadow-lg transition-all duration-300 hover:scale-105 mb-6">
+                                onClick={() => {
+                    setTimeout(() => {
+                      window.location.href = `https://checkostyle.com/checkout.html?${plan.plan_ID}`;
+                    }, 200);
+                  }}
               Upgrade to DFY for $249 →
             </button>
 

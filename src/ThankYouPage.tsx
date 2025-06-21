@@ -8,6 +8,7 @@ import MetaPixel from './components/metaPixel';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
+      <MetaPixel />
       <ThankYouPage/>
     </StrictMode>
 );

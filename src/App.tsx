@@ -15,7 +15,7 @@ import MetaPixel from './components/MetaPixel';
 function App() {
   return (
     <div className="min-h-screen">
-      <Hero />
+      <MetaPixel />
       <Hero />
       <PainProof />
       <Transformation />

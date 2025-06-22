@@ -281,7 +281,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
         {(() => {
           switch (window.location.search.replace('?', '')) {
             case 'CS_checko_tester_m':
-              return     (   
+              return(   
                 <div className="flex justify-between items-center">
                  <span>CheckoStyle Tester Plan</span>;  
                 <span className="font-bold text-green-600">$9.00</span>

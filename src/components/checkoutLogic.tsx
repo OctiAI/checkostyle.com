@@ -297,7 +297,13 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
             case 'CS_checko_dfy_m':
             case 'CS_checko_dfy_y':
                return(  
-                 <div>
+                )   
+            case 'CS_checko_enterprise_m':
+              return <span>Book My Enterprise Call →</span>;
+         }
+        })()}
+          
+                <div>
                 <div className="flex justify-between items-center">
                  <span>CheckoStyle DFY Setup Fee</span>;  
                   <span className="font-bold text-green-600">$499.00</span>
@@ -306,16 +312,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
                  <span>CheckoStyle Pro Plan</span>;  
                 <span className="font-bold text-green-600">$129.00</span>
               </div>
-                  </div>)   
-            case 'CS_checko_enterprise_m':
-              return <span>Book My Enterprise Call →</span>;
-         }
-        })()}
-          
-                <div className="flex justify-between items-center">
-                 <span>CheckoStyle Tester Plan</span>;  
-                <span className="font-bold text-green-600">$9.00</span>
-              </div>
+                  </div>
         </div>
       
       {/* Submit Button */}

@@ -59,7 +59,7 @@ const PainProof: React.FC = () => {
               <span>14.2% CVR in 72 hours</span>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-2 border-2 border-green-200">
-                   <img className="rounded-2xl max-h-full" src="https://checkostyle.com/images/newCS.webp"></img>
+                   <img className="rounded-2xl" src="https://checkostyle.com/images/newCS.webp"></img>
               <div className="mt-4 space-y-2 text-gray-500">
 
                </div>

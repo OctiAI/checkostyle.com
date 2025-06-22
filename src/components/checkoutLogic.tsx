@@ -298,8 +298,10 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
          }
         })()}
           
-          <span className="font-medium text-gray-900">CheckoStyle Tester Plan</span>
-          <span className="font-bold text-green-600">$9.00</span>
+                <div className="flex justify-between items-center">
+                 <span>CheckoStyle Tester Plan</span>;  
+                <span className="font-bold text-green-600">$9.00</span>
+              </div>
         </div>
       
       {/* Submit Button */}

@@ -79,15 +79,15 @@ const Pricing: React.FC = () => {
 
   const getPriceInfo = (plan: typeof plans[number]) => {
     if (billingCycle === 'monthly') {
-      return { price: plan.price, period: plan.period, description: plan.description };
+      return { price: plan.price, period: plan.period, description: plan.description, plan_ID: plan.plan_ID };
     }
     switch (plan.name) {
       case 'Pro':
-        return { price: '$79', period: '/month', description: 'Billed at $948/year' , plan_ID: 'CS_checko_pro_y' };
+        return { price: '$79', period: '/month', description: 'Billed at $948/year', plan_ID: 'CS_checko_pro_y' };
       case 'DFY':
         return { price: '$79', period: '/month ', description: ' $948/year (Best Value)', plan_ID: 'CS_checko_dfy_y'};
       default:
-        return { price: plan.price, period: plan.period, description: plan.description };
+        return { price: plan.price, period: plan.period, description: plan.description, plan_ID: plan.plan_ID  };
     }
   };
 
@@ -201,7 +201,7 @@ ${plan.name === 'Enterprise' ? 'order-4 lg:order-4' : ''}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => {
                     setTimeout(() => {
-                      window.location.href = `https://checkostyle.com/checkout.html?${getPriceInfo.plan_ID}`;
+                      window.location.href = `https://checkostyle.com/checkout.html${getPriceInfo.plan_ID}`;
                     }, 200);
                   }}
                 >

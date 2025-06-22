@@ -44,7 +44,7 @@ const PainProof: React.FC = () => {
               <span>Conversion Killer</span>
             </div>
             <div className="bg-gray-50 rounded-2xl p-2 border-2 border-red-200">
-            <img className="rounded-2xl" src="https://checkostyle.com/images/oldCS.webp"></img>
+            <img className="rounded-2xl h-96" src="https://checkostyle.com/images/oldCS.webp"></img>
 
               <div className="mt-4 space-y-2 text-gray-500">
             

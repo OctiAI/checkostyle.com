@@ -13,7 +13,7 @@ const FormPage: React.FC = () => {
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
               Leaking Sales
-            </span>
+            </span>max-h-full
             —Let's Fix It.
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8">

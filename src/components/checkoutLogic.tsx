@@ -308,7 +308,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
               </div>
                   </div>)   
             case 'CS_checko_enterprise_m':
-              return <span>Book My Enterprise Call →</span>;s
+              return <span>Book My Enterprise Call →</span>;
          }
         })()}
           

@@ -73,7 +73,7 @@ console.log("planId:", planId);
   const { data: planData, loading, error } = useCartData(planId);
   console.log(JSON.stringify(planData, null, 2));
   // Initialize Stripe.js
-  const stripePromise = loadStripe('pk_test_51QnPa5RoGKTuFXtOjUSXFwNJ0DBI4WCGvmc7F1Mi09g3RQ578YBgqDJYagleBSna82gWxLha31VXqc9HXHNGwlQ000lnTEuagR');
+  const stripePromise = loadStripe('pk_live_51QnPa5RoGKTuFXtOojWjniXOxD6jfuTxdXQxnbuZNE9Hq14NJb9d8KMyUS6P0IaTm5WK9zt1qD685TvFFSbe01OI00JvtkwAlO');
 
   return (
     <Elements stripe={stripePromise}>

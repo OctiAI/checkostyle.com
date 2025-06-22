@@ -297,7 +297,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
                return(   
                 <div className="flex justify-between items-center">
                  <span>CheckoStyle Pro Plan</span>  
-                <span className="font-bold text-green-600">$129.00</span>
+                <span className="font-bold text-green-600">$946.00</span>
               </div>)            
             case 'CS_checko_dfy_m':
             case 'CS_checko_dfy_y':

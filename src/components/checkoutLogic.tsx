@@ -278,11 +278,29 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
       </div>
       
      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-        <div className="flex justify-between items-center">
+        {(() => {
+          switch (window.location.search.replace('?', '')) {
+            case 'CS_checko_tester_m':
+              return     (   
+                <div className="flex justify-between items-center">
+                 <span>CheckoStyle Tester Plan</span>;  
+                <span className="font-bold text-green-600">$9.00</span>
+              </div>)
+
+            case 'CS_checko_pro_m':
+            case 'CS_checko_pro_y':
+              return <span>Start My Pro Plan →</span>;
+            case 'CS_checko_dfy_m':
+            case 'CS_checko_dfy_y':
+              return <span>Order DFY Service →</span>;
+            case 'CS_checko_enterprise_m':
+              return <span>Book My Enterprise Call →</span>;
+         }
+        })()}
+          
           <span className="font-medium text-gray-900">CheckoStyle Tester Plan</span>
           <span className="font-bold text-green-600">$9.00</span>
         </div>
-      </div>
       
       {/* Submit Button */}
       <button

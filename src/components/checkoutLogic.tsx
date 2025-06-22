@@ -289,8 +289,11 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
 
             case 'CS_checko_pro_m':
             case 'CS_checko_pro_y':
-              return <span>Start My Pro Plan →</span>;
-            case 'CS_checko_dfy_m':
+ return(   
+                <div className="flex justify-between items-center">
+                 <span>CheckoStyle Tester Plan</span>;  
+                <span className="font-bold text-green-600">$9.00</span>
+              </div>)            case 'CS_checko_dfy_m':
             case 'CS_checko_dfy_y':
               return <span>Order DFY Service →</span>;
             case 'CS_checko_enterprise_m':

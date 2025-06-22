@@ -300,18 +300,29 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
                 <span className="font-bold text-green-600">$948.00</span>
               </div>)            
             case 'CS_checko_dfy_m':
+               return(  
+                 <div>
+                    <div className="flex justify-between items-center">
+                     <span>CheckoStyle DFY Setup Fee</span>
+                      <span className="font-bold text-green-600">$499.00</span>
+                      </div>
+                     <div className="flex justify-between items-center">
+                     <span>CheckoStyle Pro Plan</span>
+                    <span className="font-bold text-green-600">$129.00</span>
+                  </div>
+                </div>)   
             case 'CS_checko_dfy_y':
                return(  
                  <div>
-                <div className="flex justify-between items-center">
-                 <span>CheckoStyle DFY Setup Fee</span>
-                  <span className="font-bold text-green-600">$499.00</span>
+                    <div className="flex justify-between items-center">
+                     <span>CheckoStyle DFY Setup Fee</span>
+                      <span className="font-bold text-green-600">$499.00</span>
+                      </div>
+                     <div className="flex justify-between items-center">
+                     <span>CheckoStyle Pro Plan</span>
+                    <span className="font-bold text-green-600">$129.00</span>
                   </div>
-                 <div className="flex justify-between items-center">
-                 <span>CheckoStyle Pro Plan</span>
-                <span className="font-bold text-green-600">$129.00</span>
-              </div>
-                  </div>)   
+                </div>)   
             case 'CS_checko_enterprise_m':
               return (<div className="flex justify-between items-center">
                  <span>Refundable Scheduling Fee</span> 

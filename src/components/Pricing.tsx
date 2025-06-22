@@ -199,7 +199,11 @@ ${plan.name === 'Enterprise' ? 'order-4 lg:order-4' : ''}
                   className={`mt-auto w-full bg-gradient-to-r ${plan.color} text-white py-4 rounded-full font-bold text-lg hover:shadow-lg transition-all duration-300`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-v
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.location.href = `https://checkostyle.com/checkout.html?${plan.plan_ID}`;
+                    }, 200);
+                  }}
                 >
                   {plan.cta}
                 </motion.button>

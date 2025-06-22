@@ -276,7 +276,12 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
         </div>
         {error && <p className="mt-2 text-red-500 text-sm">{error}</p>}
       </div>
-
+     <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-gray-900">CheckoStyle Tester Plan</span>
+                    <span className="font-bold text-green-600">$9.00</span>
+                  </div>
+                </div>
       {/* Submit Button */}
       <button
         type="submit"

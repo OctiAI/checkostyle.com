@@ -12,7 +12,7 @@ const FormPage: React.FC = () => {
             Your Checkout Is
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
-              Leaking Sales&nbsp;
+              Leaking Sales
             </span>
             —Let's Fix It.
           </h1>

@@ -5,8 +5,14 @@ import { resolve } from 'path';
 export default defineConfig({
   plugins: [
     react(),
-    ssr({ prerender: true })
-  ],
+    vitePrerenderPlugin({
+          renderTarget: '#root',                              // where your React mounts
+          prerenderScript: resolve(__dirname, 'src/prerender.tsx'),
+          additionalPrerenderRoutes: [
+            '/', '/thankyoupage.html', '/thankyoucall.html',
+            '/bookacall.html', '/checkout.html',
+          ],
+        }),  ],
   build: {
     rollupOptions: {
       input: {

@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-             <span className="text-[#E63946] sm:text-black">Your </span> Stripe Checkout
+             <span className="text-[#E63946] sm:text-gray-900">Your </span> Stripe Checkout
             <br />Might Be&nbsp;
 
             <span style={{ color: '#E63946' }}>

@@ -1,15 +1,38 @@
-// src/prerender.ts
-import React from "react";
-import { renderToString } from "react-dom/server";
-import App from "./App";    // your root component
-import { vitePrerenderPlugin } from 'vite-prerender-plugin';  // ← import it here
+// vite.config.ts
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { vitePrerenderPlugin } from 'vite-prerender-plugin';
+import { resolve } from 'path';
 
+export default defineConfig({
+  plugins: [
+    react(),
+    vitePrerenderPlugin({
+      // 1) Where does your React app mount?
+      renderTarget: '#root',
 
-/**
- * This default-exported function will be called
- * once for each route you listed in vite.config.ts
- */
-export default function prerender() {
-  // Simply render your <App /> to a string
-  return renderToString(<App />);
-}
+      // 2) The script that will render your <App /> to HTML:
+      prerenderScript: resolve(__dirname, 'src/prerender.tsx'),
+
+      // 3) List every HTML entry you want prerendered:
+      additionalPrerenderRoutes: [
+        '/',                   // maps to index.html
+        '/thankyoupage.html',
+        '/thankyoucall.html',
+        '/bookacall.html',
+        '/checkout.html',
+      ],
+    }),
+  ],
+  build: {
+    rollupOptions: {
+      input: {
+        main:         resolve(__dirname, 'index.html'),
+        thankyou:     resolve(__dirname, 'thankyoupage.html'),
+        thankyouCall: resolve(__dirname, 'thankyoucall.html'),
+        bookacall:    resolve(__dirname, 'bookacall.html'),
+        checkout:     resolve(__dirname, 'checkout.html'),
+      },
+    },
+  },
+});

@@ -361,8 +361,8 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({ planId, cart_fields }) => {
       {/* Terms */}
       <p className="text-xs text-gray-500 text-center">
         By clicking, you agree to our{' '}
-        <a href="https://checkostyle.com/Privacy%20Policy.pdf" className="text-green-600 underline">Terms of Service</a> &{' '}
-        <a href="#" className="text-green-600 underline">Privacy Policy</a>.
+        <a href="https://checkostyle.com/Terms%20of%20Service.pdf" className="text-green-600 underline">Terms of Service</a> &{' '}
+        <a href="https://checkostyle.com/Privacy%20Policy.pdf" className="text-green-600 underline">Privacy Policy</a>.
       </p>
     </form>
   );

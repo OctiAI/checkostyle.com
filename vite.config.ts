@@ -16,7 +16,7 @@ export default defineConfig({
 
       // 3) List every HTML entry you want prerendered:
       additionalPrerenderRoutes: [
-        '/index',                   // maps to index.html
+        '/index',
         '/thankyoupage',
         '/thankyoucall',
         '/bookacall',
@@ -26,6 +26,7 @@ export default defineConfig({
   ],
   build: {
     rollupOptions: {
+      // your multiple HTML entrypoints
       input: {
         main:         resolve(__dirname, 'index.html'),
         thankyou:     resolve(__dirname, 'thankyoupage.html'),
@@ -33,6 +34,14 @@ export default defineConfig({
         bookacall:    resolve(__dirname, 'bookacall.html'),
         checkout:     resolve(__dirname, 'checkout.html'),
       },
-    },
-  },
+      output: {
+        // pull all 3rd-party deps into a single vendor chunk
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        }
+      }
+    }
+  }
 });

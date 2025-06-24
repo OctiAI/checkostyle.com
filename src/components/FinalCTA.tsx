@@ -92,11 +92,11 @@ const FinalCTA: React.FC = () => {
             }}
             whileTap={{ scale: 0.95 }}
                  onClick={() => {
-    const el = document.getElementById("pricing-section");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  }}
+                  const el = document.getElementById("pricing-section");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
           >
             <span>Build My Checkout Now</span>
             <ArrowRight className="h-6 w-6" />

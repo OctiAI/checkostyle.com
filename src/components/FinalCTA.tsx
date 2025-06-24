@@ -91,11 +91,7 @@ const FinalCTA: React.FC = () => {
               boxShadow: "0 25px 50px rgba(34, 197, 94, 0.4)",
             }}
             whileTap={{ scale: 0.95 }}
-                onClick={() => {
-                    setTimeout(() => {
-                      window.location.href = `https://checkostyle.com/checkout.html?=CSp-Tester`;
-                    }, 200);
-                  }}
+               
           >
             <span>Build My Checkout Now</span>
             <ArrowRight className="h-6 w-6" />

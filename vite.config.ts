@@ -16,11 +16,11 @@ export default defineConfig({
 
       // 3) List every HTML entry you want prerendered:
       additionalPrerenderRoutes: [
-        '/',                   // maps to index.html
-        '/thankyoupage.html',
-        '/thankyoucall.html',
-        '/bookacall.html',
-        '/checkout.html',
+        '/index',                   // maps to index.html
+        '/thankyoupage',
+        '/thankyoucall',
+        '/bookacall',
+        '/checkout',
       ],
     }),
   ],

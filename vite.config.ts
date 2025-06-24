@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
+import { vitePrerenderPlugin } from 'vite-prerender-plugin';  // ← import it here
 
 export default defineConfig({
   plugins: [

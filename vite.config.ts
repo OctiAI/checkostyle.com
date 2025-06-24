@@ -11,8 +11,8 @@ export default defineConfig({
           additionalPrerenderRoutes: [
             '/', '/thankyoupage.html', '/thankyoucall.html',
             '/bookacall.html', '/checkout.html',
-          ],
-        }),  
+        ],
+      }),  
   ],
   build: {
     rollupOptions: {

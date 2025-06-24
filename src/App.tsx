@@ -1,30 +1,35 @@
-import React from 'react';
+// src/App.tsx
+import React, { Suspense } from 'react';
 import Hero from './components/Hero';
-import PainProof from './components/PainProof';
-import Transformation from './components/Transformation';
-import Trust from './components/Trust';
-import Belief from './components/Belief';
-import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
-import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer';
 
+// below-the-fold sections only load after Hero paints
+const PainProof      = React.lazy(() => import('./components/PainProof'));
+const Transformation = React.lazy(() => import('./components/Transformation'));
+const Trust          = React.lazy(() => import('./components/Trust'));
+const Belief         = React.lazy(() => import('./components/Belief'));
+const Pricing        = React.lazy(() => import('./components/Pricing'));
+const FAQ            = React.lazy(() => import('./components/FAQ'));
+const FinalCTA       = React.lazy(() => import('./components/FinalCTA'));
+const Footer         = React.lazy(() => import('./components/Footer'));
 
-
-function App() {
+export default function App() {
   return (
     <div className="min-h-screen">
       <Hero />
-      <PainProof />
-      <Transformation />
-      <Trust />
-      <Belief />
-      <Pricing />
-      <FAQ />
-      <FinalCTA />
-      <Footer />
+
+      <Suspense fallback={<div className="py-20 text-center">Loading…</div>}>
+        <PainProof />
+        <Transformation />
+        <Trust />
+        <Belief />
+        <Pricing />
+        <FAQ />
+        <FinalCTA />
+        <Footer />
+      </Suspense>
     </div>
   );
 }
+
 
 export default App;

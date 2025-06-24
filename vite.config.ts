@@ -12,7 +12,8 @@ export default defineConfig({
             '/', '/thankyoupage.html', '/thankyoucall.html',
             '/bookacall.html', '/checkout.html',
           ],
-        }),  ],
+        }),  
+  ],
   build: {
     rollupOptions: {
       input: {

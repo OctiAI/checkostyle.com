@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
           <div className="flex space-x-6 text-gray-400 mt-4 md:mt-0">
             <a href="https://checkostyle.com/Privacy%20Policy.pdf" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="https://checkostyle.com/Terms%20of%20Service.pdf" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies</a>
+            <a href="https://checkostyle.com/Privacy%20Policy.pdf" className="hover:text-white transition-colors">Cookies</a>
           </div>
         </div>
     </footer>

@@ -7,7 +7,7 @@ import {
   Smartphone, 
   MessageCircle, 
   ShoppingCart,
-  Lock,react-router
+  Lock,
   X,
   Calendar,
   DollarSign,

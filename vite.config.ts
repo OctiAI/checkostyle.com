@@ -3,7 +3,10 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 
 export default defineConfig({
-  plugins: [react()],
+    plugins: [
+    react(),
+    ssr({ prerender: true })
+  ],
   build: {
     rollupOptions: {
       input: {

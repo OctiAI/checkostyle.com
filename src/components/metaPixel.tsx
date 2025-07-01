@@ -6,15 +6,23 @@ declare global {
     fbq?: (...args: any[]) => void;
     clarity?: (...args: any[]) => void;
     requestIdleCallback?: (cb: () => void) => void;
+    _fbPixelLoaded?: boolean;
+    _clarityLoaded?: boolean;
   }
 }
 
 const MetaPixel = () => {
   useEffect(() => {
-    // the real injection logic
+    // Prevent multiple loads
+    if (window._fbPixelLoaded && window._clarityLoaded) {
+      return;
+    }
+
     const injectPixels = () => {
       // — Facebook Pixel —
-      if (!window.fbq) {
+      if (!window.fbq && !window._fbPixelLoaded) {
+        window._fbPixelLoaded = true;
+        
         (function (
           f: any,
           b: Document,
@@ -52,7 +60,9 @@ const MetaPixel = () => {
       }
 
       // — Microsoft Clarity —
-      if (!window.clarity) {
+      if (!window.clarity && !window._clarityLoaded) {
+        window._clarityLoaded = true;
+        
         (function (
           c: any,
           l: Document,
@@ -74,25 +84,32 @@ const MetaPixel = () => {
       }
     };
 
-    // Wait for full load…
-    const onLoad = () => {
-      // …then wait for an idle slot (or fall back immediately)
-      if (window.requestIdleCallback) {
-        window.requestIdleCallback(injectPixels);
+    // Use a small delay to prevent conflicts with initial page load
+    const timer = setTimeout(() => {
+      if (document.readyState === "complete") {
+        if (window.requestIdleCallback) {
+          window.requestIdleCallback(injectPixels);
+        } else {
+          injectPixels();
+        }
       } else {
-        injectPixels();
+        const onLoad = () => {
+          if (window.requestIdleCallback) {
+            window.requestIdleCallback(injectPixels);
+          } else {
+            injectPixels();
+          }
+          window.removeEventListener("load", onLoad);
+        };
+        window.addEventListener("load", onLoad);
       }
-    };
+    }, 100);
 
-    if (document.readyState === "complete") {
-      onLoad();
-    } else {
-      window.addEventListener("load", onLoad);
-      return () => window.removeEventListener("load", onLoad);
-    }
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
-  // keep your noscript fallback for non-JS cases
   return (
     <noscript>
       <img

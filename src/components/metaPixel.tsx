@@ -1,5 +1,5 @@
 // src/components/MetaPixel.tsx
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 declare global {
   interface Window {
@@ -12,11 +12,15 @@ declare global {
 }
 
 const MetaPixel = () => {
+  const hasLoaded = useRef(false);
+
   useEffect(() => {
-    // Prevent multiple loads
-    if (window._fbPixelLoaded && window._clarityLoaded) {
+    // Prevent multiple loads across component remounts
+    if (hasLoaded.current || window._fbPixelLoaded || window._clarityLoaded) {
       return;
     }
+
+    hasLoaded.current = true;
 
     const injectPixels = () => {
       // — Facebook Pixel —
@@ -84,31 +88,25 @@ const MetaPixel = () => {
       }
     };
 
-    // Use a small delay to prevent conflicts with initial page load
-    const timer = setTimeout(() => {
-      if (document.readyState === "complete") {
+    // Only inject once when component first mounts
+    if (document.readyState === "complete") {
+      if (window.requestIdleCallback) {
+        window.requestIdleCallback(injectPixels);
+      } else {
+        setTimeout(injectPixels, 0);
+      }
+    } else {
+      const onLoad = () => {
         if (window.requestIdleCallback) {
           window.requestIdleCallback(injectPixels);
         } else {
-          injectPixels();
+          setTimeout(injectPixels, 0);
         }
-      } else {
-        const onLoad = () => {
-          if (window.requestIdleCallback) {
-            window.requestIdleCallback(injectPixels);
-          } else {
-            injectPixels();
-          }
-          window.removeEventListener("load", onLoad);
-        };
-        window.addEventListener("load", onLoad);
-      }
-    }, 100);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+        window.removeEventListener("load", onLoad);
+      };
+      window.addEventListener("load", onLoad);
+    }
+  }, []); // Empty dependency array ensures this only runs once
 
   return (
     <noscript>

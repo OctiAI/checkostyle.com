@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, CheckCircle, ShieldCheck, Timer, Shield, Clock } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    // Mark that animations have run
+    setHasAnimated(true);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
       {/* Background Pattern */}
@@ -26,7 +33,7 @@ const Hero: React.FC = () => {
           {/* Main Headline */}
           <motion.h1
             className="text-5xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-12 leading-tight"
-            initial={{ opacity: 0, y: 30 }}
+            initial={hasAnimated ? false : { opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
@@ -43,7 +50,7 @@ const Hero: React.FC = () => {
           {/* Subheadline */}
           <motion.p
             className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 30 }}
+            initial={hasAnimated ? false : { opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
@@ -56,7 +63,7 @@ const Hero: React.FC = () => {
           {/* CTA Buttons */}
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
-            initial={{ opacity: 0, y: 30 }}
+            initial={hasAnimated ? false : { opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}  
           >
@@ -88,10 +95,9 @@ const Hero: React.FC = () => {
         {/* Trust Badges */}
         <motion.div
           className="flex flex-wrap items-center justify-center gap-4 opacity-70 mb-12"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.7 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
+          initial={hasAnimated ? false : { opacity: 0 }}
+          animate={{ opacity: 0.7 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
         >
           <div className="flex items-center space-x-2 bg-white rounded-full px-4 py-2 shadow-md">
             <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">

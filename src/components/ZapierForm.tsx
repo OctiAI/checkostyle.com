@@ -82,21 +82,19 @@ const ZapierForm = () => {
       </div>
 
       {/* Phone */}
-      <div>
-        <label className="block text-gray-700 font-medium mb-1" htmlFor="phone">
-          Phone<span className="text-red-500">*</span>
-        </label>
-        <input
-          id="phone"
-          name="phone"
-          type="tel"
-          required
-          value={formData.phone}
-          onChange={handleChange}
-          placeholder="(555) 123-4567"
-          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 mb-6"
-        />
-      </div>
+<input
+  id="phone"
+  name="phone"
+  type="tel"
+  required
+  pattern="^\d{10,15}$"
+  maxLength={15}
+  title="Enter a valid phone number with digits only (10–15 numbers)"
+  value={formData.phone}
+  onChange={handleChange}
+  placeholder="1234567890"
+  className="..."
+/>
 
       {/* Email */}
       <div>

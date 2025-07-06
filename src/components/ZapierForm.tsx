@@ -82,7 +82,11 @@ const ZapierForm = () => {
       </div>
 
       {/* Phone */}
-<input
+      <div>
+        <label className="block text-gray-700 font-medium mb-1" htmlFor="phone">
+          Phone<span className="text-red-500">*</span>
+        </label>
+        <input
   id="phone"
   name="phone"
   type="tel"
@@ -95,6 +99,8 @@ const ZapierForm = () => {
   placeholder="1234567890"
   className="..."
 />
+
+      </div>
 
       {/* Email */}
       <div>

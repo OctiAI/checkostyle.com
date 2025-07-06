@@ -73,6 +73,8 @@ const ZapierForm = () => {
           id="name"
           name="name"
           type="text"
+            pattern="^\d{10,15}$"
+  maxLength={15}
           required
           value={formData.name}
           onChange={handleChange}

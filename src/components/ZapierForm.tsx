@@ -11,7 +11,7 @@ const ZapierForm = () => {
   const [submitted, setSubmitted] = useState(false);
 
   // 👉 Replace this with your Zapier “Catch Hook” URL:
-  const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/19293386/u3hub60/';
+  const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/19293386/u3hub60/ ';
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));

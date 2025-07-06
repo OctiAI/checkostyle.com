@@ -12,6 +12,7 @@ const ZapierForm = () => {
 
   // 👉 Replace this with your Zapier “Catch Hook” URL:
   const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/23419654/uoh04eq/';
+https://hooks.zapier.com/hooks/catch/19293386/u3hub60/
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -91,7 +92,7 @@ const ZapierForm = () => {
           name="phone"
           type="tel"
           required
-            pattern="^[0-9\s\-\(\)]+$"
+          pattern="^[0-9\s\-\(\)]+$"
           value={formData.phone}
           onChange={handleChange}
           placeholder="(555) 123-4567"

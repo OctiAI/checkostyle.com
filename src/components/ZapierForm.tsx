@@ -11,7 +11,7 @@ const ZapierForm = () => {
   const [submitted, setSubmitted] = useState(false);
 
   // 👉 Replace this with your Zapier “Catch Hook” URL:
-  const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/19293386/u3hub60/ ';
+  const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/23419654/uoh04eq/';
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -87,19 +87,15 @@ const ZapierForm = () => {
           Phone<span className="text-red-500">*</span>
         </label>
         <input
-  id="phone"
-  name="phone"
-  type="tel"
-  required
-  pattern="^\d{10,15}$"
-  maxLength={15}
-  title="Enter a valid phone number with digits only (10–15 numbers)"
-  value={formData.phone}
-  onChange={handleChange}
-  placeholder="1234567890"
-  className="..."
-/>
-
+          id="phone"
+          name="phone"
+          type="tel"
+          required
+          value={formData.phone}
+          onChange={handleChange}
+          placeholder="(555) 123-4567"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 mb-6"
+        />
       </div>
 
       {/* Email */}

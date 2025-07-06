@@ -4,10 +4,8 @@ import { useEffect, useRef } from "react";
 declare global {
   interface Window {
     fbq?: (...args: any[]) => void;
-    clarity?: (...args: any[]) => void;
     requestIdleCallback?: (cb: () => void) => void;
     _fbPixelLoaded?: boolean;
-    _clarityLoaded?: boolean;
   }
 }
 
@@ -16,7 +14,7 @@ const MetaPixel = () => {
 
   useEffect(() => {
     // Prevent multiple loads across component remounts
-    if (hasLoaded.current || window._fbPixelLoaded || window._clarityLoaded) {
+    if (hasLoaded.current || window._fbPixelLoaded) {
       return;
     }
 
@@ -26,7 +24,7 @@ const MetaPixel = () => {
       // — Facebook Pixel —
       if (!window.fbq && !window._fbPixelLoaded) {
         window._fbPixelLoaded = true;
-        
+
         (function (
           f: any,
           b: Document,
@@ -61,30 +59,6 @@ const MetaPixel = () => {
 
         window.fbq!("init", "733564302694485");
         window.fbq!("track", "PageView");
-      }
-
-      // — Microsoft Clarity —
-      if (!window.clarity && !window._clarityLoaded) {
-        window._clarityLoaded = true;
-        
-        (function (
-          c: any,
-          l: Document,
-          a: string,
-          r: string,
-          i: string,
-          t?: HTMLScriptElement,
-          y?: Element
-        ) {
-          c[a] = c[a] || function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-          t = l.createElement(r);
-          t.async = true;
-          t.src = "https://www.clarity.ms/tag/" + i;
-          y = l.getElementsByTagName(r)[0];
-          y.parentNode?.insertBefore(t, y);
-        })(window, document, "clarity", "script", "s45r7e1qd6");
       }
     };
 

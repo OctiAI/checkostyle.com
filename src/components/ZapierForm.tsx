@@ -91,8 +91,7 @@ const ZapierForm = () => {
           name="phone"
           type="tel"
           required
-            pattern="^\d{10,15}$"
-  maxLength={15}
+            pattern="^[0-9\s\-\(\)]+$"
           value={formData.phone}
           onChange={handleChange}
           placeholder="(555) 123-4567"
